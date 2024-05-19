@@ -1,63 +1,84 @@
 import Link from "next/link";
 import { useState } from "react";
 import cn from "classnames";
-import Image from "next/image";
-
+import Slide from "../components/slidenav";
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
 
   return (
- /*  <header className="bg-green-600">
-      <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
-        <div className="flex items-center">
-          <Image
-            src="/tailwind-logo.svg"
-            width={40}
-            height={40}
-            priority
-            alt="Tailwind CSS logo"
-          />
+    <>
+      <header className=" px-16" >
+        <div className="flex flex-wrap items-center justify-between lg:container px-12 py-1 mx-auto md:flex-no-wrap ps:translate-x-6 ">
+          <div className="flex items-center desktop">
+            <img
+              src="/logo 1.png"
+              width={120}
+              height={100}
+              priority
+              alt="Tailwind CSS logo"
+            />
+          </div>
 
-          <Link href="/">
-            <a className="text-lg md:text-xl font-bold ml-3 text-white">
-              Next.js Starter Tailwind
-            </a>
-          </Link>
+          <div className="flex items-center">
+            <div>
+              <div className="flex space-x-2 md:space-x-4 justify-end lg:py-2 ">
+                <img
+                  src="/wt.png"
+                  width={30}
+                  height={30}
+                  priority
+                  alt="Tailwind CSS logo" className="h-12 w-12 pm:h-6 pm:w-6  pxs:!h-5 pxs:!w-5"
+                />
+                <div />
+
+                <img
+                  src="/telegram.png"
+                  width={30}
+                  height={30}
+                  priority
+                  alt="Telegram logo"className="h-12 w-12 pm:h-6 pm:w-6  pxs:!h-5 pxs:!w-5"
+                />
+                <div />
+
+                <img
+                  src="/facebook.png"
+                  width={30}
+                  height={30}
+                  priority
+                  alt="Facebook logo" className="h-12 w-12 pm:h-6 pm:w-6  pxs:!h-5 pxs:!w-5"
+                />
+                <div />
+
+                <img
+                  src="/social.png"
+                  width={30}
+                  height={30}
+                  priority
+                  alt="Social logo" className="h-12 w-12 pm:h-6 pm:w-6  pxs:!h-5 pxs:!w-5"
+                />
+              </div>
+
+              <ul
+                className={cn(
+                  "md:flex flex-col md:flex-row md:items-start md:justify-start text-sm w-full md:w-auto sm:hidden",
+                  mobileMenuIsOpen ? `block` : `hidden`
+                )}
+              >
+                {[{ title: "जैन का विवाह जैन से ही हो ", route: "/" }].map(
+                  ({ route, title }) => (
+                    <li className="py-3" key={title}>
+                      <Link href={route}>
+                        <a className="block text-[#EB2188] font-semibold text-2xl">{title}</a>
+                      </Link>
+                    </li>
+                  )
+                )}
+              </ul>
+            </div>
+          </div>
         </div>
-
-        <button
-          className="flex items-center block px-3 py-2 text-white border border-white rounded md:hidden"
-          onClick={() => setMobileMenuIsOpen(!mobileMenuIsOpen)}
-        >
-          <svg
-            className="w-3 h-3 fill-current"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-
-        <ul
-          className={cn(
-            "md:flex flex-col md:flex-row md:items-center md:justify-center text-sm w-full md:w-auto",
-            mobileMenuIsOpen ? `block` : `hidden`
-          )}
-        >
-          {[
-            { title: "Home", route: "/" },
-            { title: "About", route: "/login" },
-          ].map(({ route, title }) => (
-            <li className="mt-3 md:mt-0 md:ml-6" key={title}>
-              <Link href={route}>
-                <a className="block text-white">{title}</a>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </header> */ 
-    <></>
+      </header>
+      <Slide />
+    </>
   );
 }
