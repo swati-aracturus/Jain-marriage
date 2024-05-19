@@ -111,13 +111,16 @@
 }
 .wrapper i:active {
 	transform: translateY(-50%) scale(0.85);
+  color: #EB2188;
 }
 .wrapper i:first-child {
-	left: -10%;
+	left: -10%;transform: rotate(130deg)!important; font-size: 25px;
 }
 .wrapper i:last-child {
 	right: -10%;
-  transform: rotate(10%);
+  transform: rotate(-50deg)!important;
+ font-size: 25px;
+
 }
 .wrapper .carousel {
 	display: grid;

@@ -287,7 +287,7 @@ const Home = () => {
         </div>
         <div className="flex justify-center pt-[3%]">
           <div class="wrapper ">
-            <i id="left" class="fa-solid fa-angle-left pm:hidden"></i>
+            <i id="left" class="fa-solid fa-angle-left pm:hidden">◢</i>
             <ul class="carousel">
               <li class="card ">
                 <div class="img">
