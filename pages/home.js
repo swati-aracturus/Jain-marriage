@@ -253,32 +253,39 @@ const Home = () => {
         </div>
       </div>
       <section className="login">
-        <div class=" flex pt-[5%] justify-center">
+        <div class=" flex pt-[5%]  justify-center items-center">
           <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
             REGISTER OR LOG IN NOW
           </p>
         </div>
-        <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
+        <div className="flex pt-4 pm:!pt-0 pm:!-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-        <div className="w-2/3 mx-auto my-5 ps:my-3 align-center flex space-x-2  cover justify-center">
-          <img className="banner_image" width={'100%'} height={'auto'} style={{}} src={'/fe.png'} />
+        <div className="w-2/3 mx-auto my-5 ps:my-3 align-center flex space-x-2 pt-2 cover justify-center items-center">
+          <img
+            className="banner_image"
+            width={"100%"}
+            height={"auto"}
+            src={"/fe.png"}
+          />
+        </div>
+        <div className="w-2/3 mx-auto my-5 ps:my-3 align-center flow flex space-x-16 justify-center items-center ">
           <button
-            className="w-28 ps:text-xs ps:w-20 py-1 text-white rounded-[5px] bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-400 "
+            className="w-48 pm:w-24 ps:!w-[65px] ps:!py-0  pm:py-2 pm:text-sm text-xl font-bold ps:!text-[10px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
             onClick={() => console.log("Register")}
-          >
-            Register
+          > Register
           </button>
           <button
-            className="w-28 ps:text-xs ps:w-20 py-1 text-white rounded-[5px] bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-400 "
+            className="w-48 pm:w-24 pm:py-2 ps:!w-[65px] ps:!py-0  pm:text-sm text-xl font-bold ps:!text-[10px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-400 "
             onClick={() => console.log("Login")}
           >
             Login
           </button>
         </div>
       </section>
+
       <section>
-        <div class=" flex pt-[5%] justify-center">
+        <div class=" flex justify-center ">
           <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
             SUCCESS STORIES
           </p>
@@ -288,7 +295,9 @@ const Home = () => {
         </div>
         <div className="flex justify-center pt-[3%]">
           <div class="wrapper ">
-            <i id="left" class="fa-solid fa-angle-left pm:hidden">◢</i>
+            <i id="left" class="fa-solid fa-angle-left pm:hidden">
+              ◢
+            </i>
             <ul class="carousel">
               <li class="card ">
                 <div class="img">
@@ -358,7 +367,10 @@ const Home = () => {
                 <span>App Designer</span>
               </li>
             </ul>
-            <i id="right" class="fa-solid fa-angle-right pm:hidden" > ◢ </i>
+            <i id="right" class="fa-solid fa-angle-right pm:hidden">
+              {" "}
+              ◢{" "}
+            </i>
           </div>
         </div>
       </section>
