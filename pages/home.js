@@ -261,7 +261,8 @@ const Home = () => {
         <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-        <div className="w-2/3 mx-auto my-5 ps:my-3 align-center bg-slate-400 flex space-x-2  cover justify-center">
+        <div className="w-2/3 mx-auto my-5 ps:my-3 align-center flex space-x-2  cover justify-center">
+          <img className="banner_image" width={'100%'} height={'auto'} style={{}} src={'/fe.png'} />
           <button
             className="w-28 ps:text-xs ps:w-20 py-1 text-white rounded-[5px] bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-400 "
             onClick={() => console.log("Register")}

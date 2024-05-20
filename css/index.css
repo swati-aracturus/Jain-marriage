@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
 @media screen and (max-width: 1025px) {
 
   .desktop {
@@ -22,8 +22,9 @@
   #pdCarousel1.pd-carousel {
     height: 750px !important;
   }
-  .texty{
-    font-size: 65px!important;
+
+  .texty {
+    font-size: 65px !important;
   }
 }
 
@@ -33,8 +34,9 @@
   #pdCarousel1.pd-carousel {
     height: 550px !important;
   }
-  .texty{
-    font-size: 46px!important;
+
+  .texty {
+    font-size: 46px !important;
   }
 
 }
@@ -46,158 +48,184 @@
   #pdCarousel1.pd-carousel {
     height: 400px !important;
   }
-  .texty{
-    font-size: 38px!important;
+
+  .texty {
+    font-size: 38px !important;
   }
 
 }
+
 @media screen and (max-width:800px) {
 
   .pd-carousel img,
   #pdCarousel1.pd-carousel {
     height: 300px !important;
   }
-  .pd-carousel__selector_items{
+
+  .pd-carousel__selector_items {
     transform: scale(0.5);
     padding-bottom: 0.5rem !important;
   }
-  .texty{
-    font-size: 28px!important;
+
+  .texty {
+    font-size: 28px !important;
   }
 
 }
-@media screen and (max-width:500px){
 
-  .pd-carousel img,#pdCarousel1.pd-carousel {
-      height: 170px !important;
-     }
+@media screen and (max-width:500px) {
+
+  .pd-carousel img,
+  #pdCarousel1.pd-carousel {
+    height: 170px !important;
+  }
 
 
-     .texty{
-      font-size: 12px!important;
-    }
+  .texty {
+    font-size: 12px !important;
+  }
 
-    #reg{
-      transform: translateX(30%)!important;
-    }
+  #reg {
+    transform: translateX(30%) !important;
+  }
 
 }
+
 .cover {
   background-image: "../fe.png";
-  background-size : cover;
- 
+  background-size: cover;
+
 }
 
 
 .wrapper {
-	max-width: 900px;
-	width: 100%;
-	position: relative;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
 }
+
 .wrapper i {
-	top: 50%;
-	height: 50px;
-	width: 50px;
-	cursor: pointer;
-	font-size: 1.25rem;
-	position: absolute;
-	text-align: center;
-	line-height: 50px;
-	background: #fff;
-	border-radius: 50%;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-	transform: translateY(-50%);
-	transition: transform 0.1s linear;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
 }
+
 .wrapper i:active {
-	transform: translateY(-50%) scale(0.85);
+  transform: translateY(-50%) scale(0.85);
   color: #EB2188;
 }
+
 .wrapper i:first-child {
-	left: -10%;transform: rotate(130deg)!important; font-size: 25px;
+  left: -10%;
+  transform: rotate(130deg) !important;
+  font-size: 25px;
 }
+
 .wrapper i:last-child {
-	right: -10%;
-  transform: rotate(-50deg)!important;
- font-size: 25px;
+  right: -10%;
+  transform: rotate(-50deg) !important;
+  font-size: 25px;
 
 }
+
 .wrapper .carousel {
-	display: grid;
-	grid-auto-flow: column;
-	grid-auto-columns: calc((100% / 3) - 12px);
-	overflow-x: auto;
-	scroll-snap-type: x mandatory;
-	gap: 16px;
-	border-radius: 8px;
-	scroll-behavior: smooth;
-	scrollbar-width: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
+
 .carousel::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
+
 .carousel.no-transition {
-	scroll-behavior: auto;
+  scroll-behavior: auto;
 }
+
 .carousel.dragging {
-	scroll-snap-type: none;
-	scroll-behavior: auto;
+  scroll-snap-type: none;
+  scroll-behavior: auto;
 }
-.card{
-border:2px solid #8b53ff;}
+
+.card {
+  border: 2px solid #8b53ff;
+}
+
 .carousel.dragging .card {
-	cursor: grab;
-	user-select: none;
-  
+  cursor: grab;
+  user-select: none;
+
 }
+
 .carousel :where(.card, .img) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .carousel .card {
-	scroll-snap-align: start;
-	height: 342px;
-	list-style: none;
-	background: #fff;
-	cursor: pointer;
-	padding-bottom: 15px;
-	flex-direction: column;
-	border-radius: 8px;
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
 }
+
 .carousel .card .img {
-	background: #8b53ff;
-	height: 148px;
-	width: 148px;
-	border-radius: 50%;
+  background: #8b53ff;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
 }
+
 .card .img img {
-	width: 140px;
-	height: 140px;
-	border-radius: 50%;
-	object-fit: cover;
-	border: 4px solid #fff;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
 }
+
 .carousel .card h2 {
-	font-weight: 500;
-	font-size: 1.56rem;
-	margin: 30px 0 5px;
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
 }
+
 .carousel .card span {
-	color: #6a6d78;
-	font-size: 1.31rem;
+  color: #6a6d78;
+  font-size: 1.31rem;
 }
 
 @media screen and (max-width: 900px) {
-	.wrapper .carousel {
-		grid-auto-columns: calc((100% / 2) - 9px);
-	}
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
 }
 
 @media screen and (max-width: 600px) {
-	.wrapper .carousel {
-		grid-auto-columns: 100%;
-	}
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
 }
 
 
@@ -207,25 +235,30 @@ border:2px solid #8b53ff;}
   #pdCarousel1.pd-carousel {
     height: 145px !important;
   }
-  .texty{
-    font-size: 10px!important;
+
+  .texty {
+    font-size: 10px !important;
   }
 
 }
+
 @media screen and (max-width:325px) {
 
   .pd-carousel img,
   #pdCarousel1.pd-carousel {
     height: 125px !important;
   }
-  .texty{
-    font-size: 8px!important;
+
+  .texty {
+    font-size: 8px !important;
   }
 
 }
-.texty{
+
+.texty {
   font-size: 85px;
 }
+
 #fix {
   font-size: 10px;
 }
@@ -489,4 +522,11 @@ input[type="text"]:focus {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+img.banner_image {
+  position: absolute;
+  z-index: -1;
+  width: 75%;
+  margin-top: -28px;
 }
