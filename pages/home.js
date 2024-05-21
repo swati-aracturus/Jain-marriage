@@ -142,7 +142,7 @@ const Home = () => {
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
                     Discovering your ideal partner can be a challenge, but we've
-                    made it simpler.
+                    made it simpler.swati
                   </h1>
                 </div>
               </div>
