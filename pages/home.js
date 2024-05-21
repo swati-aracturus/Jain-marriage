@@ -273,9 +273,7 @@ const Home = () => {
           <button
             className="w-48 pm:w-24 ps:!w-[65px] ps:!py-0  pm:py-2 pm:text-sm text-xl font-bold ps:!text-[10px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
             onClick={() => console.log("Register")}
-          >
-            {" "}
-            Register
+          > Register
           </button>
           <button
             className="w-48 pm:w-24 pm:py-2 ps:!w-[65px] ps:!py-0  pm:text-sm text-xl font-bold ps:!text-[10px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-400 "
@@ -300,45 +298,7 @@ const Home = () => {
             <i id="left" class="fa-solid fa-angle-left pm:hidden">
               ◢
             </i>
-            <div className="flex flex-col md:flex-row justify-between">
-  <div className="text-[#e451a5] font-bold h-[220px] md:h-[180px] md:w-[500px] w-full shadow-sm shadow-slate-500 p-4 md:mr-20 mb-4 md:mb-0 rounded-lg">
-    Akash Sanghavi Weds Riddhi Mehta
-    <p className="text-black font-extralight mt-5">
-      Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. when an unknown printer took a galley of
-      type and scrambled it to make a type specimen book.
-    </p>
-  </div>
-  <div className="text-[#e451a5] font-bold h-[200px] md:h-[180px] md:w-[500px] w-full shadow-sm shadow-slate-500 p-4 rounded-lg">
-    Jaya Weds Pawan
-    <p className="text-black font-extralight mt-5">
-      Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. when an unknown printer took a galley of
-      type and scrambled it to make a type specimen book.
-    </p>
-  </div>
-</div>
-
-<div className="flex justify-center md:mt-20 mt-7"> 
-  <p className="text-4xl ps:!text-[12px] pm:text-[20px] text-[30px] pm:font-[550] font-semibold "> 
-  RECENTLY JOIN PROFILE 
-  </p>
-  </div>
-
-  <div>
-  <div className="flex  md:!pt-6 md:-translate-y-2 justify-center">
-  <img src="/tb.png" className="md:w-60 w:20" />
-</div>
-<div className="flex justify-center pt-[3%]">
-  <div className="wrapper">
-    <i id="left" className="fa-solid fa-angle-left md:hidden">◢</i>
-  </div>
-</div>
-
-  </div>
-  
-
-            <ul class="carousel md:mt-20 mt-7">
+            <ul class="carousel">
               <li class="card ">
                 <div class="img">
                   <img
@@ -414,33 +374,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-      
-      <div className="flex justify-center items-center bg-white mt-10 md:ml-[40%]">
-  <div className="bg-blue-900 h-[400px] w-full max-w-[600px] flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
-    <div className="text-white text-2xl sm:text-3xl text-center mb-4">
-      ABOUT US
-    </div>
-    <div className="flex flex-col items-center">
-      <div className="flex pt-2 md:pt-0 md:-translate-y-2 justify-center">
-        <img src="/tb.png" className="w-20 sm:w-28 md:w-40" />
-      </div>
-      <div className="flex justify-center pt-3">
-        <div className="wrapper">
-          <i id="left" className="fa-solid fa-angle-left md:hidden">◢</i>
-        </div>
-      </div>
-    </div>
-    <p className="text-white mt-4 sm:mt-8 text-justify text-sm sm:text-base">
-      Welcome to Jain E-Patrika, your trusted platform for finding the perfect life partner. We understand that the journey to finding a compatible life partner can be daunting and time-consuming, which is why we have created a centralized hub where eligible bachelors and bachelorettes can showcase their biodata and connect with potential matches within the community. We recognize that finding a soulmate goes beyond just matching biodata: it about creating meaningful relationships that last a lifetime.
-    </p>
-  <button className="bg-[#b02596] text-white m-1 md:m-0 md:p-2 px-4 md:px-8 md:text-xl text-20px rounded-lg md:mt-2">
-    Read more
-  </button>
-  </div>
-</div>
-
-
-
     </>
   );
 };
