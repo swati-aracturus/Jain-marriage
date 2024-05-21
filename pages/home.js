@@ -2,10 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/autoplay';
+
 
 
 import { useState, useEffect } from "react";
@@ -412,38 +409,7 @@ const Home = () => {
             </i>
           </div>
         </div>
-        <div className="container mx-auto px-4 py-8">
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h2 className="text-xl font-bold mb-2">Card 1</h2>
-            <p className="text-gray-700">This is the content of card 1.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h2 className="text-xl font-bold mb-2">Card 2</h2>
-            <p className="text-gray-700">This is the content of card 2.</p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="bg-white shadow-md rounded-lg p-6">
-            <h2 className="text-xl font-bold mb-2">Card 3</h2>
-            <p className="text-gray-700">This is the content of card 3.</p>
-          </div>
-        </SwiperSlide>
-        {/* Add more SwiperSlide components as needed */}
-      </Swiper>
-    </div>
+      
  
       </section>
     </>
