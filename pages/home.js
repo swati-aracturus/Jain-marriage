@@ -104,44 +104,44 @@ const Home = () => {
   }, [isAutoPlay]);
   return (
     <>
-      <div class="containeri">
-        <div class="pd-carousel " id="pdCarousel1">
+      <div className="containeri">
+        <div className="pd-carousel " id="pdCarousel1">
           <input
             type="radio"
             id="pdCarouselItem1"
-            class="pd-carousel__input"
+            className="pd-carousel__input"
             name="pdCarousel"
           />
           <input
             type="radio"
             id="pdCarouselItem2"
-            class="pd-carousel__input"
+            className="pd-carousel__input"
             name="pdCarousel"
           />
           <input
             type="radio"
             id="pdCarouselItem3"
-            class="pd-carousel__input"
+            className="pd-carousel__input"
             name="pdCarousel"
           />
           <input
             type="radio"
             id="pdCarouselItem4"
-            class="pd-carousel__input"
+            className="pd-carousel__input"
             name="pdCarousel"
           />
           <input
             type="radio"
             id="pdCarouselItem5"
-            class="pd-carousel__input"
+            className="pd-carousel__input"
             name="pdCarousel"
           />
 
-          <ul class="pd-carousel__items">
-            <li class="pd-carousel__item">
-              <label for="pdCarouselItem5" class="pd-carousel__prev"></label>
+          <ul className="pd-carousel__items">
+            <li className="pd-carousel__item">
+              <label for="pdCarouselItem5" className="pd-carousel__prev"></label>
               <img src="/banner.png" />
-              <div class="pd-carousel__item-contents flex justify-center items-center  text-right">
+              <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
@@ -150,13 +150,13 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem2" class="pd-carousel__next"></label>
+              <label for="pdCarouselItem2" className="pd-carousel__next"></label>
             </li>
 
-            <li class="pd-carousel__item">
-              <label for="pdCarouselItem1" class="pd-carousel__prev"></label>
+            <li className="pd-carousel__item">
+              <label for="pdCarouselItem1" className="pd-carousel__prev"></label>
               <img src="/banner.png" />
-              <div class="pd-carousel__item-contents flex justify-center items-center  text-right">
+              <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
@@ -165,13 +165,13 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem3" class="pd-carousel__next"></label>
+              <label for="pdCarouselItem3" className="pd-carousel__next"></label>
             </li>
 
-            <li class="pd-carousel__item">
-              <label for="pdCarouselItem2" class="pd-carousel__prev"></label>
+            <li className="pd-carousel__item">
+              <label for="pdCarouselItem2" className="pd-carousel__prev"></label>
               <img src="/banner.png" />
-              <div class="pd-carousel__item-contents flex justify-center items-center  text-right">
+              <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
@@ -180,13 +180,13 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem4" class="pd-carousel__next"></label>
+              <label for="pdCarouselItem4" className="pd-carousel__next"></label>
             </li>
 
-            <li class="pd-carousel__item">
-              <label for="pdCarouselItem3" class="pd-carousel__prev"></label>
+            <li className="pd-carousel__item">
+              <label for="pdCarouselItem3" className="pd-carousel__prev"></label>
               <img src="/banner.png" />
-              <div class="pd-carousel__item-contents flex justify-center items-center  text-right">
+              <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
@@ -195,13 +195,13 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem5" class="pd-carousel__next"></label>
+              <label for="pdCarouselItem5" className="pd-carousel__next"></label>
             </li>
 
-            <li class="pd-carousel__item">
-              <label for="pdCarouselItem4" class="pd-carousel__prev"></label>
+            <li className="pd-carousel__item">
+              <label for="pdCarouselItem4" className="pd-carousel__prev"></label>
               <img src="/banner.png" />
-              <div class="pd-carousel__item-contents flex justify-center items-center  text-right">
+              <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
@@ -210,45 +210,45 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem1" class="pd-carousel__next"></label>
+              <label for="pdCarouselItem1" className="pd-carousel__next"></label>
             </li>
           </ul>
           <div className="flex flex-wrap items-center justify-between">
             <div></div>
             <div>
-              <ul class="pd-carousel__selector_items">
-                <li class="pd-carousel__selector_item">
+              <ul className="pd-carousel__selector_items">
+                <li className="pd-carousel__selector_item">
                   <label
                     for="pdCarouselItem1"
-                    class="pd-carousel__selector"
+                    className="pd-carousel__selector"
                   ></label>
                   <label
                     for="pdCarouselItem1"
-                    class="pd-carousel__selector pd-carousel__selector_on"
+                    className="pd-carousel__selector pd-carousel__selector_on"
                   ></label>
                 </li>
-                <li class="pd-carousel__selector_item">
+                <li className="pd-carousel__selector_item">
                   <label
                     for="pdCarouselItem2"
-                    class="pd-carousel__selector"
+                    className="pd-carousel__selector"
                   ></label>
                 </li>
-                <li class="pd-carousel__selector_item">
+                <li className="pd-carousel__selector_item">
                   <label
                     for="pdCarouselItem3"
-                    class="pd-carousel__selector"
+                    className="pd-carousel__selector"
                   ></label>
                 </li>
-                <li class="pd-carousel__selector_item">
+                <li className="pd-carousel__selector_item">
                   <label
                     for="pdCarouselItem4"
-                    class="pd-carousel__selector"
+                    className="pd-carousel__selector"
                   ></label>
                 </li>
-                <li class="pd-carousel__selector_item">
+                <li className="pd-carousel__selector_item">
                   <label
                     for="pdCarouselItem5"
-                    class="pd-carousel__selector"
+                    className="pd-carousel__selector"
                   ></label>
                 </li>
               </ul>
@@ -257,7 +257,7 @@ const Home = () => {
         </div>
       </div>
       <section className="login">
-        <div class=" flex pt-[5%]  justify-center items-center">
+        <div className=" flex pt-[5%]  justify-center items-center">
           <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
             REGISTER OR LOG IN NOW
           </p>
@@ -289,7 +289,7 @@ const Home = () => {
       </section>
 
       <section>
-        <div class=" flex justify-center ">
+        <div className=" flex justify-center ">
           <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
             SUCCESS STORIES
           </p>
@@ -330,13 +330,13 @@ const Home = () => {
 
 
         <div className="flex justify-center pt-[3%]">
-          <div class="wrapper ">
-            <i id="left" class="fa-solid fa-angle-left pm:hidden">
+          <div className="wrapper ">
+            <i id="left" className="fa-solid fa-angle-left pm:hidden">
               ◢
             </i>
-            <ul class="carousel">
-              <li class="card ">
-                <div class="img">
+            <ul className="carousel">
+              <li className="card ">
+                <div className="img">
                   <img
                     src="https://t4.ftcdn.net/jpg/03/50/40/93/240_F_350409330_2bqhjowfBmrqEia5U8lBsGrvD7h8EIo6.jpg"
                     alt="img"
@@ -346,8 +346,8 @@ const Home = () => {
                 <h2>Blanche Pearson</h2>
                 <span>Sales Manager</span>
               </li>
-              <li class="card">
-                <div class="img">
+              <li className="card">
+                <div className="img">
                   <img
                     src="https://t3.ftcdn.net/jpg/00/57/55/40/240_F_57554079_g3LhdDR5C0f2mc2ZxjFgsbb6WMqouUwQ.jpg"
                     alt="img"
@@ -357,8 +357,8 @@ const Home = () => {
                 <h2>Joenas Brauers</h2>
                 <span>Web Developer</span>
               </li>
-              <li class="card">
-                <div class="img">
+              <li className="card">
+                <div className="img">
                   <img
                     src="https://t3.ftcdn.net/jpg/06/15/91/36/240_F_615913669_1GvdMMT0H44Z4owh9SCYsml6mCcy8g3G.jpg"
                     alt="img"
@@ -368,8 +368,8 @@ const Home = () => {
                 <h2>Lariach French</h2>
                 <span>Online Teacher</span>
               </li>
-              <li class="card">
-                <div class="img">
+              <li className="card">
+                <div className="img">
                   <img
                     src="https://t3.ftcdn.net/jpg/02/60/67/80/240_F_260678009_gV1PBTotxDIwTngnmn3nYqWshbznYf24.jpg"
                     alt="img"
@@ -379,8 +379,8 @@ const Home = () => {
                 <h2>James Khosravi</h2>
                 <span>Freelancer</span>
               </li>
-              <li class="card">
-                <div class="img">
+              <li className="card">
+                <div className="img">
                   <img
                     src="https://t3.ftcdn.net/jpg/03/99/91/62/240_F_399916297_1JwXdmC6ViCG4YhZuhLVz7xfuZhfHCY9.jpg"
                     alt="img"
@@ -391,8 +391,8 @@ const Home = () => {
                 <span>Bank Manager</span>
               </li>
 
-              <li class="card">
-                <div class="img">
+              <li className="card">
+                <div className="img">
                   <img
                     src="https://t4.ftcdn.net/jpg/06/81/01/43/240_F_681014359_dyMjwn4JYLtY985umiBOeytmLmVxEjC0.jpg"
                     alt="img"
@@ -403,7 +403,7 @@ const Home = () => {
                 <span>App Designer</span>
               </li>
             </ul>
-            <i id="right" class="fa-solid fa-angle-right pm:hidden">
+            <i id="right" className="fa-solid fa-angle-right pm:hidden">
               {" "}
               ◢{" "}
             </i>
@@ -412,6 +412,144 @@ const Home = () => {
       
  
       </section>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+<div className="flex pt-[8%] justify-center ">
+          <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
+            RECENTLY JOINED PROFILE
+          </p>
+        </div>
+        <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
+          <img src="/tb.png" className="ps:w-28 " />
+        </div>
+        <div class="container my-12 mx-auto px-4 md:px-12">
+    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+
+       
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+         
+            <article class="overflow-hidden rounded-lg shadow-lg">
+<div className="flex justify-between p-2 md:p-4">
+              
+                    <div></div>
+                    <div><img src="/e1.png"/></div>
+                    <div><img src="/nri.png"/></div>
+                    </div>
+                  
+                <header class="flex justify-center space-x-2 items-center">
+                   
+                        <div class="no-underline font-semibold text-black" >
+                            Abc00123      </div><img src="/tick.png"/>
+                   
+                  
+                    
+                </header>
+
+               <p  class="flex justify-center">
+
+
+26, 5ft 5in, 55kg<br></br></p><p class="flex justify-center"> <b>Indore, M.P., India Never Married</b></p>
+
+            </article>
+           
+
+        </div>
+     
+
+       
+       
+       
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+    
+            <article class="overflow-hidden rounded-lg shadow-lg">
+
+                <a href="#">
+                    <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random"/>
+                </a>
+
+                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                    <h1 class="text-lg">
+                        <a class="no-underline hover:underline text-black" href="#">
+                            Article Title
+                        </a>
+                    </h1>
+                    <p class="text-grey-darker text-sm">
+                        11/1/19
+                    </p>
+                </header>
+
+                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                    <a class="flex items-center no-underline hover:underline text-black" href="#">
+                        <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random"/>
+                        <p class="ml-2 text-sm">
+                            Author Name
+                        </p>
+                    </a>
+                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                        <span class="hidden">Like</span>
+                        <i class="fa fa-heart"></i>
+                    </a>
+                </footer>
+
+            </article>
+   
+
+        </div>
+    
+        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+    
+<article class="overflow-hidden rounded-lg shadow-lg">
+
+    <a href="#">
+        <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random"/>
+    </a>
+
+    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+        <h1 class="text-lg">
+            <a class="no-underline hover:underline text-black" href="#">
+                Article Title
+            </a>
+        </h1>
+        <p class="text-grey-darker text-sm">
+            11/1/19
+        </p>
+    </header>
+
+    <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+        <a class="flex items-center no-underline hover:underline text-black" href="#">
+            <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random"/>
+            <p class="ml-2 text-sm">
+                Author Name
+            </p>
+        </a>
+        <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+            <span class="hidden">Like</span>
+            <i class="fa fa-heart"></i>
+        </a>
+    </footer>
+
+</article>
+
+
+</div>
+    </div>
+</div>
+</section>
     </>
   );
 };
