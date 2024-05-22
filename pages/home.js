@@ -1,9 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from 'react';
-
-
+import React from "react";
 
 import { useState, useEffect } from "react";
 const Home = () => {
@@ -139,7 +137,10 @@ const Home = () => {
 
           <ul className="pd-carousel__items">
             <li className="pd-carousel__item">
-              <label for="pdCarouselItem5" className="pd-carousel__prev"></label>
+              <label
+                for="pdCarouselItem5"
+                className="pd-carousel__prev"
+              ></label>
               <img src="/banner.png" />
               <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
@@ -150,11 +151,17 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem2" className="pd-carousel__next"></label>
+              <label
+                for="pdCarouselItem2"
+                className="pd-carousel__next"
+              ></label>
             </li>
 
             <li className="pd-carousel__item">
-              <label for="pdCarouselItem1" className="pd-carousel__prev"></label>
+              <label
+                for="pdCarouselItem1"
+                className="pd-carousel__prev"
+              ></label>
               <img src="/banner.png" />
               <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
@@ -165,11 +172,17 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem3" className="pd-carousel__next"></label>
+              <label
+                for="pdCarouselItem3"
+                className="pd-carousel__next"
+              ></label>
             </li>
 
             <li className="pd-carousel__item">
-              <label for="pdCarouselItem2" className="pd-carousel__prev"></label>
+              <label
+                for="pdCarouselItem2"
+                className="pd-carousel__prev"
+              ></label>
               <img src="/banner.png" />
               <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
@@ -180,11 +193,17 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem4" className="pd-carousel__next"></label>
+              <label
+                for="pdCarouselItem4"
+                className="pd-carousel__next"
+              ></label>
             </li>
 
             <li className="pd-carousel__item">
-              <label for="pdCarouselItem3" className="pd-carousel__prev"></label>
+              <label
+                for="pdCarouselItem3"
+                className="pd-carousel__prev"
+              ></label>
               <img src="/banner.png" />
               <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
@@ -195,11 +214,17 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem5" className="pd-carousel__next"></label>
+              <label
+                for="pdCarouselItem5"
+                className="pd-carousel__next"
+              ></label>
             </li>
 
             <li className="pd-carousel__item">
-              <label for="pdCarouselItem4" className="pd-carousel__prev"></label>
+              <label
+                for="pdCarouselItem4"
+                className="pd-carousel__prev"
+              ></label>
               <img src="/banner.png" />
               <div className="pd-carousel__item-contents flex justify-center items-center  text-right">
                 <div className="w-1/2"></div>
@@ -210,7 +235,10 @@ const Home = () => {
                   </h1>
                 </div>
               </div>
-              <label for="pdCarouselItem1" className="pd-carousel__next"></label>
+              <label
+                for="pdCarouselItem1"
+                className="pd-carousel__next"
+              ></label>
             </li>
           </ul>
           <div className="flex flex-wrap items-center justify-between">
@@ -265,7 +293,7 @@ const Home = () => {
         <div className="flex pt-4 pm:!pt-0 pm:!-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-        <div className="w-2/3 mx-auto my-5 ps:my-3 align-center flex space-x-2 pt-2 cover justify-center items-center">
+        <div className="w-4/5 mx-auto my-5 ps:my-3 align-center flex  pt-2 cover justify-center items-center">
           <img
             className="banner_image"
             width={"100%"}
@@ -277,7 +305,9 @@ const Home = () => {
           <button
             className="w-48 pm:w-24 ps:!w-[65px] ps:!py-0  pm:py-2 pm:text-sm text-xl font-bold ps:!text-[10px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
             onClick={() => console.log("Register")}
-          > Register
+          >
+            {" "}
+            Register
           </button>
           <button
             className="w-48 pm:w-24 pm:py-2 ps:!w-[65px] ps:!py-0  pm:text-sm text-xl font-bold ps:!text-[10px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-400 "
@@ -297,37 +327,6 @@ const Home = () => {
         <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <div className="flex justify-center pt-[3%]">
           <div className="wrapper ">
@@ -409,24 +408,10 @@ const Home = () => {
             </i>
           </div>
         </div>
-      
- 
       </section>
-      
 
-
-
-
-
-
-
-
-
-
-
-
-<section>
-<div className="flex pt-[8%] justify-center ">
+      <section>
+        <div className="flex pt-[8%] justify-center ">
           <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
             RECENTLY JOINED PROFILE
           </p>
@@ -434,122 +419,123 @@ const Home = () => {
         <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-        <div class="container my-12 mx-auto px-4 md:px-12">
-    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+        <div class="container pt-2 w-4/5 mx-auto">
+          <div class="flex  flex-wrap ">
+            <div class=" px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+              <article class="overflow-hidden rounded-lg shadow-lg py-2 border-gray-200 border-2">
+                <div className="flex justify-between px-2 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e1.png" />
+                  </div>
+                  <div>
+                    <img src="/nri.png" />
+                  </div>
+                </div>
 
-       
-        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-
-         
-            <article class="overflow-hidden rounded-lg shadow-lg">
-<div className="flex justify-between p-2 md:p-4">
-              
-                    <div></div>
-                    <div><img src="/e1.png"/></div>
-                    <div><img src="/nri.png"/></div>
-                    </div>
-                  
                 <header class="flex justify-center space-x-2 items-center">
+                  <div class="no-underline font-semibold text-black">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p class="flex justify-center">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p class="flex justify-center pb-4 px-4 ">
+                  {" "}
+                  <b class="text-center align-center px-4">Indore, M.P., India <br/>Never Married</b>
+                </p>
+              </article>
+            </div>
+            <div class=" px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4 ">
+              <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-between px-2 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e4.png" />
+                  </div>
+                  <div>
+                    <img src="/nri.png" />
+                  </div>
+                </div>
+
+                <header class="flex justify-center space-x-2 items-center">
+                  <div class="no-underline font-semibold text-black">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p class="flex justify-center">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p class="flex justify-center pb-4 px-4 ">
+                  {" "}
+                  <b class="text-center align-center px-4">Indore, M.P., India <br/>Never Married</b>
+                </p>
+              </article>
+            </div>
+            <div class=" px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+              <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-between px-2 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e3.png" />
+                  </div>
+                  <div>
                    
-                        <div class="no-underline font-semibold text-black" >
-                            Abc00123      </div><img src="/tick.png"/>
-                   
+                  </div>
+                </div>
+
+                <header class="flex justify-center space-x-2 items-center">
+                  <div class="no-underline font-semibold text-black">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p class="flex justify-center">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p class="flex justify-center pb-4 px-4 ">
+                  {" "}
+                  <b class="text-center align-center px-4">Indore, M.P., India <br/>Never Married</b>
+                </p>
+              </article>
+            </div>
+            <div class=" px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+              <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-between px-2 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e1.png" />
+                  </div>
+                  <div>
                   
-                    
+                  </div>
+                </div>
+
+                <header class="flex justify-center space-x-2 items-center">
+                  <div class="no-underline font-semibold text-black">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
                 </header>
 
-               <p  class="flex justify-center">
-
-
-26, 5ft 5in, 55kg<br></br></p><p class="flex justify-center"> <b>Indore, M.P., India Never Married</b></p>
-
-            </article>
-           
-
+                <p class="flex justify-center">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p class="flex justify-center pb-4 px-4 ">
+                  {" "}
+                  <b class="text-center align-center px-4">Indore, M.P., India <br/>Never Married</b>
+                </p>
+              </article>
+            </div>     
+          </div>
         </div>
-     
-
-       
-       
-       
-        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-
-    
-            <article class="overflow-hidden rounded-lg shadow-lg">
-
-                <a href="#">
-                    <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random"/>
-                </a>
-
-                <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-                    <h1 class="text-lg">
-                        <a class="no-underline hover:underline text-black" href="#">
-                            Article Title
-                        </a>
-                    </h1>
-                    <p class="text-grey-darker text-sm">
-                        11/1/19
-                    </p>
-                </header>
-
-                <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-                    <a class="flex items-center no-underline hover:underline text-black" href="#">
-                        <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random"/>
-                        <p class="ml-2 text-sm">
-                            Author Name
-                        </p>
-                    </a>
-                    <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-                        <span class="hidden">Like</span>
-                        <i class="fa fa-heart"></i>
-                    </a>
-                </footer>
-
-            </article>
-   
-
-        </div>
-    
-        <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-
-    
-<article class="overflow-hidden rounded-lg shadow-lg">
-
-    <a href="#">
-        <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random"/>
-    </a>
-
-    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
-        <h1 class="text-lg">
-            <a class="no-underline hover:underline text-black" href="#">
-                Article Title
-            </a>
-        </h1>
-        <p class="text-grey-darker text-sm">
-            11/1/19
-        </p>
-    </header>
-
-    <footer class="flex items-center justify-between leading-none p-2 md:p-4">
-        <a class="flex items-center no-underline hover:underline text-black" href="#">
-            <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random"/>
-            <p class="ml-2 text-sm">
-                Author Name
-            </p>
-        </a>
-        <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
-            <span class="hidden">Like</span>
-            <i class="fa fa-heart"></i>
-        </a>
-    </footer>
-
-</article>
-
-
-</div>
-    </div>
-</div>
-</section>
+      </section>
     </>
   );
 };
