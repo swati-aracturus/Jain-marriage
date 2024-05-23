@@ -286,7 +286,7 @@ const Home = () => {
       </div>
       <section className="login">
         <div className=" flex pt-[5%]  justify-center items-center">
-          <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
+          <p className="text-4xl ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold ">
             REGISTER OR LOG IN NOW
           </p>
         </div>
@@ -320,7 +320,7 @@ const Home = () => {
 
       <section>
         <div className=" flex justify-center ">
-          <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
+          <p className="text-4xl ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold ">
             SUCCESS STORIES
           </p>
         </div>
@@ -412,7 +412,7 @@ const Home = () => {
 
       <section>
         <div className="flex pt-[8%] justify-center ">
-          <p className="text-4xl ps:!text-[12px] pm:text-[20px] pm:font-[550] font-semibold ">
+          <p className="text-4xl ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold ">
             RECENTLY JOINED PROFILE
           </p>
         </div>
@@ -420,8 +420,8 @@ const Home = () => {
           <img src="/tb.png" className="ps:w-28 " />
         </div>
         <div class="container pt-2 w-4/5 mx-auto">
-          <div class="flex  flex-wrap ">
-            <div class=" px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+          <div class="flex flex-wrap ">
+            <div class=" px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
               <article class="overflow-hidden rounded-lg shadow-lg py-2 border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
@@ -445,11 +445,14 @@ const Home = () => {
                 </p>
                 <p class="flex justify-center pb-4 px-4 ">
                   {" "}
-                  <b class="text-center align-center px-4">Indore, M.P., India <br/>Never Married</b>
+                  <b class="text-center align-center px-4">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
                 </p>
               </article>
             </div>
-            <div class=" px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4 ">
+            <div class="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
               <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
@@ -473,20 +476,21 @@ const Home = () => {
                 </p>
                 <p class="flex justify-center pb-4 px-4 ">
                   {" "}
-                  <b class="text-center align-center px-4">Indore, M.P., India <br/>Never Married</b>
+                  <b class="text-center align-center px-4">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
                 </p>
               </article>
             </div>
-            <div class=" px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+            <div class="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
               <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
                     <img src="/e3.png" />
                   </div>
-                  <div>
-                   
-                  </div>
+                  <div></div>
                 </div>
 
                 <header class="flex justify-center space-x-2 items-center">
@@ -501,20 +505,21 @@ const Home = () => {
                 </p>
                 <p class="flex justify-center pb-4 px-4 ">
                   {" "}
-                  <b class="text-center align-center px-4">Indore, M.P., India <br/>Never Married</b>
+                  <b class="text-center align-center px-4">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
                 </p>
               </article>
             </div>
-            <div class=" px-1 w-full md:w-1/3 lg:my-4 lg:px-4 lg:w-1/4">
+            <div class="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
               <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
-                    <img src="/e1.png" />
+                    <img src="/e2.png" />
                   </div>
-                  <div>
-                  
-                  </div>
+                  <div></div>
                 </div>
 
                 <header class="flex justify-center space-x-2 items-center">
@@ -529,13 +534,62 @@ const Home = () => {
                 </p>
                 <p class="flex justify-center pb-4 px-4 ">
                   {" "}
-                  <b class="text-center align-center px-4">Indore, M.P., India <br/>Never Married</b>
+                  <b class="text-center align-center px-4">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
                 </p>
               </article>
-            </div>     
+            </div>
+          </div>
+          <div class=" flex justify-between pt-2 pm:hidden">
+            <div></div>
+            <div className="flex space-x-1">
+              <p className="text-[#EB2188] font-[550]">View All </p>
+              <img src="arrow.png" className="object-scale-down" />
+            </div>
+          </div>
+
+          <div class=" flex justify-center pt-2 md:hidden">
+            <div className="flex space-x-1">
+              <p className="text-[#EB2188] font-[550]">View All </p>
+              <img src="arrow.png" className="object-scale-down" />
+            </div>
           </div>
         </div>
       </section>
+    
+      <section class="container w-4/5 mx-auto pt-[5%] h-auto">
+  <div class="flex flex-wrap justify-center items-stretch pb-10">
+    <div class="w-full h-96 md:w-1/2 lg:w-1/2 xl:w-1/2 order-1 md:order-none">
+      <img src="abt.png" alt="About Image" class="w-full h-full object-cover" />
+    </div>
+    <div class="bg-slate-400 h-96 w-full md:w-1/2 lg:w-1/2 xl:w-1/2 px-4 py-8 order-2 md:order-none flex flex-col justify-center">
+      <div class="flex pt-[5%] justify-center items-center">
+        <p class="text-4xl ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold">
+          ABOUT US
+        </p>
+      </div>
+      <div class="pt-4 pm:!pt-0 pm:!-translate-y-2 flex justify-center">
+        <img src="/tb.png" class="ps:w-28" />
+      </div>
+      <div class="pt-4 pm:!pt-0 pm:!-translate-y-2 flex justify-center">
+        <p class="text-center">
+          Welcome to Jain E-Patrika, your trusted platform for finding the perfect life partner. We understand that the journey to finding a compatible life partner can be daunting and time-consuming, which is why we have created a centralized hub where eligible bachelors and bachelorettes can showcase their biodata and connect with potential matches within the community. We recognize that finding a soulmate goes beyond just matching biodata; it's about creating meaningful relationships that last a lifetime...
+        </p>
+         
+         
+      </div>
+   <div className="flex justify-center py-4">   <button
+            className="w-48  pm:w-24 ps:!w-[65px] ps:!py-0  pm:py-2 pm:text-sm text-lg font-bold ps:!text-[10px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
+            onClick={() => console.log("Register")}
+          >
+            {" "}
+            Read More
+          </button></div>
+    </div>
+  </div>
+</section>
     </>
   );
 };
