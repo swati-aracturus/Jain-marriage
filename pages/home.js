@@ -138,7 +138,7 @@ const Home = () => {
           <ul className="pd-carousel__items">
             <li className="pd-carousel__item">
               <label
-                for="pdCarouselItem5"
+                htmlFor="pdCarouselItem5"
                 className="pd-carousel__prev"
               ></label>
               <img src="/banner.png" />
@@ -146,20 +146,20 @@ const Home = () => {
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
-                    Discovering your ideal partner can be a challenge, but we've
-                    made it simpler.
+                    Discovering your ideal partner can be a challenge, but
+                    we&apos;ve made it simpler.
                   </h1>
                 </div>
               </div>
               <label
-                for="pdCarouselItem2"
+                htmlFor="pdCarouselItem2"
                 className="pd-carousel__next"
               ></label>
             </li>
 
             <li className="pd-carousel__item">
               <label
-                for="pdCarouselItem1"
+                htmlFor="pdCarouselItem1"
                 className="pd-carousel__prev"
               ></label>
               <img src="/banner.png" />
@@ -167,20 +167,20 @@ const Home = () => {
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
-                    Discovering your ideal partner can be a challenge, but we've
-                    made it simpler.
+                    Discovering your ideal partner can be a challenge, but
+                    we&apos;ve made it simpler.
                   </h1>
                 </div>
               </div>
               <label
-                for="pdCarouselItem3"
+                htmlFor="pdCarouselItem3"
                 className="pd-carousel__next"
               ></label>
             </li>
 
             <li className="pd-carousel__item">
               <label
-                for="pdCarouselItem2"
+                htmlFor="pdCarouselItem2"
                 className="pd-carousel__prev"
               ></label>
               <img src="/banner.png" />
@@ -188,20 +188,20 @@ const Home = () => {
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
-                    Discovering your ideal partner can be a challenge, but we've
-                    made it simpler.
+                    Discovering your ideal partner can be a challenge, but
+                    we&apos;ve made it simpler.
                   </h1>
                 </div>
               </div>
               <label
-                for="pdCarouselItem4"
+                htmlFor="pdCarouselItem4"
                 className="pd-carousel__next"
               ></label>
             </li>
 
             <li className="pd-carousel__item">
               <label
-                for="pdCarouselItem3"
+                htmlFor="pdCarouselItem3"
                 className="pd-carousel__prev"
               ></label>
               <img src="/banner.png" />
@@ -209,20 +209,20 @@ const Home = () => {
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
-                    Discovering your ideal partner can be a challenge, but we've
-                    made it simpler.
+                    Discovering your ideal partner can be a challenge, but
+                    we&apos;ve made it simpler.
                   </h1>
                 </div>
               </div>
               <label
-                for="pdCarouselItem5"
+                htmlFor="pdCarouselItem5"
                 className="pd-carousel__next"
               ></label>
             </li>
 
             <li className="pd-carousel__item">
               <label
-                for="pdCarouselItem4"
+                htmlFor="pdCarouselItem4"
                 className="pd-carousel__prev"
               ></label>
               <img src="/banner.png" />
@@ -230,13 +230,13 @@ const Home = () => {
                 <div className="w-1/2"></div>
                 <div className="w-1/2 p-4">
                   <h1 className=" texty font-semibold text-white font-serif italic">
-                    Discovering your ideal partner can be a challenge, but we've
-                    made it simpler.
+                    Discovering your ideal partner can be a challenge, but
+                    we&apos;ve made it simpler.
                   </h1>
                 </div>
               </div>
               <label
-                for="pdCarouselItem1"
+                htmlFor="pdCarouselItem1"
                 className="pd-carousel__next"
               ></label>
             </li>
@@ -247,35 +247,35 @@ const Home = () => {
               <ul className="pd-carousel__selector_items">
                 <li className="pd-carousel__selector_item">
                   <label
-                    for="pdCarouselItem1"
+                    htmlFor="pdCarouselItem1"
                     className="pd-carousel__selector"
                   ></label>
                   <label
-                    for="pdCarouselItem1"
+                    htmlFor="pdCarouselItem1"
                     className="pd-carousel__selector pd-carousel__selector_on"
                   ></label>
                 </li>
                 <li className="pd-carousel__selector_item">
                   <label
-                    for="pdCarouselItem2"
+                    htmlFor="pdCarouselItem2"
                     className="pd-carousel__selector"
                   ></label>
                 </li>
                 <li className="pd-carousel__selector_item">
                   <label
-                    for="pdCarouselItem3"
+                    htmlFor="pdCarouselItem3"
                     className="pd-carousel__selector"
                   ></label>
                 </li>
                 <li className="pd-carousel__selector_item">
                   <label
-                    for="pdCarouselItem4"
+                    htmlFor="pdCarouselItem4"
                     className="pd-carousel__selector"
                   ></label>
                 </li>
                 <li className="pd-carousel__selector_item">
                   <label
-                    for="pdCarouselItem5"
+                    htmlFor="pdCarouselItem5"
                     className="pd-carousel__selector"
                   ></label>
                 </li>
@@ -286,14 +286,14 @@ const Home = () => {
       </div>
       <section className="login">
         <div className=" flex pt-[5%]  justify-center items-center">
-          <p className="text-4xl ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold ">
+          <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
             REGISTER OR LOG IN NOW
           </p>
         </div>
         <div className="flex pt-4 pm:!pt-0 pm:!-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-        <div className="w-4/5 mx-auto my-5 ps:my-3 align-center flex  pt-2 cover justify-center items-center">
+        <div className="w-4/5 ps:!w-[95%] mx-auto my-5 ps:my-3 align-center flex  pt-2 cover justify-center items-center">
           <img
             className="banner_image"
             width={"100%"}
@@ -320,7 +320,7 @@ const Home = () => {
 
       <section>
         <div className=" flex justify-center ">
-          <p className="text-4xl ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold ">
+          <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
             SUCCESS STORIES
           </p>
         </div>
@@ -412,48 +412,48 @@ const Home = () => {
 
       <section>
         <div className="flex pt-[8%] justify-center ">
-          <p className="text-4xl ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold ">
+          <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
             RECENTLY JOINED PROFILE
           </p>
         </div>
         <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-        <div class="container pt-2 w-4/5 mx-auto">
-          <div class="flex flex-wrap ">
-            <div class=" px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
-              <article class="overflow-hidden rounded-lg shadow-lg py-2 border-gray-200 border-2">
+        <div className="container pt-2 ps:!w-[95%] w-4/5 mx-auto">
+          <div className="flex flex-wrap ">
+            <div className=" px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2 border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
-                    <img src="/e1.png" />
+                    <img src="/e1.png" alt="des" />
                   </div>
                   <div>
                     <img src="/nri.png" />
                   </div>
                 </div>
 
-                <header class="flex justify-center space-x-2 items-center">
-                  <div class="no-underline font-semibold text-black">
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
                     Abc00123{" "}
                   </div>
                   <img src="/tick.png" />
                 </header>
 
-                <p class="flex justify-center">
+                <p className="flex justify-center ps:text-[13px]">
                   26, 5ft 5in, 55kg<br></br>
                 </p>
-                <p class="flex justify-center pb-4 px-4 ">
+                <p className="flex justify-center pb-4 px-4 ">
                   {" "}
-                  <b class="text-center align-center px-4">
+                  <b className="text-center align-center px-4 ps:text-[13px]">
                     Indore, M.P., India <br />
                     Never Married
                   </b>
                 </p>
               </article>
             </div>
-            <div class="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
-              <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+            <div className="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
@@ -464,27 +464,27 @@ const Home = () => {
                   </div>
                 </div>
 
-                <header class="flex justify-center space-x-2 items-center">
-                  <div class="no-underline font-semibold text-black">
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
                     Abc00123{" "}
                   </div>
                   <img src="/tick.png" />
                 </header>
 
-                <p class="flex justify-center">
+                <p className="flex justify-center ps:text-[13px]">
                   26, 5ft 5in, 55kg<br></br>
                 </p>
-                <p class="flex justify-center pb-4 px-4 ">
+                <p className="flex justify-center pb-4 px-4 ">
                   {" "}
-                  <b class="text-center align-center px-4">
+                  <b className="text-center align-center px-4 ps:text-[13px]">
                     Indore, M.P., India <br />
                     Never Married
                   </b>
                 </p>
               </article>
             </div>
-            <div class="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
-              <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+            <div className="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
@@ -493,27 +493,27 @@ const Home = () => {
                   <div></div>
                 </div>
 
-                <header class="flex justify-center space-x-2 items-center">
-                  <div class="no-underline font-semibold text-black">
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
                     Abc00123{" "}
                   </div>
                   <img src="/tick.png" />
                 </header>
 
-                <p class="flex justify-center">
+                <p className="flex justify-center ps:text-[13px]">
                   26, 5ft 5in, 55kg<br></br>
                 </p>
-                <p class="flex justify-center pb-4 px-4 ">
+                <p className="flex justify-center pb-4 px-4 ">
                   {" "}
-                  <b class="text-center align-center px-4">
+                  <b className="text-center align-center px-4 ps:text-[13px]">
                     Indore, M.P., India <br />
                     Never Married
                   </b>
                 </p>
               </article>
             </div>
-            <div class="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
-              <article class="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+            <div className="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
@@ -522,19 +522,19 @@ const Home = () => {
                   <div></div>
                 </div>
 
-                <header class="flex justify-center space-x-2 items-center">
-                  <div class="no-underline font-semibold text-black">
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
                     Abc00123{" "}
                   </div>
                   <img src="/tick.png" />
                 </header>
 
-                <p class="flex justify-center">
+                <p className="flex justify-center ps:text-[13px]">
                   26, 5ft 5in, 55kg<br></br>
                 </p>
-                <p class="flex justify-center pb-4 px-4 ">
+                <p className="flex justify-center pb-4 px-4 ">
                   {" "}
-                  <b class="text-center align-center px-4">
+                  <b className="text-center align-center px-4 ps:text-[13px]">
                     Indore, M.P., India <br />
                     Never Married
                   </b>
@@ -542,15 +542,15 @@ const Home = () => {
               </article>
             </div>
           </div>
-          <div class=" flex justify-between pt-2 pm:hidden">
+          <div className=" flex justify-between pt-2 pm:hidden">
             <div></div>
             <div className="flex space-x-1">
-              <p className="text-[#EB2188] font-[550]">View All </p>
+              <p className="text-[#EB2188] font-[550] ">View All </p>
               <img src="arrow.png" className="object-scale-down" />
             </div>
           </div>
 
-          <div class=" flex justify-center pt-2 md:hidden">
+          <div className=" flex justify-center pt-4 md:hidden">
             <div className="flex space-x-1">
               <p className="text-[#EB2188] font-[550]">View All </p>
               <img src="arrow.png" className="object-scale-down" />
@@ -558,38 +558,118 @@ const Home = () => {
           </div>
         </div>
       </section>
-    
-      <section class="container w-4/5 mx-auto pt-[5%] h-auto">
-  <div class="flex flex-wrap justify-center items-stretch pb-10">
-    <div class="w-full h-96 md:w-1/2 lg:w-1/2 xl:w-1/2 order-1 md:order-none">
-      <img src="abt.png" alt="About Image" class="w-full h-full object-cover" />
-    </div>
-    <div class="bg-slate-400 h-96 w-full md:w-1/2 lg:w-1/2 xl:w-1/2 px-4 py-8 order-2 md:order-none flex flex-col justify-center">
-      <div class="flex pt-[5%] justify-center items-center">
-        <p class="text-4xl ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold">
-          ABOUT US
-        </p>
-      </div>
-      <div class="pt-4 pm:!pt-0 pm:!-translate-y-2 flex justify-center">
-        <img src="/tb.png" class="ps:w-28" />
-      </div>
-      <div class="pt-4 pm:!pt-0 pm:!-translate-y-2 flex justify-center">
-        <p class="text-center">
-          Welcome to Jain E-Patrika, your trusted platform for finding the perfect life partner. We understand that the journey to finding a compatible life partner can be daunting and time-consuming, which is why we have created a centralized hub where eligible bachelors and bachelorettes can showcase their biodata and connect with potential matches within the community. We recognize that finding a soulmate goes beyond just matching biodata; it's about creating meaningful relationships that last a lifetime...
-        </p>
-         
-         
-      </div>
-   <div className="flex justify-center py-4">   <button
-            className="w-48  pm:w-24 ps:!w-[65px] ps:!py-0  pm:py-2 pm:text-sm text-lg font-bold ps:!text-[10px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
-            onClick={() => console.log("Register")}
-          >
-            {" "}
-            Read More
-          </button></div>
-    </div>
-  </div>
-</section>
+
+      <section className="container w-4/5 ps:!w-[95%] mx-auto pt-[5%] pd:!pt-[20%] h-auto">
+        <div className="flex flex-wrap justify-center items-stretch pb-10">
+          <div className="w-full h-[28rem] ps:!h-[400px] pmg:h-[500px] md:w-1/2 lg:w-1/2 xl:w-1/2 order-1 md:order-none">
+            <img
+              src="abt.png"
+              alt="About Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="bg-slate-400 ps:!h-[400px]  h-[28rem] pmg:h-[500px] w-full md:w-1/2 lg:w-1/2 xl:w-1/2 px-4 py-8 order-2 md:order-none flex flex-col justify-center">
+            <div className="flex pt-[5%]  justify-center items-center">
+              <p className="text-4xl ps:!text-[20px] pm:text-[20px] pm:font-[550] font-semibold">
+                ABOUT US
+              </p>
+            </div>
+            <div className="pt-4  pm:!py-2  pm:!-translate-y-2 flex justify-center">
+              <img src="/tb.png" className="ps:w-28" />
+            </div>
+            <div className="pt-4 pm:!pt-0 pm:!-translate-y-2 ps:text-[13px] flex justify-center">
+              <p className="text-center">
+                Welcome to Jain E-Patrika, your trusted platform for finding the
+                perfect life partner. We understand that the journey to finding
+                a compatible life partner can be daunting and time-consuming,
+                which is why we have created a centralized hub where eligible
+                bachelors and bachelorettes can showcase their biodata and
+                connect with potential matches within the community. We
+                recognize that finding a soulmate goes beyond just matching
+                biodata; it&apos;s about creating meaningful relationships that
+                last a lifetime...
+              </p>
+            </div>
+            <div className="flex justify-center py-4">
+              {" "}
+              <button
+                className="w-48 ps:w-28  pm:py-1 pm:!text-[14px] text-lg font-bold ps:!text-[16px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
+                onClick={() => console.log("Register")}
+              >
+                {" "}
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="login">
+        <div className=" flex pt-[5%]  justify-center items-center">
+          <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
+            HOW IT WORKS
+          </p>
+        </div>
+        <div className="flex pt-4 pm:!pt-0 pm:!-translate-y-2 justify-center">
+          <img src="/tb.png" className="ps:w-28 " />
+        </div>
+        <div className="w-3/5 ps:!w-[95%] mx-auto my-5 ps:my-3 align-center flex  pt-2 cover justify-center items-center ">
+       <p className="text-center">We aim to provide a secure and user-friendly experience, empowering you to connect with like-minded individuals and explore the possibilities of finding your ideal life partner. To get started, here are a few simple steps:</p>
+        </div>
+      
+<ol className=" sm:flex w-4/5 items-center ">
+    <li className="relative mb-6 sm:mb-0 items-center">
+        <div className="flex items-center">
+            <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </div>
+            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div className="mt-3 sm:pe-8">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+        </div>
+    </li>
+    <li className="relative mb-6 sm:mb-0">
+        <div className="flex items-center">
+            <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </div>
+            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div className="mt-3 sm:pe-8">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.0</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 23, 2021</time>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+        </div>
+    </li>
+    <li className="relative mb-6 sm:mb-0">
+        <div className="flex items-center">
+            <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                <svg className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </div>
+            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+        </div>
+        <div className="mt-3 sm:pe-8">
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on January 5, 2022</time>
+            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
+        </div>
+    </li>
+</ol>
+
+
+      </section>
+
+
+
     </>
   );
 };
