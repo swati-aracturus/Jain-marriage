@@ -77,7 +77,7 @@ function Slide() {
         </header>
       </div>
       <div className="mobile">
-      <nav className="flex items-center justify-between flex-wrap bg-gray-800 py-2 px-6 ps:!py-0.5">
+      <nav className="flex items-center justify-between flex-wrap bg-[#080A52] py-2 px-6 ps:!py-0.5">
           <div className="flex items-center flex-shrink-0 text-white mr-6 ">
             <Image
               src="/logo 1.png"

@@ -357,7 +357,7 @@ const Home = () => {
         </div>
         <div className="container pt-2 ps:!w-[95%] w-4/5 mx-auto">
           <div className="flex flex-wrap ">
-            <div className=" px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
+            <div className=" px-1 w-full md:w-1/2 flex ps:w-1/2  lg:my-4 lg:px-4 lg:w-1/4">
               <article className="overflow-hidden rounded-lg shadow-lg py-2 border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
@@ -388,7 +388,7 @@ const Home = () => {
                 </p>
               </article>
             </div>
-            <div className="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
+            <div className="px-1 w-full md:w-1/2  flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
               <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
@@ -419,7 +419,7 @@ const Home = () => {
                 </p>
               </article>
             </div>
-            <div className="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 ps:hidden">
               <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
@@ -448,12 +448,70 @@ const Home = () => {
                 </p>
               </article>
             </div>
-            <div className="px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/2 xl:w-1/4">
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 ps:hidden">
               <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
                     <img src="/e2.png" />
+                  </div>
+                  <div></div>
+                </div>
+
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p className="flex justify-center ps:text-[13px]">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p className="flex justify-center pb-4 px-4 ">
+                  {" "}
+                  <b className="text-center align-center px-4 ps:text-[13px]">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
+                </p>
+              </article>
+            </div>
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 ">
+              <article className=" rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-center  py-4 md:p-4">
+                  
+                  <div>
+                    <img src="/e2.png" />
+                  </div>
+                 
+                </div>
+
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p className="flex justify-center ps:text-[13px]">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p className="flex justify-center pb-4 px-4 ">
+                  {" "}
+                  <b className="text-center align-center px-4 ps:text-[13px]">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
+                </p>
+              </article>
+            </div>
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 ">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-between px-2 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e3.png" />
                   </div>
                   <div></div>
                 </div>
