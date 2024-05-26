@@ -598,7 +598,7 @@ body {
   cursor: pointer;
 }
 
-/* custom css start */
+/* custom css start.. */
 
 nav>a {
   padding: 15px 20px 15px 20px;
@@ -614,9 +614,9 @@ a.active {
   border-radius: 1px;
 }
 
-/* custom css end */
+/* custom css end.. */
 
-/* custom slider start */
+/* custom slider start.. */
 
 .MainBoxCard {
   background-color: #ffffff;
@@ -653,4 +653,4 @@ img.ImageCardBox {
   margin-left: 80px;
   margin-top: 15px;
 }
-/* custom slider end */ 
+/* custom slider end.. */ 

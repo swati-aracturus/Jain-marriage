@@ -360,7 +360,7 @@ const Home = () => {
                       Akash Sanghavi Weds Riddhi Mehta
                       <p className="text-black font-extralight mt-5">
                         Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. when an unknown printer took a galley of
+                        typesetting industry. when specimen an unknown printer took a galley of
                         type and scrambled it to make a type specimen book.
                       </p>
                     </div>
@@ -377,7 +377,7 @@ const Home = () => {
                     Jaya Weds Pawan
                     <p className="text-black font-extralight mt-5">
                       Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. when an unknown printer took a galley of
+                      typesetting industry. when an specimen unknown printer took a galley of
                       type and scrambled it to make a type specimen book.
                     </p>
                     </div>
