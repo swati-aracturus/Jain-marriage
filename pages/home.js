@@ -355,7 +355,7 @@ const Home = () => {
         <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-        <div className="container pt-2 ps:!w-[95%] w-4/5 mx-auto">
+        <div className="container pt-2 ps:!w-[95%] xl:w-3/5   mx-auto">
           <div className="flex flex-wrap ">
             <div className=" px-1 w-full md:w-1/2 flex ps:w-1/2  lg:my-4  lg:w-1/4">
               <article className="overflow-hidden rounded-lg shadow-lg py-2 border-gray-200 border-2">
