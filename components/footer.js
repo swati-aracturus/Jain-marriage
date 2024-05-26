@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
       </section>
     <section>
-   <div className="flex justify-center text-center items-center" >
+   <div className="flex justify-center text-center items-center desktop" >
     <div className="w-1/5 py-2 bg-[#EB2188] ">
   <h1 className="text-white">TRUSTED BY MILLIONS</h1>
 </div>
