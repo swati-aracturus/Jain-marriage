@@ -538,3 +538,19 @@ body {
   cursor: pointer;
 }
 
+/* custom css start */
+
+nav > a {
+  padding: 15px 20px 15px 20px;
+}
+
+nav > a:active, a:hover, a.active {
+  position: relative;
+  border-bottom: 3px solid #db2877;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 1px;
+}
+
+/* custom css end */
+
