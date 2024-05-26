@@ -15,12 +15,12 @@ function Slide() {
     <>
       <div className="desktop">
         <header className="bg-[#080A52] text-white px-16 ">
-          <div className="flex items-center justify-between lg:container py-3 mx-auto px-6">
+          <div className="flex items-center justify-between lg:container mx-auto px-6">
             {/* Left side options */}
             <div className="flex items-center  md:space-x-4">
               {/* Home, About, Membership, Contact, Matches links */}
-              <nav className="hidden lg:flex space-x-8 ">
-                <a href="#" className="hover:text-gray-300 ">
+              <nav className="hidden lg:flex space-x-8">
+                <a href="#" className="hover:text-gray-300 active">
                   Home
                 </a>
                 <a href="#" className="hover:text-gray-300 ">
