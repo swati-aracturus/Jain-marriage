@@ -344,7 +344,7 @@ const Home = () => {
           <img src="/tb.png" className="ps:w-28 " />
         </div>
         <div>
-          <div class="three-slide-slider">
+          <div className="three-slide-slider">
             <Carousel>
               {items.map(item =>
                 <div key={item.id} className="flex flex-col md:flex-row justify-between my-[50px] mx-[50px]">
