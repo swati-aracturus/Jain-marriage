@@ -32,23 +32,23 @@ export default function Footer() {
 
             <div className="md:flex ps:flex content-center flex-wrap -mx-2 p-3 pb-[2%] bg-grey rounded shadow-lg">
               <div className="ps:flex ps:w-1/2 lg:w-1/4 px-2 py-2 justify-center align-center items-center">
-                <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center">
+                <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center h-full">
                   <h1 className="text-2xl font-bold text-[#EB2188]"> 7+ </h1>
                   <p className=" text-white"> Years of bond of trust </p>
                 </div>
               </div>
               <div className="ps:flex ps:w-1/2 lg:w-1/4 px-2 py-2 ">
-                <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center">
+                <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center h-full">
                   <h1 className="text-2xl font-bold text-[#EB2188]"> 10,000+ </h1>
                   <p className=" text-white">Number of Live Profiles </p>
                 </div>
               </div><div className="ps:flex ps:w-1/2 lg:w-1/4 px-2 py-2 ">
-                <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center">
+                <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center h-full">
                   <h1 className="text-2xl font-bold text-[#EB2188]"> 50,000+ </h1>
                   <p className=" text-white">Number of Visited Profiles </p>
                 </div>
               </div><div className="ps:flex ps:w-1/2 lg:w-1/4 px-2 py-2 ">
-                <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center">
+                <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center h-full">
                   <h1 className="text-2xl font-bold text-[#EB2188]"> 9,893+ </h1>
                   <p className=" text-white"> Successful Marriages </p>
                 </div>

@@ -4,12 +4,14 @@ import Link from "next/link";
 import { useState } from "react";
 import Navbar from "@components/header";
 import  Home from "../pages/home"
+import Members from "@components/members";
 
 export default function IndexPage() {
  return (
     <>
-     <Navbar/>
-<Home/>
+     {/* <Navbar/>
+<Home/> */}
+<Members/>
     </>
   );
 }
