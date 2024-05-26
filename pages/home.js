@@ -328,6 +328,60 @@ const Home = () => {
         <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
+        <div>
+          <div class="three-slide-slider">
+            <Carousel>
+              {items.map(item =>
+                <div key={item.id} className="flex flex-col md:flex-row justify-between my-[50px] mx-[50px]">
+                  <div className="text-[#e451a5] font-bold h-[220px] md:h-[180px] md:w-[500px] w-full shadow-sm shadow-slate-500 p-4 md:mr-20 mb-4 md:mb-0 rounded-lg MainBoxCard">
+                    <div className="img">
+                      <img
+                        className="ImageCardBox"
+                        src="/group10Image.png"
+                        alt="img"
+                        draggable="false" />
+                    </div>
+                    <div className="innerbox">
+                      Akash Sanghavi Weds Riddhi Mehta
+                      <p className="text-black font-extralight mt-5">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. when specimen an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="text-[#e451a5] font-bold h-[200px] md:h-[180px] md:w-[500px] w-full shadow-sm shadow-slate-500 p-4 rounded-lg MainBoxCard">
+                    <div className="img">
+                      <img
+                        className="ImageCardBox"
+                        src="/group10Image.png"
+                        alt="img"
+                        draggable="false" />
+                    </div>
+                    <div className="innerbox">
+                    Jaya Weds Pawan
+                    <p className="text-black font-extralight mt-5">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. when an specimen unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                    </div>
+                  </div>
+                </div>)}
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
+      <section hidden>
+        <div className=" flex justify-center ">
+          <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
+            SUCCESS STORIES
+          </p>
+        </div>
+        <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
+          <img src="/tb.png" className="ps:w-28 " />
+        </div>
 
         <div className="flex justify-center pt-[3%]">
           <div className="wrapper ">
