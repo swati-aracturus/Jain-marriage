@@ -25,6 +25,7 @@
     "nextjs-redirect": "^6.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-elastic-carousel": "^0.11.5",
     "react-hot-toast": "^2.4.1",
     "react-select": "^5.8.0",
     "redirect": "^0.2.0",
