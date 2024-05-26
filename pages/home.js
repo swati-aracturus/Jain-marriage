@@ -3,7 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Footer from "../components/footer";
+import Carousel from 'react-elastic-carousel';
 import { useState, useEffect } from "react";
+
+let items = [
+  { id: 1, title: 'item #1' },
+  { id: 2, title: 'item #2' },
+  { id: 3, title: 'item #3' },
+  { id: 4, title: 'item #4' },
+  { id: 5, title: 'item #5' }
+]
+
+const img = "/Group10Image.png";
+const styling = {
+  backgroundImage: `url('${img}')`,
+  width: "100%",
+  height: "100%"
+}
 
 const Home = () => {
   const [isDragging, setIsDragging] = useState(false);
@@ -318,8 +334,61 @@ const Home = () => {
           </button>
         </div>
       </section>
-
       <section>
+        <div className=" flex justify-center ">
+          <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
+            SUCCESS STORIES
+          </p>
+        </div>
+        <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
+          <img src="/tb.png" className="ps:w-28 " />
+        </div>
+        <div>
+          <div class="three-slide-slider">
+            <Carousel>
+              {items.map(item =>
+                <div key={item.id} className="flex flex-col md:flex-row justify-between my-[50px] mx-[50px]">
+                  <div className="text-[#e451a5] font-bold h-[220px] md:h-[180px] md:w-[500px] w-full shadow-sm shadow-slate-500 p-4 md:mr-20 mb-4 md:mb-0 rounded-lg MainBoxCard">
+                    <div className="img">
+                      <img
+                        className="ImageCardBox"
+                        src="/group10Image.png"
+                        alt="img"
+                        draggable="false" />
+                    </div>
+                    <div className="innerbox">
+                      Akash Sanghavi Weds Riddhi Mehta
+                      <p className="text-black font-extralight mt-5">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. when an unknown printer took a galley of
+                        type and scrambled it to make a type specimen book.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="text-[#e451a5] font-bold h-[200px] md:h-[180px] md:w-[500px] w-full shadow-sm shadow-slate-500 p-4 rounded-lg MainBoxCard">
+                    <div className="img">
+                      <img
+                        className="ImageCardBox"
+                        src="/group10Image.png"
+                        alt="img"
+                        draggable="false" />
+                    </div>
+                    <div className="innerbox">
+                    Jaya Weds Pawan
+                    <p className="text-black font-extralight mt-5">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. when an unknown printer took a galley of
+                      type and scrambled it to make a type specimen book.
+                    </p>
+                    </div>
+                  </div>
+                </div>)}
+            </Carousel>
+          </div>
+        </div>
+      </section>
+
+      <section hidden>
         <div className=" flex justify-center ">
           <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
             SUCCESS STORIES
@@ -355,14 +424,14 @@ const Home = () => {
         <div className="flex pt-4 pm:!pt-0 pm:-translate-y-2 justify-center">
           <img src="/tb.png" className="ps:w-28 " />
         </div>
-        <div className="container pt-2 ps:!w-[95%] xl:w-3/5   mx-auto">
+        <div className="container pt-2 ps:!w-[95%] w-4/5 mx-auto">
           <div className="flex flex-wrap ">
-            <div className=" px-1 w-full md:w-1/2 flex ps:w-1/2  lg:my-4  lg:w-1/4">
+            <div className=" px-1 w-full md:w-1/2 flex ps:w-1/2  lg:my-4 lg:px-4 lg:w-1/4">
               <article className="overflow-hidden rounded-lg shadow-lg py-2 border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
-                    <img src="/e1.png" alt="des" className="ps:px-2 ps:translate-x-2" />
+                    <img src="/e1.png" alt="des" />
                   </div>
                   <div>
                     <img src="/nri.png" />
@@ -388,12 +457,12 @@ const Home = () => {
                 </p>
               </article>
             </div>
-            <div className="px-1 w-full md:w-1/2  flex ps:w-1/2 lg:my-4  lg:w-1/4">
+            <div className="px-1 w-full md:w-1/2  flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
               <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
-                    <img src="/e4.png"className="ps:px-2 ps:translate-x-2"  />
+                    <img src="/e4.png" />
                   </div>
                   <div>
                     <img src="/nri.png" />
@@ -419,7 +488,7 @@ const Home = () => {
                 </p>
               </article>
             </div>
-            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4  lg:w-1/4 desktop">
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 ps:hidden">
               <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
@@ -448,7 +517,7 @@ const Home = () => {
                 </p>
               </article>
             </div>
-            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4  lg:w-1/4 desktop">
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 ps:hidden">
               <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
@@ -477,14 +546,14 @@ const Home = () => {
                 </p>
               </article>
             </div>
-            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4  lg:w-1/4 mobile">
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 ">
               <article className=" rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-center  py-4 md:p-4">
-                  
+
                   <div>
-                    <img src="/e2.png" className="ps:px-7" />
+                    <img src="/e2.png" />
                   </div>
-                 
+
                 </div>
 
                 <header className="flex justify-center space-x-2 items-center">
@@ -506,12 +575,12 @@ const Home = () => {
                 </p>
               </article>
             </div>
-            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 mobile">
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 ">
               <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
                 <div className="flex justify-between px-2 py-4 md:p-4">
                   <div></div>
                   <div>
-                    <img src="/e3.png" className="ps:px-5 " />
+                    <img src="/e3.png" />
                   </div>
                   <div></div>
                 </div>
@@ -1113,16 +1182,16 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-center py-4 ps:pt-[10%] ">
-              {" "}
-              <button
-                className="w-48  pm:py-1 pm:!text-[14px] text-lg font-bold ps:!text-[16px] ps:w-36  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
-                onClick={() => console.log("Register")}
-              >
-                Register Now
-              </button>
-            </div>
+          {" "}
+          <button
+            className="w-48  pm:py-1 pm:!text-[14px] text-lg font-bold ps:!text-[16px] ps:w-36  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
+            onClick={() => console.log("Register")}
+          >
+            Register Now
+          </button>
+        </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };
