@@ -598,13 +598,10 @@ img.ImageCardBox {
   
   /* members */
   
-  .main_container {
-    position: relative;
-    margin-bottom: 34rem;
-  }
+  
   .first_container img {
     width: 100%;
-    position: relative;
+   
     z-index: 1;
   }
   
