@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
 
             <div className="md:flex ps:flex content-center flex-wrap -mx-2 p-3 pb-[2%] bg-grey rounded shadow-lg">
-              <div className="ps:flex ps:w-1/2 lg:w-1/4 px-2 py-2 justify-center align-center items-center">
+              <div className="ps:flex ps:w-1/2 lg:w-1/4 px-2 py-2 justify-center  items-center">
                 <div className="ps:flex-1 p-4 rounded  backdrop-blur-[2px] bg-white/25  text-center">
                   <h1 className="text-2xl font-bold text-[#EB2188]"> 7+ </h1>
                   <p className=" text-white"> Years of bond of trust </p>
@@ -79,11 +79,11 @@ export default function Footer() {
             <h1 className="text-white text-lg ps">TRUSTED BY MILLIONS</h1>
           </div>
         </div>
-        <div className="bg-[#080A52]">
-          <div className="w-full flex justify-center  items-center py-2 bg-[#080A52] ">
+        <div className="bg-[#080A52] pb-8">
+          <div className="w-full flex justify-center   py-2 bg-[#080A52] ">
             <div className="w-3/5 py-0  ps:w-full ps:px-4">
-              <div className="border-t-[1px] border-b-[1px] border-gray-700 backdrop-blur-sm flex justify-center  items-center mt-[5%] ps:mt-[10%] py-2 space-x-2">
-                <div className="flex justify-center align-center  items-center w-1/3 desktop">
+              <div className="border-t-[1px] border-b-[1px] border-gray-700 backdrop-blur-sm flex justify-center   mt-[5%] ps:mt-[10%] py-2 space-x-2">
+                <div className="flex justify-center    w-1/3 desktop">
                   <svg
                     width="50"
                     height="50"
@@ -101,7 +101,7 @@ export default function Footer() {
                     Best Matches
                   </p>
                 </div>
-                <div className="flex justify-center align-center  items-center w-1/3 mobile">
+                <div className="flex justify-center    w-1/3 mobile">
                   <svg
                     width="25"
                     height="25"
@@ -119,7 +119,7 @@ export default function Footer() {
                     Best Matches
                   </p>
                 </div>
-                <div className="flex justify-center align-center  items-center w-1/3 desktop">
+                <div className="flex justify-center    w-1/3 desktop">
                   <svg
                     width="50"
                     height="50"
@@ -138,7 +138,7 @@ export default function Footer() {
                     Best Results
                   </p>
                 </div>
-                <div className="flex justify-center align-center  items-center w-1/3 mobile">
+                <div className="flex justify-center    w-1/3 mobile">
                   <svg
                     width="24"
                     height="24"
@@ -157,7 +157,7 @@ export default function Footer() {
                     Best Results
                   </p>
                 </div>
-                <div className="flex justify-center align-center  items-center w-1/3 desktop">
+                <div className="flex justify-center    w-1/3 desktop">
                   <svg
                     width="50"
                     height="50"
@@ -176,7 +176,7 @@ export default function Footer() {
                     100% Secure and Private
                   </p>
                 </div>
-                <div className="flex justify-center align-center  items-center w-1/3 mobile">
+                <div className="flex justify-center    w-1/3 mobile">
                   <svg
                     width="45"
                     height="45"
@@ -200,9 +200,9 @@ export default function Footer() {
           </div>
 
           <div className="w-full">
-            <div className="w-4/5 items-center mx-auto flex flex-row flex-wrap ps:flex-col">
+            <div className="w-4/5 mx-auto flex flex-row flex-wrap ps:flex-col">
             <div className="relative w-1/3 backdrop-blur-sm ps:w-full ps:mx-auto">
-  <div className="absolute translate-y-10 right-0 h-[60%] w-[1px] bg-gray-700"></div>
+  <div className="absolute translate-y-[10px] top-[20%] right-0 h-[45%] w-[1px] bg-gray-700 ps:hidden"></div>
   <h1 className="text-white text-[20px] mx-auto pt-3 pb-2">
     Contact Info:
   </h1>
@@ -292,8 +292,10 @@ export default function Footer() {
                 </div>
               
             </div>
-              <div className="w-1/3 border-r-[1px] border-gray-700 pl-6 ps:pl-0 ps:pt-3 backdrop-blur-sm ps:border-0 ps:w-full ps:mx-auto">
-                <h1 className="text-white text-[20px] mx-auto pt-3 pb-2">
+              <div className="w-1/3 relative  pl-6 ps:pl-0 ps:pt-3 backdrop-blur-sm ps:border-0 ps:w-full ps:mx-auto">
+              
+  <div className="absolute translate-y-12 right-0 h-[45%] w-[1px] bg-gray-700 ps:hidden"></div>
+    <h1 className="text-white text-[20px] mx-auto pt-3 pb-2">
                   Our Links :
                 </h1>
                 <div className="flex space-x-1 justify-start py-1  w-full">
@@ -317,7 +319,7 @@ export default function Footer() {
                 <h1 className="text-white text-[20px] mx-auto pt-3 pb-2">
                   Follow Us :
                 </h1>
-                <div className="flex space-x-4 justify-start py-1  w-full">
+                <div className="flex space-x-4 ps:space-x-2 justify-start py-1  w-full">
                   <div>
                     <svg
                       width={40}
@@ -495,7 +497,10 @@ export default function Footer() {
           </div>
         </div>
       </section>
-
+<section className=" bg-[#D9D9D9]">
+ <div className="w-4/5 mx-auto flex justify-between py-2 ps:space-x-5"> <div className="text-[14px] ps:text-[10px]">Copyright © 2023 VCT. All rights reserved.</div>
+ <div className="text-[14px] ps:text-[10px]">Powered By Prem Rishtey Service Pvt Ltd.</div></div>
+</section>
       {/*  <div className="bg-gray-100 mx-auto max-w-6xl bg-white py-20 px-12 lg:px-24 shadow-xl mb-24">
   <form>
     <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
