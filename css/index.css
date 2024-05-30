@@ -425,7 +425,7 @@ input[type="text"]:focus {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .flow {
@@ -677,7 +677,7 @@ img.ImageCardBox {
 
 .cards {
   background-color: #F5F5F5;
-  height: 325px;
+  height: 355px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -696,7 +696,7 @@ img.ImageCardBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   /* line-height: 16px; */
 }
 
@@ -794,7 +794,7 @@ img.ImageCardBox {
 
 .second_container {
   position: absolute;
- 
+
   width: 100%;
   z-index: 2;
 }
@@ -832,24 +832,43 @@ img.ImageCardBox {
 
 /* responsive */
 
+@media screen and (max-width: 330px) {
+  .cards_container {
+    display: flex;
+    flex-direction: column;
+width: 70%!important;
+  }}
+
 @media screen and (max-width: 1660px) {
   .main_container .second_container {
     top: 500px;
   }
 
   .cards_container {
-    margin: 0 1%;
+    margin: 0 auto;
   }
 }
 
-@media screen and  (max-width:1250px) {
+@media screen and (max-width:1250px) {
   .main_container .second_container {
-    top:422px;}}
+    top: 422px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .cards {
+    margin-bottom: 2rem;
+    height: 100%;
+    padding: 1rem;
+    transform: translateX(32%);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .cards_container {
     display: flex;
     flex-direction: column;
-
+width: 90%;
   }
 
 
@@ -864,17 +883,18 @@ img.ImageCardBox {
   }
 
   .main_container .second_container {
-    margin-top: -8rem;
+    margin-top: -12rem;
   }
 
   .cards {
     margin-bottom: 2rem;
     height: 100%;
     padding: 1rem;
+    transform: translateX(38%);
   }
 
   .head_part {
-    gap: 120px;
+    gap: 70px;
     margin-bottom: 1rem;
   }
 
@@ -900,3 +920,37 @@ img.ImageCardBox {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
   }
 }
+
+
+
+
+input[type="radio"] + label span {
+  transition: background .2s,
+    transform .2s;
+}
+
+input[type="radio"] + label span:hover,
+input[type="radio"] + label:hover span{
+transform: scale(1.2);
+} 
+
+input[type="radio"]:checked + label span {
+background-color: #ffffff; 
+box-shadow: 0px 0px 0px 2px #EB2188 inset;
+}
+
+input[type="radio"]:checked + label{
+ color: #ffffff; 
+ font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+  input[type="radio"],label span{
+  transform: scale(0.75);
+  }
+
+label {
+    font-size: 12px!important;
+   }
+  
+}
+

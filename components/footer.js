@@ -82,8 +82,8 @@ export default function Footer() {
         <div className="bg-[#080A52] pb-8">
           <div className="w-full flex justify-center   py-2 bg-[#080A52] ">
             <div className="w-3/5 py-0  ps:w-full ps:px-4">
-              <div className="border-t-[1px] border-b-[1px] border-gray-700 backdrop-blur-sm flex justify-center   mt-[5%] ps:mt-[10%] py-2 space-x-2">
-                <div className="flex justify-center    w-1/3 desktop">
+              <div className="border-t-[1px] border-b-[1px] border-gray-700 backdrop-blur-sm flex  text-center justify-center items-center  mt-[5%] ps:mt-[10%] py-2 space-x-2">
+                <div className="flex justify-center text-center  items-center   w-1/3 desktop">
                   <svg
                     width="50"
                     height="50"
@@ -101,7 +101,7 @@ export default function Footer() {
                     Best Matches
                   </p>
                 </div>
-                <div className="flex justify-center    w-1/3 mobile">
+                <div className="flex text-center justify-center items-center    w-1/3 mobile">
                   <svg
                     width="25"
                     height="25"
@@ -115,11 +115,11 @@ export default function Footer() {
                       fill="#EB2188"
                     />
                   </svg>
-                  <p className="text-white text-[20px] font-![100]  ps:text-sm ml-2">
+                  <p className="text-white text-[20px]  font-![100]  ps:text-sm ml-2">
                     Best Matches
                   </p>
                 </div>
-                <div className="flex justify-center    w-1/3 desktop">
+                <div className="flex text-center justify-center items-center    w-1/3 desktop">
                   <svg
                     width="50"
                     height="50"
@@ -138,7 +138,7 @@ export default function Footer() {
                     Best Results
                   </p>
                 </div>
-                <div className="flex justify-center    w-1/3 mobile">
+                <div className="flex text-center justify-center items-center    w-1/3 mobile">
                   <svg
                     width="24"
                     height="24"
@@ -157,7 +157,7 @@ export default function Footer() {
                     Best Results
                   </p>
                 </div>
-                <div className="flex justify-center    w-1/3 desktop">
+                <div className="flex text-center justify-center items-center    w-1/3 desktop">
                   <svg
                     width="50"
                     height="50"
@@ -176,7 +176,7 @@ export default function Footer() {
                     100% Secure and Private
                   </p>
                 </div>
-                <div className="flex justify-center    w-1/3 mobile">
+                <div className="flex text-center justify-center items-center    w-1/3 mobile">
                   <svg
                     width="45"
                     height="45"

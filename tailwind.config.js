@@ -7,7 +7,8 @@ module.exports = {
       screens: {
         'pxs': {'max':'322px'},
         'pmd': {'max':'380px'},
-        'ps': {'max':'450px'},
+        'ps': {'max':'480px'},
+       
         'pm': {'max':'780px'},
         'pd':  {'max':'1000px'},
         'pmg':  {'max':'1025px'},
