@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@components/header";
 import Footer from "@components/footer";
+import Strip from "@components/strip";
 
 const Members = () => {
   return (
@@ -166,15 +167,11 @@ const Members = () => {
               </div>
             </div>
 
-            <div className="banner">
-              <h2>Your Story is waiting to happen!</h2>
-              <button className="btn hover:text-white active:text-white">
-                Register Now
-              </button>
-            </div>
+           <Strip/>
           </div>
         </div>
       </div>
+      <div className="mobilei bg-white h-[200px]"></div>
       <Footer />
     </>
   );

@@ -14,7 +14,13 @@
     transform: translateY(-250%) !important;
   }
 }
+@media screen and (min-width: 400px) {
+  .mobilei {
+    display: none;
+  }
 
+
+}
 @media screen and (min-width: 1025px) {
   .mobile {
     display: none;
@@ -106,6 +112,7 @@
     transform: translateY(-220%) !important;
   }
 }
+
 
 @media screen and (max-width:500px) {
 
@@ -677,7 +684,7 @@ img.ImageCardBox {
 
 .cards {
   background-color: #F5F5F5;
-  height: 355px;
+  height: 450px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -905,14 +912,15 @@ width: 90%;
   }
 
   .banner h2 {
-    font-size: 15px;
+    font-size: 22px;
     color: #fff;
     font-weight: 600;
+    padding-right: 5%;
   }
 
   .banner .btn {
     background-color: #080a52;
-    width: 117px;
+    width: 150px;
     height: 43px;
     border-radius: 13px;
     color: #fff;

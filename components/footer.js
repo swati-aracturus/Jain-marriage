@@ -201,62 +201,62 @@ export default function Footer() {
 
           <div className="w-full">
             <div className="w-4/5 mx-auto flex flex-row flex-wrap ps:flex-col">
-            <div className="relative w-1/3 backdrop-blur-sm ps:w-full ps:mx-auto">
-  <div className="absolute translate-y-[10px] top-[20%] right-0 h-[45%] w-[1px] bg-gray-700 ps:hidden"></div>
-  <h1 className="text-white text-[20px] mx-auto pt-3 pb-2">
-    Contact Info:
-  </h1>
-  <div className="flex space-x-1 justify-start py-1 w-full">
-    <div>
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
-          fill="#EB2188"
-        />
-      </svg>
-    </div>
-    <div>
-      <p className="text-white ps:text-sm">VCT@gmail.com</p>
-    </div>
-  </div>
-  <div className="flex space-x-1 justify-start py-1 w-full">
-    <div>
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M16.5559 12.906L16.1009 13.359C16.1009 13.359 15.0179 14.435 12.0629 11.497C9.10788 8.55898 10.1909 7.48298 10.1909 7.48298L10.4769 7.19698C11.1839 6.49498 11.2509 5.36698 10.6339 4.54298L9.37388 2.85998C8.60988 1.83998 7.13488 1.70498 6.25988 2.57498L4.68988 4.13498C4.25688 4.56698 3.96688 5.12498 4.00188 5.74498C4.09188 7.33198 4.80988 10.745 8.81388 14.727C13.0609 18.949 17.0459 19.117 18.6749 18.965C19.1909 18.917 19.6389 18.655 19.9999 18.295L21.4199 16.883C22.3799 15.93 22.1099 14.295 20.8819 13.628L18.9719 12.589C18.1659 12.151 17.1859 12.28 16.5559 12.906Z"
-          fill="#EB2188"
-        />
-      </svg>
-    </div>
-    <div>
-      <p className="text-white ps:text-sm">
-        xxx-xxxx-xxx,xxx-xxxx-xxx,{" "}
-      </p>
-    </div>
-  </div>
-  <div className="flex space-x-1 justify-start py-1 w-full">
-    <div>
-      <svg
-        width="20"
-        height="24"
-        viewBox="0 0 20 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M16.8941 17.394L11.5916 22.698C11.3827 22.9071 11.1346 23.073 10.8615 23.1861C10.5884 23.2993 10.2957 23.3575 10.0001 23.3575C9.70452 23.3575 9.41182 23.2993 9.13875 23.1861C8.86567 23.073 8.61757 22.9071 8.40862 22.698L3.10612 17.394C2.20069 16.4887 1.48244 15.4139 0.992387 14.231C0.502333 13.0481 0.25007 11.7802 0.25 10.4998C0.24993 9.21939 0.502056 7.95151 0.99198 6.76855C1.48191 5.58558 2.20004 4.5107 3.10537 3.60526C4.0107 2.69983 5.08551 1.98159 6.26842 1.49153C7.45133 1.00148 8.71918 0.749215 9.99959 0.749146C11.28 0.749076 12.5479 1.0012 13.7308 1.49113C14.9138 1.98105 15.9887 2.69918 16.8941 3.60451C17.7996 4.5099 18.5179 5.58479 19.008 6.7678C19.498 7.95081 19.7503 9.21877 19.7503 10.4993C19.7503 11.7798 19.498 13.0477 19.008 14.2307C18.5179 15.4137 17.7996 16.4886 16.8941 17.394ZM15.3041 5.19601C13.8974 3.78931 11.9895 2.99753 10.0001 2.99753C8.01073 2.99753 6.10283 3.78781 4.69612 5.19451C3.28941 6.60122 2.49913 8.50913 2.49913 10.4985C2.49913 12.4879 3.28941 14.3958 4.69612 15.8025L10.0001 21.105L15.3041 15.804C16.0008 15.1075 16.5534 14.2807 16.9304 13.3706C17.3075 12.4605 17.5015 11.4851 17.5015 10.5C17.5015 9.51493 17.3075 8.5395 16.9304 7.62943C16.5534 6.71936 16.0008 5.89248 15.3041 5.19601ZM10.0001 13.5C9.60061 13.509 9.20332 13.4382 8.83158 13.2916C8.45984 13.1449 8.12114 12.9255 7.83536 12.6462C7.54958 12.3669 7.32248 12.0333 7.16741 11.665C7.01233 11.2967 6.93239 10.9011 6.93229 10.5015C6.93219 10.1019 7.01193 9.70632 7.16683 9.33795C7.32172 8.96958 7.54865 8.63587 7.83429 8.3564C8.11992 8.07694 8.45852 7.85736 8.83018 7.71056C9.20185 7.56375 9.5991 7.49268 9.99862 7.50151C10.7825 7.51885 11.5284 7.84235 12.0767 8.40277C12.625 8.9632 12.9321 9.716 12.9323 10.5C12.9325 11.2841 12.6257 12.037 12.0777 12.5977C11.5297 13.1584 10.784 13.4823 10.0001 13.5Z"
+              <div className="relative w-1/3 backdrop-blur-sm ps:w-full ps:mx-auto">
+                <div className="absolute translate-y-[10px] top-[20%] right-0 h-[45%] w-[1px] bg-gray-700 ps:hidden"></div>
+                <h1 className="text-white text-[20px] mx-auto pt-3 pb-2">
+                  Contact Info:
+                </h1>
+                <div className="flex space-x-1 justify-start py-1 w-full">
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
+                        fill="#EB2188"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-white ps:text-sm">VCT@gmail.com</p>
+                  </div>
+                </div>
+                <div className="flex space-x-1 justify-start py-1 w-full">
+                  <div>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.5559 12.906L16.1009 13.359C16.1009 13.359 15.0179 14.435 12.0629 11.497C9.10788 8.55898 10.1909 7.48298 10.1909 7.48298L10.4769 7.19698C11.1839 6.49498 11.2509 5.36698 10.6339 4.54298L9.37388 2.85998C8.60988 1.83998 7.13488 1.70498 6.25988 2.57498L4.68988 4.13498C4.25688 4.56698 3.96688 5.12498 4.00188 5.74498C4.09188 7.33198 4.80988 10.745 8.81388 14.727C13.0609 18.949 17.0459 19.117 18.6749 18.965C19.1909 18.917 19.6389 18.655 19.9999 18.295L21.4199 16.883C22.3799 15.93 22.1099 14.295 20.8819 13.628L18.9719 12.589C18.1659 12.151 17.1859 12.28 16.5559 12.906Z"
+                        fill="#EB2188"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-white ps:text-sm">
+                      xxx-xxxx-xxx,xxx-xxxx-xxx,{" "}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex space-x-1 justify-start py-1 w-full">
+                  <div>
+                    <svg
+                      width="20"
+                      height="24"
+                      viewBox="0 0 20 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.8941 17.394L11.5916 22.698C11.3827 22.9071 11.1346 23.073 10.8615 23.1861C10.5884 23.2993 10.2957 23.3575 10.0001 23.3575C9.70452 23.3575 9.41182 23.2993 9.13875 23.1861C8.86567 23.073 8.61757 22.9071 8.40862 22.698L3.10612 17.394C2.20069 16.4887 1.48244 15.4139 0.992387 14.231C0.502333 13.0481 0.25007 11.7802 0.25 10.4998C0.24993 9.21939 0.502056 7.95151 0.99198 6.76855C1.48191 5.58558 2.20004 4.5107 3.10537 3.60526C4.0107 2.69983 5.08551 1.98159 6.26842 1.49153C7.45133 1.00148 8.71918 0.749215 9.99959 0.749146C11.28 0.749076 12.5479 1.0012 13.7308 1.49113C14.9138 1.98105 15.9887 2.69918 16.8941 3.60451C17.7996 4.5099 18.5179 5.58479 19.008 6.7678C19.498 7.95081 19.7503 9.21877 19.7503 10.4993C19.7503 11.7798 19.498 13.0477 19.008 14.2307C18.5179 15.4137 17.7996 16.4886 16.8941 17.394ZM15.3041 5.19601C13.8974 3.78931 11.9895 2.99753 10.0001 2.99753C8.01073 2.99753 6.10283 3.78781 4.69612 5.19451C3.28941 6.60122 2.49913 8.50913 2.49913 10.4985C2.49913 12.4879 3.28941 14.3958 4.69612 15.8025L10.0001 21.105L15.3041 15.804C16.0008 15.1075 16.5534 14.2807 16.9304 13.3706C17.3075 12.4605 17.5015 11.4851 17.5015 10.5C17.5015 9.51493 17.3075 8.5395 16.9304 7.62943C16.5534 6.71936 16.0008 5.89248 15.3041 5.19601ZM10.0001 13.5C9.60061 13.509 9.20332 13.4382 8.83158 13.2916C8.45984 13.1449 8.12114 12.9255 7.83536 12.6462C7.54958 12.3669 7.32248 12.0333 7.16741 11.665C7.01233 11.2967 6.93239 10.9011 6.93229 10.5015C6.93219 10.1019 7.01193 9.70632 7.16683 9.33795C7.32172 8.96958 7.54865 8.63587 7.83429 8.3564C8.11992 8.07694 8.45852 7.85736 8.83018 7.71056C9.20185 7.56375 9.5991 7.49268 9.99862 7.50151C10.7825 7.51885 11.5284 7.84235 12.0767 8.40277C12.625 8.9632 12.9321 9.716 12.9323 10.5C12.9325 11.2841 12.6257 12.037 12.0777 12.5977C11.5297 13.1584 10.784 13.4823 10.0001 13.5Z"
                         fill="#EB2188"
                       />
                     </svg>
@@ -290,12 +290,10 @@ export default function Footer() {
                     </p>
                   </div>
                 </div>
-              
-            </div>
+              </div>
               <div className="w-1/3 relative  pl-6 ps:pl-0 ps:pt-3 backdrop-blur-sm ps:border-0 ps:w-full ps:mx-auto">
-              
-  <div className="absolute translate-y-12 right-0 h-[45%] w-[1px] bg-gray-700 ps:hidden"></div>
-    <h1 className="text-white text-[20px] mx-auto pt-3 pb-2">
+                <div className="absolute translate-y-12 right-0 h-[45%] w-[1px] bg-gray-700 ps:hidden"></div>
+                <h1 className="text-white text-[20px] mx-auto pt-3 pb-2">
                   Our Links :
                 </h1>
                 <div className="flex space-x-1 justify-start py-1  w-full">
@@ -497,405 +495,18 @@ export default function Footer() {
           </div>
         </div>
       </section>
-<section className=" bg-[#D9D9D9]">
- <div className="w-4/5 mx-auto flex justify-between py-2 ps:space-x-5"> <div className="text-[14px] ps:text-[10px]">Copyright © 2023 VCT. All rights reserved.</div>
- <div className="text-[14px] ps:text-[10px]">Powered By Prem Rishtey Service Pvt Ltd.</div></div>
-</section>
-      {/*  <div className="bg-gray-100 mx-auto max-w-6xl bg-white py-20 px-12 lg:px-24 shadow-xl mb-24">
-  <form>
-    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
-      <div className="-mx-3 md:flex mb-6">
-        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-sm font-bold mb-2"
-            htmlFor="company"
-          >
-           Whatsapp No.<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-            <span className="text-red-500 text-xs italic">
-              Please fill out this field.
-            </span>
+      <section className=" bg-[#D9D9D9]">
+        <div className="w-4/5 mx-auto flex justify-between py-2 ps:space-x-5">
+          {" "}
+          <div className="text-[14px] ps:text-[10px]">
+            Copyright © 2023 VCT. All rights reserved.
+          </div>
+          <div className="text-[14px] ps:text-[10px]">
+            Powered By Prem Rishtey Service Pvt Ltd.
           </div>
         </div>
-         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-          Email Id<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-            
-          </div>
-        </div>
-     
-      </div>
-      <div className="-mx-3 md:flex mb-6">
-        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-           Password<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-       Re-Type Password<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-     
-      </div>
-      <div className="-mx-3 md:flex mb-6">
-        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-           Refrence By<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-        Religion<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-     
-      </div>
-      <div className="-mx-3 md:flex mb-6">
-        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-          Community<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-        Gender<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-     
-      </div>
+      </section>
     
-      <div className="-mx-3 md:flex mb-6">
-        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-          Candidate Name<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-      Birth Place<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-     
-      </div>
-      <div className="-mx-3 md:flex mb-6">
-        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-        Height<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-      Weight<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-     
-      </div>
-      <div className="-mx-3 md:flex mb-6">
-        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-      Complexion<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-      Profession<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-     
-      </div>
-      <div className="-mx-3 md:flex mb-6">
-        <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-    Marrital Status<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-         <div className="md:w-1/2 px-3 mb-6 md:mb-0">
-          <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-    Blood group<span className="text-red-500 ">*</span>
-          </label>
-          <input
-            className="w-full  text-black border border-gray-200 rounded py-3 px-4 mb-3"
-            id="company"
-            type="text"
-            placeholder="Tutsplus"
-          />
-          <div>
-           
-          </div>
-        </div>
-     
-      </div>
-      <label
-            className="uppercase tracking-wide text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-    photo<span className="text-red-500 ">*</span>
-          </label>
-
-
-          <div className="flex items-center justify-center w-full">
-  <label
-    htmlFor="dropzone-file"
-    className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-702 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
-  >
-    <div className="flex flex-col items-center justify-center pt-5 pb-6">
-      <svg
-        className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 20 16"
-      >
-        <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-        />
-      </svg>
-      <p className="mb-2 text-xs text-gray-500 dark:text-gray-400">
-        <span className="font-semibold">Click to upload</span> or drag and drop
-      </p>
-      <p className="text-xs text-gray-500 dark:text-gray-400">
-        SVG, PNG, JPG or GIF (MAX. 800x400px)
-      </p>
-    </div>
-    <input id="dropzone-file" type="file" className="hidden" />
-  </label>
-</div>
-
-<label
-            className="uppercase tracking-wide pt-8 text-black text-xs font-bold mb-2"
-            htmlFor="company"
-          >
-    Id Proof<span className="text-red-500 ">*</span>
-          </label>
-          
-
-          <div className="flex items-center justify-center w-full">
-  <label
-    htmlFor="dropzone-file"
-    className="flex flex-col items-center justify-center w-full h-64 border-2 
-    border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-100 hover:bg-gray-200 dark:border-gray-200 dark:hover:border-gray-100 dark:hover:bg-gray-200"
-  >
-    <div className="flex flex-col items-center justify-center pt-5 pb-6">
-      <svg
-        className="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 20 16"
-      >
-        <path
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-        />
-      </svg>
-      <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-        <span className="font-semibold">Click to upload</span> or drag and drop
-      </p>
-      <p className="text-xs text-gray-500 dark:text-gray-400">
-        SVG, PNG, JPG or GIF (MAX. 800x400px)
-      </p>
-    </div>
-    <input id="dropzone-file" type="file" className="hidden" />
-  </label>
-</div>
-      <div className="flex justify-center py-4">
-              {" "}
-              <button
-                className="w-48 ps:w-36   pm:py-1 pm:!text-[14px] text-lg font-bold ps:!text-[16px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
-                onClick={() => console.log("Register")}
-              >
-                {" "}
-               Register Now
-              </button>
-            </div>
-    </div>
-  </form>
-</div> */}
     </>
   );
 }
