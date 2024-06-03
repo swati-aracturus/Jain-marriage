@@ -51,7 +51,7 @@ function Slide() {
                   <Link href="/"> Home</Link>
                 </a>
                 <a href="#" className="hover:text-gray-300 ">
-                  About
+                <Link href="/about">About</Link>  
                 </a>
                 <a className="hover:text-gray-300 ">
                   <Link href="/membership"> Membership</Link>
@@ -244,23 +244,23 @@ function Slide() {
           >
             <div className="text-sm lg:flex-grow">
               <a
-                href="#"
+                href=""
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg"
               >
-                Home
+            <Link href="/"> Home</Link>
               </a>
               <a
                 href="#"
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg"
               >
-                About Us
-              </a>
+              <Link href="/about">About</Link>  
+                </a>
               <a
                 href="#"
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg"
               >
-                Membership
-              </a>
+            <Link href="/membership"> Membership</Link>
+                   </a>
               <a
                 href="#"
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg"
