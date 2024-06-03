@@ -175,7 +175,17 @@
 }
 
 input[type="text"]:focus {
-  color: rgb(255, 108, 216);
+  color: rgb(231, 1, 166);
+  font-weight:600;
+  border:2px solid #EB2188;
+}
+input[type=text] {
+ 
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
 }
 
 /* lower = faster transition */
@@ -613,10 +623,10 @@ nav>a {
 }
 
 nav>a:active,
-a:hover,
-a.active {
+nav>a:hover,
+nav>a.active {
   position: relative;
-  border-bottom: 3px solid #db2877;
+  border-bottom: 4px solid #db2877;
   transition: 0.3s;
   text-decoration: none;
   border-radius: 1px;
@@ -632,7 +642,7 @@ a.active {
   padding: 5px;
   box-shadow: 2px 2px 9px 0px #c8c8c8;
   padding: 5px;
-  z-index: 999;
+  z-index: 1;
   margin: 10px;
   border-radius: 10px;
 }
@@ -696,7 +706,7 @@ img.ImageCardBox {
 
 .cards hr {
   width: 300px;
-  border: 0.8px solid #EAEAEA;
+  border: 0.8px solid #aaa9a9;
 }
 
 .head_part {
@@ -829,7 +839,12 @@ img.ImageCardBox {
   .head_part h2 span {
     color: #fff;
   }
-
+.features p{
+  color: #ececec;
+}
+.features span{
+  color: #EAEAEA;
+}
   hr {
     width: 300px;
     border: 0.8px solid #cb0369;
@@ -951,6 +966,7 @@ input[type="radio"]:checked + label{
  color: #ffffff; 
  font-weight: 500;
 }
+
 @media screen and (max-width: 600px) {
   input[type="radio"],label span{
   transform: scale(0.75);
