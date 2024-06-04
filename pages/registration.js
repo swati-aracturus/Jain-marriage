@@ -242,7 +242,7 @@ const Registration = () => {
                       className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
                       htmlFor="company"
                     >
-                      Refrence By <span className="text-red-500 ">*</span>
+                      Reference By <span className="text-red-500 ">*</span>
                     </label>
                     <input
                       className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
@@ -356,7 +356,7 @@ const Registration = () => {
                         Candidate Name<span className="text-red-500 ">*</span>
                       </label>
                       <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       
@@ -571,7 +571,7 @@ const Registration = () => {
                         defaultValue={selectedOption}
                         onChange={setSelectedOption}
                         options={options}
-                        className="mt-2 "
+                        className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
                     </div>
@@ -604,7 +604,7 @@ const Registration = () => {
                         defaultValue={selectedOption}
                         onChange={setSelectedOption}
                         options={optionstwo}
-                        className="mt-2 "
+                        className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
                     </div>
@@ -620,7 +620,7 @@ const Registration = () => {
                         defaultValue={selectedOption}
                         onChange={setSelectedOption}
                         options={income}
-                        className="mt-2"
+                        className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
                     </div>
@@ -812,7 +812,7 @@ const Registration = () => {
                         defaultValue={selectedOption}
                         onChange={setSelectedOption}
                         options={options}
-                        className="mt-2 "
+                        className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
                     </div>
@@ -954,7 +954,7 @@ const Registration = () => {
                         defaultValue={selectedOption}
                         onChange={setSelectedOption}
                         options={manglik}
-                        className="mt-2 "
+                        className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
                     </div>
@@ -1276,7 +1276,7 @@ const Registration = () => {
                         defaultValue={selectedOption}
                         onChange={setSelectedOption}
                         options={options}
-                        className="mt-2 "
+                        className="text-gray-600 border border-gray-400 mt-2"
                         placeholder=""
                       />
                       <div></div>

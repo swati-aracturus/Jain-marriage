@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import Footer from "../components/footer";
 import Carousel from 'react-elastic-carousel';
+import Events from "@components/events";
 import { useState, useEffect, useRef } from "react";
 let items = [
   { id: 1, title: 'item #1' },
@@ -1314,6 +1315,7 @@ const Home = () => {
               </button>
             </div>
       </section>
+      <Events/>
       <Footer/>
     </>
   );
