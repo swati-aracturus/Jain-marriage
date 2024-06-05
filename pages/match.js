@@ -4,7 +4,7 @@ import Footer from "@components/footer";
 import { GoChevronDown, GoChevronRight } from "react-icons/go";
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import { MdCheckBox } from "react-icons/md";
-
+import MatchNav from "@components/matchslide";
 const Matches = () => {
     //     const [selectedTab, setSelectedTab] = useState("New Matches");
     //     const handleTabClick = (tabName) => {
@@ -118,58 +118,7 @@ const Matches = () => {
         <>
             <Header />
 
-            {/* <div className="md:flex bg-[#EB2188] ml-10 px-[12%]">
-                <div
-                    className={`cursor-pointer mr-6 w-19 mt-3 pb-4 text-white ${selectedTab === "New Matches" &&
-                        "border-b-[4px] border-[#080A52] text-[#080A50]"
-                        } `}
-                    onClick={() => handleTabClick("New Matches")}
-                >
-                    New Matches(7,903)
-                </div>
-                <div
-                    className={`cursor-pointer mr-6 w-18 mt-3 pb-4 text-white ${selectedTab === "Today's Matches" &&
-                        "border-b-[4px] border-[#080A52] text-[#080A50]"
-                        } `}
-                    onClick={() => handleTabClick("Today's Matches")}
-                >
-                    Today's Matches(10)
-                </div>
-                <div
-                    className={`cursor-pointer mr-6 w-18 mt-3 pb-4 text-white ${selectedTab === "My Matches" &&
-                        "border-b-[4px] border-[#080A52] text-[#080A50]"
-                        } `}
-                    onClick={() => handleTabClick("My Matches")}
-                >
-                    My Matches(444)
-                </div>
-                <div
-                    className={`cursor-pointer mr-6 w-18 mt-3 pb-4 text-white ${selectedTab === "Near Me" &&
-                        "border-b-[4px] border-[#080A52] text-[#080A50]"
-                        } `}
-                    onClick={() => handleTabClick("Near Me")}
-                >
-                    Near Me
-                </div>
-                <div
-                    className={`cursor-pointer mr-6 w-18 mt-3 pb-4 text-white ${selectedTab === "Recently Viewed" &&
-                        "border-b-[4px] border-[#080A52] text-[#080A50]"
-                        } `}
-                    onClick={() => handleTabClick("Recently Viewed")}
-                >
-                    Recently Viewed
-                </div>
-                <div
-                    className={`cursor-pointer mr-6 w-18 mt-3 pb-4 text-white ${selectedTab === "More Matches" &&
-                        "border-b-[4px] border-[#080A52] text-[#080A50]"
-                        } `}
-                    onClick={() => handleTabClick("More Matches")}
-                >
-                    More Matches
-                </div>
-            </div> */}
-
-            {/* left tab */}
+        <MatchNav/>
             <div className=" sm:flex md:flex lg:flex" >
                 <div className=" mt-10 sm:ml-[2%] md:ml-[6%] lg:ml-[10%] shadow-md shadow-grey-600 flex ">
                     <div>
@@ -724,7 +673,7 @@ const Matches = () => {
                                 </p>
                                 <div className="mt-2">
 
-                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4'5 , 50kg </p>
+                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4&apos;5 , 50kg </p>
                                     <p className="mt-1 " style={{ whiteSpace: 'nowrap' }}>Hindu, Chouhan</p>
                                     <p className="mt-1 "> Hindi</p>
                                 </div>
@@ -763,7 +712,7 @@ const Matches = () => {
                                 </p>
                                 <div className="mt-2">
 
-                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4'5 , 50kg </p>
+                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4&apos;5 , 50kg </p>
                                     <p className="mt-1 " style={{ whiteSpace: 'nowrap' }}>Hindu, Chouhan</p>
                                     <p className="mt-1 "> Hindi</p>
                                 </div>
@@ -800,7 +749,7 @@ const Matches = () => {
                                 </p>
                                 <div className="mt-2">
 
-                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4'5 , 50kg </p>
+                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4&apos;5 , 50kg </p>
                                     <p className="mt-1 " style={{ whiteSpace: 'nowrap' }}>Hindu, Chouhan</p>
                                     <p className="mt-1 "> Hindi</p>
                                 </div>
@@ -837,7 +786,7 @@ const Matches = () => {
                                 </p>
                                 <div className="mt-2">
 
-                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4'5 , 50kg </p>
+                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4&apos;5 , 50kg </p>
                                     <p className="mt-1 " style={{ whiteSpace: 'nowrap' }}>Hindu, Chouhan</p>
                                     <p className="mt-1 "> Hindi</p>
                                 </div>

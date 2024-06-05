@@ -47,20 +47,20 @@ function Slide() {
             <div className="flex items-center ">
               {/* Home, About, Membership, Contact, Matches links */}
               <nav className="hidden lg:flex space-x-8">
-                <a href="#" className="hover:text-gray-300 active">
+                <a  className="hover:text-gray-300 active">
                   <Link href="/"> Home</Link>
                 </a>
-                <a href="#" className="hover:text-gray-300 ">
+                <a  className="hover:text-gray-300 ">
                 <Link href="/about">About</Link>  
                 </a>
                 <a className="hover:text-gray-300 ">
                   <Link href="/membership"> Membership</Link>
                 </a>
-                <a href="#" className="hover:text-gray-300 ">
-                  Contact
+                <a  className="hover:text-gray-300 ">
+                <Link href="/contact">  Contact</Link>
                 </a>
-                <a href="#" className="hover:text-gray-300 ">
-                  Matches
+                <a  className="hover:text-gray-300 ">
+                <Link href="/match"> Matches</Link>
                 </a>
               </nav>
 
@@ -250,28 +250,27 @@ function Slide() {
             <Link href="/"> Home</Link>
               </a>
               <a
-                href="#"
+                
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg"
               >
               <Link href="/about">About</Link>  
                 </a>
               <a
-                href="#"
+                
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg"
               >
             <Link href="/membership"> Membership</Link>
                    </a>
               <a
-                href="#"
+                
                 className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg"
               >
-                Contact
+                <Link href="/contact">  Contact</Link>
               </a>
               <a
-                href="#"
-                className=" block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg"
-              >
-                Matches
+                
+                className=" block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg" >
+                <Link href="/match">  Matches</Link> 
               </a>
             </div>
             <div className="space-x-2 pt-4">

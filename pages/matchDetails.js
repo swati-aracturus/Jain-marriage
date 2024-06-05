@@ -12,7 +12,7 @@ import { GiBarbedStar } from "react-icons/gi";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaPeopleRobbery, FaDollarSign } from "react-icons/fa6";
 import { FcManager } from "react-icons/fc";
-
+import MatchNav from "@components/matchslide";
 
 
 
@@ -26,10 +26,10 @@ const MatchDetails = () => {
 
         <>
        <Header />
-         
+        <MatchNav/> 
          <div>
             <div className="font-bold text-2xl sm:ml-[10%] md:ml-[20%] lg:ml-[23%] xl:ml-[25%] mx-5 md:mx-0 mt-12">
-            Here are Today's top Matches for you.Connect with them now!
+            Here are Today&apos;s top Matches for you.Connect with them now!
             </div>
             
             <div className="flex sm:ml-[60%] md:ml-[70%] lg:ml-[75%] xl:ml-[60%] ml-[70%] sm:mt-[2%] md:mt-[3%] lg:mt-[4%] xl:mt-[5%] mt-[7%]">
@@ -63,7 +63,7 @@ const MatchDetails = () => {
                                 </p>
                                 <div className="mt-2">
 
-                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4'5 , 50kg </p>
+                                    <p className="mt-1" style={{ whiteSpace: 'nowrap' }}>28 yrs , 4&apos;5 , 50kg </p>
                                     <p className="mt-1 ">Hindu, Chouhan</p>
                                     <p className="mt-1"> Hindi</p>
                                 </div>
@@ -129,7 +129,7 @@ const MatchDetails = () => {
             <h1 className="mt-3 ml-3 px-3 md:px-0 md:text-[18px]">Self</h1>
             </div>
             <p className="text-[20px] md:ml-10 md:mx-20 px-5 mt-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                 Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
        
                 <div className="h-[1px] md:w-[81%] w-20 mt-5 mx-[4%] bg-gray-300"></div>
