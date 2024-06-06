@@ -3,8 +3,13 @@ import Link from "next/link";
 import cn from "classnames";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import axios from "axios";
+
 
 function Slide() {
+  const notify = () => toast.success("Successfully Logged In!");
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -38,6 +43,51 @@ function Slide() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isPopupOpen]);
+
+
+
+  const [user, SetUser] = useState("")
+  const [pass, SetPass] = useState("")
+
+  const handleUser = (e) => {
+    const value = e?.target.value;
+    if(value !== null);
+    SetUser(value)
+  }
+
+  const handlePass = (e) => {
+    const value = e?.target.value;
+    if(value !== null);
+    SetPass(value)
+  }
+
+const validateForm = () =>{  
+  if (!user.trim()) {
+    toast.error("Username / Mobile No./ User ID is required");
+  } else if (!pass.trim()) {
+    toast.error("Password is required");
+   } else {
+      registerEvent();
+    }
+  }
+
+
+
+  const registerEvent = async () => {
+    const data = {
+      user: user,
+      password: pass
+    }
+    console.log(data)
+    await axios.post("https://shreevct.com/api/login", data)
+    .then((res) =>{
+      console.log(res)
+    })
+    .catch((error) =>{
+      console.log(error);
+    })
+  } 
+
   return (
     <>
       <div className="desktop">
@@ -110,12 +160,16 @@ function Slide() {
                     <div className="flex pt-2 pm:!pt-0 pm:!-translate-y-2 justify-center">
                       <img src="/tb.png" className="w-36 ps:pt-2" alt="pic"/>
                     </div>
-                    <form className="px-6 pxs:px-0">
+                    <form 
+                    onSubmit={(e) => e.preventDefault()}
+                    className="px-6 pxs:px-0">
                       <div className="mb-4">
                         <label className="block text-gray-700 mt-[5%] pb-2">
                           Mobile No. / User Id / Email Id
                         </label>
                         <input
+                        required
+                        onChange={(e) => handleUser(e)}
                           type="text"
                           className="w-full px-3 py-2  text-gray-600 border border-gray-400 rounded "
                         />
@@ -125,6 +179,8 @@ function Slide() {
                           Password
                         </label>
                         <input
+                        required
+                         onChange={(e) => handlePass(e)}
                           type="text"
                           className="w-full px-3 py-2  text-gray-600 border border-gray-400 rounded "
                         />
@@ -151,11 +207,37 @@ function Slide() {
                         </div>
                       </div>
                       <button
+                      onClick={() => validateForm()}
                         type="submit"
                         className="w-full mb-[5%] py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 mt-[5%]"
                       >
                         Login
                       </button>
+                      <Toaster
+                        position="top-center"
+                        reverseOrder={false}
+                        gutter={8}
+                        containerClassName=""
+                        containerStyle={{}}
+                        toastOptions={{
+                          // Define default options
+                          className: "",
+                          duration: 5000,
+                          style: {
+                            background: "#363636",
+                            color: "#fff",
+                          },
+  
+                          // Default options for specific types
+                          success: {
+                            duration: 3000,
+                            theme: {
+                              primary: "green",
+                              secondary: "black",
+                            },
+                          },
+                        }}
+                      />
                       <div className="justify-center flex align-center items-center">
                         <p className="text-lg ps:text-sm text-slate-800">
                           Already have an account - &nbsp;{" "}
@@ -272,7 +354,7 @@ function Slide() {
                 className=" block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white mr-4 text-center text-lg" >
                 <Link href="/match">  Matches</Link> 
               </a>
-            </div>
+            </div> 
             <div className="space-x-2 pt-4">
               <button
                 className="w-28 py-1 text-white rounded-full bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring focus:ring-pink-400 "
