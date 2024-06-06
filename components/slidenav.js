@@ -108,7 +108,7 @@ function Slide() {
                       </p>
                     </div>
                     <div className="flex pt-2 pm:!pt-0 pm:!-translate-y-2 justify-center">
-                      <img src="/tb.png" className="w-36 ps:pt-2" />
+                      <img src="/tb.png" className="w-36 ps:pt-2" alt="pic"/>
                     </div>
                     <form className="px-6 pxs:px-0">
                       <div className="mb-4">

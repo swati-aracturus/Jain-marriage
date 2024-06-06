@@ -863,7 +863,7 @@ width: 70%!important;
 
 @media screen and (max-width: 1660px) {
   .main_container .second_container {
-    top: 600px;
+    top: 520px;
   }
 
   .cards_container {
@@ -871,7 +871,11 @@ width: 70%!important;
   }
 }
 
-
+.backgrd{
+  background-image: url('/tail.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;}
 
 @media screen and (max-width: 390px) {
   .cards {

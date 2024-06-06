@@ -2,6 +2,7 @@ import React from "react";
 import Header from "@components/header";
 import Footer from "@components/footer";
 import Strip from "@components/strip";
+import Link from "next/link";
 
 const Members = () => {
   return (
@@ -60,7 +61,7 @@ const Members = () => {
                 </div>
                 <div>
                   <button className="btn  active:text-white hover:text-white ">
-                    Get Started
+                  <Link href="/payment"  >Get Started</Link>
                   </button>
                 </div>
               </div>
@@ -111,7 +112,8 @@ const Members = () => {
                 </div>
                 <div>
                   <button className="btn hover:text-white active:text-white">
-                    Get Started
+                  <Link href="/payment"  >Get Started</Link>
+                 
                   </button>
                 </div>
               </div>
@@ -161,7 +163,8 @@ const Members = () => {
                 </div>
                 <div>
                   <button className="btn hover:text-white active:text-white">
-                    Get Started
+                  <Link href="/payment"  >Get Started</Link>
+                 
                   </button>
                 </div>
               </div>
