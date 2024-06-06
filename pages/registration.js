@@ -803,8 +803,10 @@ const Registration = () => {
                       onChange={(e) => handleRadio(e)}
                       id="radio1"
                       type="radio"
-                      name="radio"
-                      className="hidden"
+                      name="radiocheck"
+                      // className="hidden"
+                      style={{ appearance: 'none' }}
+
                       defaultChecked=""
                       value="Self"
                     />
@@ -822,8 +824,9 @@ const Registration = () => {
                       onChange={(e) => handleRadio(e)}
                       id="radio2"
                       type="radio"
-                      name="radio"
-                      className="hidden"
+                      name="radiocheck"
+                      // className="hidden"
+                      style={{ appearance: 'none' }}
                       value="Son"
                     />
                     <label
@@ -840,8 +843,10 @@ const Registration = () => {
                       onChange={(e) => handleRadio(e)}
                       id="radio3"
                       type="radio"
-                      name="radio"
-                      className="hidden"
+                      name="radiocheck"
+                      // className="hidden"
+                      style={{ appearance: 'none' }}
+
                       value="Daughter"
                     />
                     <label
@@ -858,8 +863,10 @@ const Registration = () => {
                       onChange={(e) => handleRadio(e)}
                       id="radio4"
                       type="radio"
-                      name="radio"
-                      className="hidden"
+                      name="radiocheck"
+                      // className="hidden"
+                      style={{ appearance: 'none' }}
+
                       value="Brother"
                     />
                     <label
@@ -876,8 +883,10 @@ const Registration = () => {
                       onChange={(e) => handleRadio(e)}
                       id="radio5"
                       type="radio"
-                      name="radio"
-                      className="hidden"
+                      name="radiocheck"
+                      // className="hidden"
+                      style={{ appearance: 'none' }}
+
                       value="Sister"
                     />
                     <label
@@ -894,8 +903,10 @@ const Registration = () => {
                       onChange={(e) => handleRadio(e)}
                       id="radio6"
                       type="radio"
-                      name="radio"
-                      className="hidden"
+                      name="radiocheck"
+                      // className="hidden"
+                      style={{ appearance: 'none' }}
+
                       value="Relative"
                     />
                     <label
@@ -912,8 +923,10 @@ const Registration = () => {
                       onChange={(e) => handleRadio(e)}
                       id="radio7"
                       type="radio"
-                      name="radio"
-                      className="hidden"
+                      name="radiocheck"
+                      // className="hidden"
+                      style={{ appearance: 'none' }}
+
                       value="Other"
                     />
                     <label
@@ -1765,7 +1778,7 @@ const Registration = () => {
 
                   <div className="flex items-center justify-center w-full">
                     <label
-                      htmlFor="dropzone-file"
+                      htmlFor="dropzone-file1"
                       className="flex flex-col items-center justify-center w-full h-44 border-2 
                       border-gray-300 border-dashed rounded-lg cursor-pointer
                       bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-100
@@ -1795,9 +1808,9 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleFileChange(e)}
-                        id="dropzone-file"
+                        id="dropzone-file1"
                         type="file"
-                        // className="hidden"
+                        className="hidden"
                       />
                     </label>
                   </div>
@@ -1817,7 +1830,7 @@ const Registration = () => {
 
                   <div className="flex items-center justify-center w-full">
                     <label
-                      htmlFor="dropzone-file"
+                      htmlFor="dropzone-file2"
                       className="flex flex-col items-center justify-center w-full h-44 border-2 
                       border-gray-300 border-dashed rounded-lg cursor-pointer
                       bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-100
@@ -1847,7 +1860,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleFileChange2(e)}
-                        id="dropzone-file"
+                        id="dropzone-file2"
                         type="file"
                         className="hidden"
                       />
