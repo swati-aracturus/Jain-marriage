@@ -816,11 +816,9 @@ const Registration = () => {
       toast.error("Phone number is required");
     } else if (!photo) {
       toast.error("Photo is required");
-    } 
-    // else if (!id) {
-    //   toast.error("ID is required");
-    // } 
-    else if (!partner_income.trim()) {
+    } else if (!id) {
+       toast.error("ID is required");
+    } else if (!partner_income.trim()) {
       toast.error("Partner's income is required");
     } else if (!selectedCountry.name.trim()) {
       toast.error("Partner's country is required");
