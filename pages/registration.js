@@ -12,12 +12,7 @@ import { City, Country, State } from "country-state-city";
 
 const Registration = () => {
   const notify = () => toast.success("Successfully Registered In!");
-  const ToggleDivComponent = () => {
-    const [isVisible, setIsVisible] = useState(false);
-    const handleRadioChange = (event) => {
-      setIsVisible(event.target.value === 'yes');
-    };
-  
+
   const options = [
     { value: "Unmarried", label: "Unmarried" },
     { value: "Married", label: "Married" },
@@ -821,9 +816,11 @@ const Registration = () => {
       toast.error("Phone number is required");
     } else if (!photo) {
       toast.error("Photo is required");
-    } else if (!id) {
-       toast.error("ID is required");
-    } else if (!partner_income.trim()) {
+    } 
+    // else if (!id) {
+    //   toast.error("ID is required");
+    // } 
+    else if (!partner_income.trim()) {
       toast.error("Partner's income is required");
     } else if (!selectedCountry.name.trim()) {
       toast.error("Partner's country is required");
@@ -1640,7 +1637,7 @@ const Registration = () => {
 
 
 
-
+                  
                   <div className=" ps:px-0 px-3 mb-6">
                     <label
                       className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
@@ -1663,7 +1660,6 @@ const Registration = () => {
                               defaultChecked=""
                               value="Yes"
                             />
-                          
                             <label
                               htmlFor="yes"
                               className="flex items-center text-xl leading-[20px] text-white cursor-pointer  "
