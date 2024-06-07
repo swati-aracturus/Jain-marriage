@@ -6,9 +6,7 @@ import Link from "next/link";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 
-
-
-const Registration = () => {
+const Matching = () => {
   const options = [
     { value: "Unmarried", label: "Unmarried" },
     { value: "Married", label: "Married" },
@@ -91,1264 +89,259 @@ const Registration = () => {
           </div>
           {/* pink box */}
 
-          <div className="justify-center flex align-center items-center">
-            <div className="w-4/5 py-8 rounded shadow-xl bg-[#EB2188] -translate-y-[34px] ps:-translate-y-[20px]  ps:w-[90%] ps:py-2">
+          <div className="justify-center flex align-center items-center ps:hidden">
+            <div className="w-[80%] py-3 rounded-l  shadow-xl bg-[#EB2188] -translate-y-[34px] ps:-translate-y-[20px]  ps:w-[90%] ps:py-2">
               <div className="flex justify-center align-center items-center flex-wrap">
                 <>
                   <div className="flex items-center mr- ps:mr-4 align-center justify-center">
-                    <p>Age :</p>
-                 
+                    <p className="text-white">Age :</p>
                     <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        className="text-gray-600 border border-gray-400 mt-2 mx-2 "
-                      />   <label
-                      htmlFor="radio1"
-                      className="flex items-center text-xl leading-[20px] text-white cursor-pointer  "
-                    >
-                      <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey ps:text-sm " />
-                      Self
-                    </label>
-                  </div>
-                  <div className="flex items-center mr-8  ps:mr-4">
-                    <input
-                      id="radio2"
-                      type="radio"
-                      name="radio"
-                      className="hidden"
+                      placeholder="28"
+                      defaultValue={selectedOption}
+                      onChange={setSelectedOption}
+                      options={options}
+                      className="text-gray-600 border border-gray-400 mt-2 mx-2 "
                     />
-                    <label
-                      htmlFor="radio2"
-                      className="flex items-center text-xl leading-[20px] text-white cursor-pointer"
-                    >
-                      <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey ps:text-sm" />
-                      Son
-                    </label>
                   </div>
-                  <div className="flex items-center mr-8 ps:mr-4 ">
-                    <input
-                      id="radio3"
-                      type="radio"
-                      name="radio"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="radio3"
-                      className="flex items-center text-xl leading-[20px] text-white cursor-pointer"
-                    >
-                      <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey ps:text-sm" />
-                      Daughter
-                    </label>
-                  </div>
-                  <div className="flex items-center mr-8 ps:mr-4 ">
-                    <input
-                      id="radio4"
-                      type="radio"
-                      name="radio"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="radio4"
-                      className="flex items-center text-xl leading-[20px] text-white cursor-pointer"
-                    >
-                      <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey ps:text-sm" />
-                      Brother
-                    </label>
-                  </div>
-                  <div className="flex items-center mr-8 ps:mr-4 ">
-                    <input
-                      id="radio5"
-                      type="radio"
-                      name="radio"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="radio5"
-                      className="flex items-center text-xl leading-[20px] text-white cursor-pointer"
-                    >
-                      <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey ps:text-sm" />
-                      Sister
-                    </label>
-                  </div>
-                  <div className="flex items-center mr-8 ps:mr-4 ">
-                    <input
-                      id="radio6"
-                      type="radio"
-                      name="radio"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="radio6"
-                      className="flex items-center text-xl leading-[20px] text-white cursor-pointer"
-                    >
-                      <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey ps:text-sm" />
-                      Relative
-                    </label>
-                  </div>
-                  <div className="flex items-center mr-8 ps:mr-4 ">
-                    <input
-                      id="radio7"
-                      type="radio"
-                      name="radio"
-                      className="hidden"
-                    />
-                    <label
-                      htmlFor="radio7"
-                      className="flex items-center text-xl leading-[20px]  text-white cursor-pointer"
-                    >
-                      <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey ps:text-sm" />
-                      Other
-                    </label>
+                  <div className="flex items-center mr- ps:mr-4 align-center justify-center">
+                    <p className="text-white">To</p>
+                    <Select
+                      placeholder="32 "
+                      defaultValue={selectedOption}
+                      onChange={setSelectedOption}
+                      options={options}
+                      className="text-gray-600 border border-gray-400 mt-2 mx-2 "
+                    />{" "}
+                  </div>{" "}
+                  <div className="flex items-center mr- ps:mr-4 align-center justify-center">
+                    <p className="text-white">Status :</p>
+                    <Select
+                      placeholder=" Single "
+                      defaultValue={selectedOption}
+                      onChange={setSelectedOption}
+                      options={options}
+                      className="text-gray-600 border border-gray-400 mt-2 mx-2 "
+                    />{" "}
+                  </div>{" "}
+                  <div className="flex items-center mr- ps:mr-4 align-center justify-center">
+                    <p className="text-white">City :</p>
+                    <Select
+                      placeholder="Indore "
+                      defaultValue={selectedOption}
+                      onChange={setSelectedOption}
+                      options={options}
+                      className="text-gray-600 border border-gray-400 mt-2 mx-2 "
+                    />{" "}
+                  </div>{" "}
+                  <div className="flex items-center mr- ps:mr-4 align-center justify-center">
+                    <p className="text-white">State :</p>
+                    <Select
+                      placeholder="Indore  "
+                      defaultValue={selectedOption}
+                      onChange={setSelectedOption}
+                      options={options}
+                      className="text-gray-600 border border-gray-400 mt-2 mx-2 "
+                    />{" "}
+                  </div>{" "}
+                  <div className="flex items-center mr- ps:mr-4 align-center justify-center">
+                    <p className="text-white">Country :</p>
+                    <Select
+                      placeholder="Indore  "
+                      defaultValue={selectedOption}
+                      onChange={setSelectedOption}
+                      options={options}
+                      className="text-gray-600 border border-gray-400 mt-2 mx-2 "
+                    />{" "}
+                  </div>{" "}
+                  <div className="flex items-center mr- ps:mr-4 align-center justify-center">
+                    <p className="text-white">Citizen :</p>
+                    <Select
+                      placeholder=" Indian"
+                      defaultValue={selectedOption}
+                      onChange={setSelectedOption}
+                      options={options}
+                      className="text-gray-600 border border-gray-400 mt-2 mx-2 "
+                    />{" "}
                   </div>
                 </>
               </div>
             </div>
-          </div>
-
-          <div className="justify-between flex align-center flex-wrap w-[95%]">
-            <div></div>
-            <div className="justify-center flex align-center items-center">
-              <p className="text-lg ps:text-sm">
-                Already have an account - &nbsp;{" "}
-              </p>
-              <button
-                className="   pm:py-1  ps:text-sm  pt-1 pb-1.5 px-4 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
-           >
-                Log In
-              </button>
+            <div className="w-[5%] bg-[#080A52] rounded-r flex justify-center text-center items-center shadow-xl py-[11px] -translate-y-[34px] ps:-translate-y-[20px]  ps:w-[90%] ps:py-2">
+              <img src="/search.png"></img>
             </div>
           </div>
 
-          <section className="w-5/6 mx-auto">
-            <div className=" flex pt-[3%] ps:pt-[10%] justify-center items-center">
-              <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
-                CREATE PROFILE on VCT
-              </p>
-            </div>
-            <div className="flex pt-4 pm:!pt-0 pm:!-translate-y-2 justify-center">
-              <img src="/tb.png" className="ps:w-28 " />
-            </div>
-            <div className=" flex pt-[1%]  justify-center items-center">
-              <p className=" ps:!text-[14px] pm:text-[20px] pm:font-[550] font-semibold ">
-                All Fields with <span className="text-pink-600">*</span> are
-                mandatory
-              </p>
-            </div>
-
-            <div className="flex justify-center align-center items-center mx-auto ">
-              {/* form */}
-
-              <form className="w-[90%] ps:w-[100%]">
-                <div className="bg-white  rounded pt-8  flex flex-col ">
-                  <div className=" ps:px-0 px-3 mb-6">
-                    <label
-                      className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                      htmlFor="company"
-                    >
-                      Reference By <span className="text-red-500 ">*</span>
-                    </label>
-                    <input
-                      className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                      id="company"
-                      type="text"
-                    
-                    />
-                    <div></div>
+          <section>
+    
+        <div className="container pt-2 ps:!w-[95%] xl:w-4/5   mx-auto">
+          <div className="flex flex-wrap ">
+            <div className=" px-1 w-full md:w-1/2 flex ps:w-1/2  lg:my-4  lg:w-1/4">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2 border-gray-200 border-2">
+                <div className="flex justify-between px-8 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e1.png" alt="des" className="ps:px-2 ps:translate-x-2" />
                   </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Whatsapp No.<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div>
-                        <span className="text-red-500 text-sm italic">
-                          Please fill out this field.
-                        </span>
-                      </div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Email Id<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
+                  <div>
+                    <img src="/nri.png" />
                   </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Password<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Re-Type Password<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-3">
-                    <div className="md:w-1/2 ps:px-0 px-3  md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-base font-bold "
-                        htmlFor="company"
-                      >
-                        Personal Details -
-                      </label>
-
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Gender<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3  mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Candidate Name<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Date of birth<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2 mt-2"
-                        htmlFor="company"
-                      >
-                        Age<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2 mt-2"
-                        htmlFor="company"
-                      >
-                        Birthplace <span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Birth Time<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2 mt-2"
-                        htmlFor="company"
-                      >
-                        Height<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Weight<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Complexion<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Education <span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Profession<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Occupation<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Religion<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Community<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Mariatal Status<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        className="text-gray-600 border border-gray-400 mt-2"
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Physical Status<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Blood Group<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={optionstwo}
-                        className="text-gray-600 border border-gray-400 mt-2"
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Candidate Income<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={income}
-                        className="text-gray-600 border border-gray-400 mt-2"
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" ps:px-0 px-3 mb-6">
-                    <label
-                      className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                      htmlFor="message"
-                    >
-                      Candidate Address <span className="text-red-500 ">*</span>
-                    </label>
-                    <textarea
-                      className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                      id="message"
-                      type="text"
-                    
-                    />
-                    <div></div>
-                  </div>
-                  <div className=" ps:px-0 px-3 mb-6">
-                    <label
-                      className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                      htmlFor="message"
-                    >
-                      If NRI <span className="text-red-500 ">*</span>
-                    </label>
-
-                    <div className=" flex align-center items-center">
-                      <div className=" py-2 rounded shadow-xl bg-[#EB2188] px-4 ">
-                        <div className="flex  align-center items-center ">
-                          <div className="flex items-center mr-8 ps:mr-4 align-center justify-center">
-                            <input
-                              id="yes"
-                              type="radio"
-                              name="radio"
-                              className="hidden"
-                              defaultChecked=""
-                            />
-                            <label
-                              htmlFor="yes"
-                              className="flex items-center text-xl leading-[20px] text-white cursor-pointer  "
-                            >
-                              <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey ps:text-[12px] " />
-                              Yes
-                            </label>
-                          </div>
-                          <div className="flex items-center mr-8  ps:mr-4">
-                            <input
-                              id="no"
-                              type="radio"
-                              name="radio"
-                              className="hidden"
-                            />
-                            <label
-                              htmlFor="no"
-                              className="flex items-center text-xl leading-[20px] text-white cursor-pointer"
-                            >
-                              <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey " />
-                              No
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Candidate Visa<span className="text-red-500 ">*</span>
-                      </label>
-                      <textarea
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Address ( NRI Citizen )
-                        <span className="text-red-500 ">*</span>
-                      </label>
-                      <textarea
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        rows="2"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-3">
-                    <div className="md:w-1/2 ps:px-0 px-3  md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-base font-bold "
-                        htmlFor="company"
-                      >
-                        Family Details -
-                      </label>
-
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Father Name<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3  mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Father Profession
-                        <span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Mother Name<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2 mt-2"
-                        htmlFor="company"
-                      >
-                        Mother Profession
-                        <span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Residence Type<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        className="text-gray-600 border border-gray-400 mt-2"
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Gotra<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Community<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2 mt-2"
-                        htmlFor="company"
-                      >
-                        Sub Community<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" ps:px-0 px-3 mb-6">
-                    <label
-                      className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                      htmlFor="message"
-                    >
-                      Family Address <span className="text-red-500 ">*</span>
-                    </label>
-                    <textarea
-                      className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                      id="message"
-                      type="text"
-                    
-                    />
-                    <div></div>
-                  </div>
-                  <div className=" md:flex mb-3">
-                    <div className="md:w-1/2 ps:px-0 px-3  md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-base font-bold "
-                        htmlFor="company"
-                      >
-                        Siblings Details -
-                      </label>
-
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Brother<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2 mt-2"
-                        htmlFor="company"
-                      >
-                        Sister<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" ps:px-0 px-3 mb-6">
-                    <label
-                      className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                      htmlFor="message"
-                    >
-                      Other Family Details{" "}
-                      <span className="text-red-500 ">*</span>
-                    </label>
-                    <textarea
-                      className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                      id="message"
-                      type="text"
-                    
-                    />
-                    <div></div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Manglik<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={manglik}
-                        className="text-gray-600 border border-gray-400 mt-2"
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Phone Number<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <label
-                    className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                    htmlFor="company"
-                  >
-                    Photo<span className="text-red-500 ">*</span>{" "}
-                    <span className="text-slate-400">
-                      ( Face should be near )
-                    </span>
-                  </label>
-
-                  <div className="flex items-center justify-center w-full">
-                    <label
-                      htmlFor="dropzone-file"
-                      className="flex flex-col items-center justify-center w-full h-44 border-2 
-                      border-gray-300 border-dashed rounded-lg cursor-pointer
-                      bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-100
-                       hover:bg-gray-200 dark:border-gray-400
-                        dark:hover:border-gray-100 dark:hover:bg-gray-200"
-                    >
-                      <div className="flex flex-col items-center justify-center">
-                        <svg
-                          className="w-[80px] h-[80px]  mb-4 text-gray-500 dark:text-gray-400"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 20 16"
-                        >
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-                          />
-                        </svg>
-                        <p className="mb-2 text-lg  ps:text-sm text-gray-700 dark:text-gray-400">
-                          Drag and Drop Here / Browse
-                        </p>
-                      </div>
-                      <input
-                        id="dropzone-file"
-                        type="file"
-                        className="hidden"
-                      />
-                    </label>
-                  </div>
-
-                  <label
-                    className=" tracking-wide pt-8 text-gray-600 text-sm
-                     font-bold mb-2"
-                    htmlFor="company"
-                  >
-                    Id Proof<span className="text-red-500 ">*</span>
-                    <span className="text-slate-400">
-                      {" "}
-                      ( Adhar Card, PAN Card, Voter Id, Driving Licence, COVID,
-                      Ayushman, Religion Id. ){" "}
-                    </span>
-                  </label>
-
-                  <div className="flex items-center justify-center w-full">
-                    <label
-                      htmlFor="dropzone-file"
-                      className="flex flex-col items-center justify-center w-full h-44 border-2 
-                      border-gray-300 border-dashed rounded-lg cursor-pointer
-                      bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-100
-                       hover:bg-gray-200 dark:border-gray-400
-                        dark:hover:border-gray-100 dark:hover:bg-gray-200"
-                    >
-                      <div className="flex flex-col items-center justify-center">
-                        <svg
-                          className="w-[80px] h-[80px] mb-4 text-gray-500 dark:text-gray-400"
-                          aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 20 16"
-                        >
-                          <path
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
-                          />
-                        </svg>
-                        <p className="mb-2 text-lg ps:text-sm text-gray-700 dark:text-gray-400">
-                          Drag and Drop Here / Browse
-                        </p>
-                      </div>
-                      <input
-                        id="dropzone-file"
-                        type="file"
-                        className="hidden"
-                      />
-                    </label>
-                  </div>
-                  <label
-                    className=" tracking-wide pt-2 text-gray-600 text-xs
-                     font-bold mb-2"
-                    htmlFor="company"
-                  >
-                    <span className="text-red-500 ">
-                      NOTE_ Without ID’s Proof Account can not be verified.
-                    </span>
-                  </label>
-                  <div className=" md:flex mb-3 pt-8">
-                    <div className="md:w-1/2 ps:px-0 px-3  md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-base font-bold "
-                        htmlFor="company"
-                      >
-                        Partner Preference -
-                      </label>
-
-                      <div></div>
-                    </div>
-                  </div>
-
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Age Group<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <div className="flex flex-wrap pt-4">
-                        <div className="flex w-1/2 justify-center align-center items-center text-center ps:w-full ps:pb-2 ">
-                          <span className="text-sm  font-semibold  px-2 text-slate-700">
-                            From:{" "}
-                          </span>
-                          <Select
-                            defaultValue={selectedOption}
-                            onChange={setSelectedOption}
-                            options={agefrom}
-                            name="field_name"
-                            className="text-gray-600 text-sm font-bold  w-full"
-                            type="text"
-                            placeholder=""
-                          />
-                        </div>{" "}
-                        <div className="flex  w-1/2 justify-center align-center text-center  items-center ps:w-full ps:pb-2">
-                          <span className="text-sm  font-semibold  px-2 text-slate-700">
-                            To:
-                          </span>
-                          <Select
-                            defaultValue={selectedOption}
-                            onChange={setSelectedOption}
-                            options={ageto}
-                            name="field_name"
-                            className=" text-gray-600 text-sm font-bold w-full"
-                            type="text"
-                            placeholder=""
-                          />
-                        </div>
-                      </div>
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Income<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Country<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        State<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        City<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Education<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Occupation<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Profession<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <input
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Manglik<span className="text-red-500 ">*</span>
-                      </label>
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={manglik}
-                        className="mt-2 h-2"
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Mariatal Status<span className="text-red-500 ">*</span>
-                      </label>
-
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                        className="text-gray-600 border border-gray-400 mt-2"
-                        placeholder=""
-                      />
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/2 mt-2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Astrology Matching
-                        <span className="text-red-500 ">*</span>
-                      </label>
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={matching}
-                        className="mt-2 h-2"
-                        placeholder=""
-                      />
-                      <div></div>
-                    </div>
-                  </div>
-                  <div className=" ps:px-0 px-3 mb-6">
-                    <label
-                      className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                      htmlFor="message"
-                    >
-                      Expectation Partner Details
-                      <span className="text-red-500 ">*</span>
-                    </label>
-                    <textarea
-                      className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                      id="message"
-                      type="text"
-                    
-                    />
-                    <div></div>
-                  </div>
-
-                  <div className="flex items-center">
-                    <input
-                      id="link-checkbox"
-                      type="checkbox"
-                      value="" 
-                      className="appearance-none rounded h-4 w-4 bg-transparent
-                      focus:ring-0 focus:ring-offset-0 checked:bg-pink-600
-                      border-pink-600 border-2  checked:text-pink-200 ps:w-7 ps:h-4"
-                    />
-                    <label
-                      htmlFor="link-checkbox"
-                      className="ms-2"
-                    >
-                      Terms and Conditions of services provided by VCT Powered by Prem Rishtey Service Pvt Ltd.
-                    </label>
-                  </div>
-
-                 <div className="flex justify-center py-4 mt-[5%]">
-                    <button
-                      className="w-48 ps:w-36   pm:py-1 pm:!text-[14px] text-lg font-bold ps:!text-[16px]  py-2 text-white rounded-[10px] bg-pink-600 hover:bg-pink-700 focus:outline-none  focus:ring focus:ring-pink-400 "
-                      onClick={() => console.log("Register")}
-                    >
-                     <Link href="/">    Register Now </Link> 
-                    </button>
-                  </div> 
                 </div>
-              </form>
+
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p className="flex justify-center ps:text-[13px]">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p className="flex justify-center pb-4 px-8 ">
+                  {" "}
+                  <b className="text-center align-center px-8 ps:px-0 ps:text-[13px]">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
+                </p>
+              </article>
             </div>
-          </section>
+            <div className="px-1 w-full md:w-1/2  flex ps:w-1/2 lg:my-4  lg:w-1/4">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-between px-8 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e4.png"className="ps:px-2 ps:translate-x-2"  />
+                  </div>
+                  <div>
+                    <img src="/nri.png" />
+                  </div>
+                </div>
+
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p className="flex justify-center ps:text-[13px]">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p className="flex justify-center pb-4 px-8 ">
+                  {" "}
+                  <b className="text-center align-center px-8 ps:px-0 ps:text-[13px]">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
+                </p>
+              </article>
+            </div>
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4  lg:w-1/4 desktop">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-between px-8 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e3.png" />
+                  </div>
+                  <div></div>
+                </div>
+
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p className="flex justify-center ps:text-[13px]">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p className="flex justify-center pb-4 px-8 ">
+                  {" "}
+                  <b className="text-center align-center px-8 ps:text-[13px]">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
+                </p>
+                <div className="my-2 mx-1 ">
+                  <button className="text-black">Contact</button>
+                </div>
+              </article>
+            </div>
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4  lg:w-1/4 desktop">
+              <article className="overflow-hidden rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-between px-8 py-4 md:p-4">
+                  <div></div>
+                  <div>
+                    <img src="/e2.png" />
+                  </div>
+                  <div></div>
+                </div>
+
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p className="flex justify-center ps:text-[13px]">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p className="flex justify-center pb-4 px-8 ">
+                  {" "}
+                  <b className="text-center align-center px-8 ps:text-[13px]">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
+                </p>
+              </article>
+            </div>
+            <div className="px-1 w-full md:w-1/2 flex ps:w-1/2 lg:my-4  lg:w-1/4 mobile">
+              <article className=" rounded-lg shadow-lg py-2  border-gray-200 border-2">
+                <div className="flex justify-center  py-4 md:p-4">
+                  
+                  <div>
+                    <img src="/e2.png" className="ps:px-7" />
+                  </div>
+                 
+                </div>
+
+                <header className="flex justify-center space-x-2 items-center">
+                  <div className="no-underline font-semibold text-black ps:text-[13px]">
+                    Abc00123{" "}
+                  </div>
+                  <img src="/tick.png" />
+                </header>
+
+                <p className="flex justify-center ps:text-[13px]">
+                  26, 5ft 5in, 55kg<br></br>
+                </p>
+                <p className="flex justify-center pb-4 px-4 ">
+                  {" "}
+                  <b className="text-center align-center px-4 ps:text-[13px]">
+                    Indore, M.P., India <br />
+                    Never Married
+                  </b>
+                </p>
+                <div className="my-2 mx-1 ">
+                  <button className="text-black">Contact</button>
+                </div>
+              </article>
+            </div>
+            
+          </div>
+        
+
+          <div className=" flex justify-center pt-4 md:hidden">
+            <div className="flex space-x-1">
+              <p className="text-[#EB2188] font-[550]">View All </p>
+              <img src="arrow.png" className="object-scale-down" />
+            </div>
+          </div>
+        </div>
+      </section>
         </div>
       </div>
       <Footer />
@@ -1356,4 +349,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default Matching;
