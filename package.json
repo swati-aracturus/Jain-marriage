@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "node server.js",
     "lint": "next lint"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/taylorbryant/next-starter-tailwind#readme",
   "dependencies": {
     "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
     "country-state-city": "^3.2.1",
     "import": "^0.0.6",
     "next": "12.2.4",
