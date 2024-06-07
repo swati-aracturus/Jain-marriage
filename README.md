@@ -1,1 +1,1 @@
-# Next.js Starter Tailwind
+# Next.js Jain Marriage Tailwind
