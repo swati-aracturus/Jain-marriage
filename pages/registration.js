@@ -12,7 +12,12 @@ import { City, Country, State } from "country-state-city";
 
 const Registration = () => {
   const notify = () => toast.success("Successfully Registered In!");
-
+  const ToggleDivComponent = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const handleRadioChange = (event) => {
+      setIsVisible(event.target.value === 'yes');
+    };
+  
   const options = [
     { value: "Unmarried", label: "Unmarried" },
     { value: "Married", label: "Married" },
@@ -1421,9 +1426,9 @@ const Registration = () => {
                         Height<span className="text-red-500 ">*</span>
                       </label>
                       <Select
-                    
+                    placeholder=""
                       onChange={(e) => handleHeight(e)}
-                   
+                      options={heights}
                       className="text-gray-600 border border-gray-400 mt-2"
                     />
                       <div></div>
@@ -1436,7 +1441,6 @@ const Registration = () => {
                         Weight<span className="text-red-500 ">*</span>
                       </label>
                        <Select
-                      // defaultValue={selectedOption}
                       onChange={(e) => handleWeight(e)}
                       options={weights}
                       className="text-gray-600 border border-gray-400 mt-2"
@@ -1631,6 +1635,14 @@ const Registration = () => {
                     />
                     <div></div>
                   </div>
+
+
+
+
+
+
+
+
                   <div className=" ps:px-0 px-3 mb-6">
                     <label
                       className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
@@ -1653,6 +1665,7 @@ const Registration = () => {
                               defaultChecked=""
                               value="Yes"
                             />
+                          
                             <label
                               htmlFor="yes"
                               className="flex items-center text-xl leading-[20px] text-white cursor-pointer  "
@@ -1717,6 +1730,20 @@ const Registration = () => {
                       <div></div>
                     </div>
                   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   <div className=" md:flex mb-3">
                     <div className="md:w-1/2 ps:px-0 px-3  md:mb-0">
                       <label
