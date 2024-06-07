@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>VCT-Jaon Marriage</title>
+        <title>VCT-Jain Marriage</title>
         <meta
           name="Description"
           content="Igniculus"
