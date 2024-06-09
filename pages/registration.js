@@ -8,16 +8,19 @@ import axios from "axios";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import { City, Country, State } from "country-state-city";
-// import CountryRegionSelector from "react-country-region-selector";
 
 const Registration = () => {
   const notify = () => toast.success("Successfully Registered In!");
-
+ 
   const options = [
     { value: "Unmarried", label: "Unmarried" },
     { value: "Married", label: "Married" },
     { value: "Divorced", label: "Divorced" },
     { value: "Widow", label: "Widow" },
+  ];
+  const Gender = [
+    { value: "Male", label: "Male" },
+    { value: "Female", label: "Female" },
   ];
   const weights = [
     { value: "35 kg", label: "35 kg" },
@@ -237,12 +240,12 @@ const Registration = () => {
     { value: "7'9", label: "7 feet 9 inches" },
     { value: "7'10", label: "7 feet 10 inches" },
     { value: "7'11", label: "7 feet 11 inches" },
-    { value: "8'0", label: "8 feet 0 inches" }
+    { value: "8'0", label: "8 feet 0 inches" },
   ];
   const manglik = [
     { value: "Yes", label: "Yes" },
     { value: "No", label: "No" },
-    { value: "don’t know", label: "don’t knowo" },
+    { value: "don’t know", label: "don’t know" },
   ];
   const matching = [
     { value: "Yes", label: "Yes" },
@@ -2450,7 +2453,6 @@ const Registration = () => {
                       id="radio6"
                       type="radio"
                       name="radiocheck"
-                      // className="hidden"
                       style={{ appearance: "none" }}
                       value="Relative"
                     />
@@ -2469,7 +2471,6 @@ const Registration = () => {
                       id="radio7"
                       type="radio"
                       name="radiocheck"
-                      // className="hidden"
                       style={{ appearance: "none" }}
                       value="Other"
                     />
@@ -2515,8 +2516,6 @@ const Registration = () => {
             </div>
 
             <div className="flex justify-center align-center items-center mx-auto ">
-              {/* form */}
-
               <form
                 onSubmit={(e) => e.preventDefault()}
                 className="w-[90%] ps:w-[100%]"
@@ -2630,13 +2629,12 @@ const Registration = () => {
                       >
                         Gender<span className="text-red-500 ">*</span>
                       </label>
-                      <input
-                        required
+                      <Select
                         onChange={(e) => handleGender(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3  mt-2"
-                        id="company"
-                        type="text"
+                        options={Gender}
+                        className="text-gray-600 border border-gray-400 mt-2"
                       />
+
                       <div></div>
                     </div>
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
@@ -2727,12 +2725,15 @@ const Registration = () => {
                       >
                         Birth Time<span className="text-red-500 ">*</span>
                       </label>
+
                       <input
+                        id="appt-time"
                         required
                         onChange={(e) => handleBirthTime(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
+                        className="w-full text-pink-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        type="time"
+                        name="appt-time"
+                        step="2"
                       />
                       <div></div>
                     </div>
@@ -2984,13 +2985,6 @@ const Registration = () => {
                     <div></div>
                   </div>
 
-
-
-
-
-
-
-                  
                   <div className=" ps:px-0 px-3 mb-6">
                     <label
                       className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
@@ -3191,9 +3185,7 @@ const Registration = () => {
 
                       <Select
                         onChange={(e) => handlResidence(e)}
-                        // defaultValue={selectedOption}
-                        // onChange={setSelectedOption}
-                        options={options}
+                        options={Family_Type}
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
@@ -3211,6 +3203,38 @@ const Registration = () => {
                         className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
                         id="company"
                         type="text"
+                      />
+                      <div></div>
+                    </div>
+                  </div>
+                  <div className=" md:flex mb-6">
+                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
+                      <label
+                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
+                        htmlFor="company"
+                      >
+                        Family Status<span className="text-red-500 ">*</span>
+                      </label>
+
+                      <Select
+                        onChange={(e) => handlResidence(e)}
+                        options={Family_Status}
+                        className="text-gray-600 border border-gray-400 mt-2"
+                      />
+                      <div></div>
+                    </div>
+                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
+                      <label
+                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
+                        htmlFor="company"
+                      >
+                       Family Type<span className="text-red-500 ">*</span>
+                      </label>
+                
+                      <Select
+                        onChange={(e) => handlResidence(e)}
+                        options={Family}
+                        className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
                     </div>
@@ -3536,100 +3560,78 @@ const Registration = () => {
                       <Select
                         onChange={(e) => handlePartnerIncome(e)}
                         options={Income}
-                        className="text-gray-600 border border-gray-400 mt-2"
+                        className="text-gray-600   mt-4"
                       />
-                      {/* <input
-                        required
-                        onChange={(e) => handlePartnerIncome(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      /> */}
+
                       <div></div>
                     </div>
                   </div>
-
-                  <div className=" md:flex mb-6">
-                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Country<span className="text-red-500 ">*</span>
-                      </label>
-                      <select
-                        value={selectedCountry?.name}
-                        onChange={handleCountryChange}
-                      >
-                        {countryData.map((country) => (
-                          <option key={country.isoCode} value={country.name}>
-                            {country.name}
-                          </option>
-                        ))}
-                      </select>
-                      {/* <input
-                        required
-                        onChange={(e) => handlecountry(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      /> */}
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        State<span className="text-red-500 ">*</span>
-                      </label>
-                      <select
-                        value={selectedState?.name}
-                        onChange={handleStateChange}
-                      >
-                        {stateData.map((state) => (
-                          <option key={state.isoCode} value={state.name}>
-                            {state.name}
-                          </option>
-                        ))}
-                      </select>
-
-                      {/* <input
-                        required
-                        onChange={(e) => handleState(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      /> */}
-                      <div></div>
-                    </div>
-                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        City<span className="text-red-500 ">*</span>
-                      </label>
-                      <select
-                        value={selectedCity?.name}
-                        onChange={handleCityChange}
-                      >
-                        {cityData.map((city) => (
-                          <option key={city.name} value={city.name}>
-                            {city.name}
-                          </option>
-                        ))}
-                      </select>
-                      {/* <input
-                        required
-                        onChange={(e) => handleCity(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      /> */}
-                      <div></div>
-                    </div>
-                  </div>
+                  <div className="md:flex mb-6">
+  <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
+    <label
+      className="tracking-wide text-gray-600 text-sm font-bold mb-2"
+      htmlFor="country"
+    >
+      Country
+      <span className="text-red-500">*</span>
+    </label>
+    <select
+      id="country"
+      value={selectedCountry?.name}
+      onChange={handleCountryChange}
+      className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
+    >
+      {countryData.map((country) => (
+        <option key={country.isoCode} value={country.name}>
+          {country.name}
+        </option>
+      ))}
+    </select>
+    <div></div>
+  </div>
+  <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
+    <label
+      className="tracking-wide text-gray-600 text-sm font-bold mb-2"
+      htmlFor="state"
+    >
+      State<span className="text-red-500">*</span>
+    </label>
+    <select
+      id="state"
+      value={selectedState?.name}
+      onChange={handleStateChange}
+      className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
+    >
+      {stateData.map((state) => (
+        <option key={state.isoCode} value={state.name}>
+          {state.name}
+        </option>
+      ))}
+    </select>
+    <div></div>
+  </div>
+  <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
+    <label
+      className="tracking-wide text-gray-600 text-sm font-bold mb-2"
+      htmlFor="city"
+    >
+      City<span className="text-red-500">*</span>
+    </label>
+    <select
+      id="city"
+      value={selectedCity?.name}
+      onChange={handleCityChange}
+      className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
+    >
+      {cityData.map((city) => (
+        <option key={city.name} value={city.name}>
+          {city.name}
+        </option>
+      ))}
+    </select>
+    <div></div>
+  </div>
+</div>
 
                   <div className=" md:flex mb-6">
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
@@ -3643,7 +3645,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlePartner_Education(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3675,18 +3677,11 @@ const Registration = () => {
                         Profession<span className="text-red-500 ">*</span>
                       </label>
                       <Select
-                        // defaultValue={selectedOption}
                         onChange={(e) => handlepartner_Profession(e)}
                         options={Profession}
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
-                      {/* <input
-                        required
-                        onChange={(e) => handlepartner_Profession(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      /> */}
+
                       <div></div>
                     </div>
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
@@ -3697,7 +3692,6 @@ const Registration = () => {
                         Manglik<span className="text-red-500 ">*</span>
                       </label>
                       <Select
-                        // defaultValue={selectedOption}
                         onChange={(e) => handlePartner_manglik(e)}
                         options={manglik}
                         className="mt-2 h-2"
@@ -3716,7 +3710,7 @@ const Registration = () => {
 
                       <Select
                         onChange={(e) => handlePartner_maritalStatus(e)}
-                        // defaultValue={selectedOption}
+                      
                         options={Marital_status}
                         className="text-gray-600 border border-gray-400 mt-2"
                         placeholder=""
@@ -3733,8 +3727,7 @@ const Registration = () => {
                       </label>
                       <Select
                         onChange={(e) => handlePartnerAstrology(e)}
-                        // defaultValue={selectedOption}
-                        // onChange={setSelectedOption}
+                    
                         options={matching}
                         className="mt-2 h-2"
                         placeholder=""
@@ -3752,7 +3745,7 @@ const Registration = () => {
                     </label>
                     <textarea
                       onChange={(e) => handlepartner_expectation(e)}
-                      className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
+                      className="w-full text-gray-600 border-[3px] border-gray-300   rounded py-3 px-4 mb-3 mt-2"
                       id="message"
                       type="text"
                     />

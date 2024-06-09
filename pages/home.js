@@ -525,20 +525,6 @@ const Home = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <section>
         <div className="flex pt-[8%] justify-center ">
           <p className="text-4xl ps:!text-[16px] pm:text-[20px] pm:font-[550] font-semibold ">
