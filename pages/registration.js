@@ -1770,7 +1770,7 @@ const Registration = () => {
   };
 
   const handleGender = (e) => {
-    const value = e?.target.value;
+    const value = e.value;
     if (value !== null);
     SetGender(value);
   };
@@ -1973,7 +1973,7 @@ const Registration = () => {
   };
 
   const handlepartner_Profession = (e) => {
-    const value = e?.target.value;
+    const value = e.value;
     if (value !== null);
     SetPartner_profession(value);
   };
