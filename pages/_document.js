@@ -1,10 +1,9 @@
+// eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, {
   Html,
   Head,
   Main,
   NextScript,
-  DocumentContext,
-  DocumentInitialProps,
 } from "next/document";
 
 class MyDocument extends Document {
@@ -16,7 +15,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
+        <Head /> 
         <body>
           <Main />
           <NextScript />
