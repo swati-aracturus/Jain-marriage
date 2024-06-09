@@ -2268,7 +2268,7 @@ const Registration = () => {
     console.log(formData);
 
     await axios
-      .post("https://shreevct.com/api/register", { formData })
+      .post("http://api.shreevct.com/", { formData })
       .then((res) => {
         console.log(res);
       })
