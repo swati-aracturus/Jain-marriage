@@ -8,7 +8,7 @@ import axios from "axios";
 import { City, Country, State } from "country-state-city";
 const Registration = () => {
   const notify = () => toast.success("Successfully Registered In!");
- 
+
   const options = [
     { value: "Unmarried", label: "Unmarried" },
     { value: "Married", label: "Married" },
@@ -1778,10 +1778,10 @@ const Registration = () => {
     Setname(value);
   };
 
-  const handleDOB = (date) => {
-    const selectedDate = date ? date.toISOString().split("T")[0] : null;
-    if (date !== null);
-    SetDOB(selectedDate); //data format is yyyy-MM-dd
+  const handleDOB = (e) => {
+    const value = e?.target.value;
+    if(value != null);
+    SetDOB(value); //data format is yyyy-MM-dd
   };
 
   const handleAge = (e) => {
@@ -2269,7 +2269,7 @@ const Registration = () => {
     console.log(formData);
 
     await axios
-      .post("http://api.shreevct.com/", { formData })
+      .post("https://api.shreevct.com/api", { formData })
       .then((res) => {
         console.log(res);
       })
@@ -2588,7 +2588,7 @@ const Registration = () => {
                         required
                         onChange={(e) => handlePassword(e)}
                         className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
-                         id="company"
+                        id="company"
                         type="text"
                       />
                       <div></div>
@@ -2623,20 +2623,20 @@ const Registration = () => {
                     </div>
                   </div>
                   <div className=" md:flex mb-6">
-                  <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-  <label
-    className="tracking-wide text-gray-600 text-sm font-bold mb-2"
-    htmlFor="gender"
-  >
-    Gender<span className="text-red-500">*</span>
-  </label>
-  <Select
-    onChange={(e) => handleGender(e)}
-    options={Gender}
-    className="text-gray-600 border border-gray-400 mt-2" 
-  />
-  <div></div>
-</div>
+                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
+                      <label
+                        className="tracking-wide text-gray-600 text-sm font-bold mb-2"
+                        htmlFor="gender"
+                      >
+                        Gender<span className="text-red-500">*</span>
+                      </label>
+                      <Select
+                        onChange={(e) => handleGender(e)}
+                        options={Gender}
+                        className="text-gray-600 border border-gray-400 mt-2"
+                      />
+                      <div></div>
+                    </div>
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
                       <label
                         className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
@@ -2662,7 +2662,7 @@ const Registration = () => {
                       >
                         Date of birth<span className="text-red-500 ">*</span>
                       </label>
-                     {/*  <div>
+                      {/*  <div>
                         <DatePicker
                           id="dob"
                           selected={dob}
@@ -2672,16 +2672,17 @@ const Registration = () => {
                           className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
                         />
                       </div> */}
-                      
+
                       <div className="relative max-w-sm">
- 
-  <input
-    datepicker=""   placeholder="Select date"
-    type="date"   selected={dob}
-    onChange={(date) => handleDOB(date)}
-    className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10 p-2.5  "/>
-  
-</div>
+                        <input
+                          datepicker=""
+                          placeholder="Select date"
+                          type="date"
+                          selected={dob}
+                          onChange={(date) => handleDOB(date)}
+                          className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10 p-2.5  "
+                        />
+                      </div>
 
                       <div></div>
                     </div>
@@ -2733,8 +2734,7 @@ const Registration = () => {
                         required
                         onChange={(e) => handleBirthTime(e)}
                         className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10  "
-                        
-                          type="time"
+                        type="time"
                         name="appt-time"
                         step="2"
                       />
@@ -3231,9 +3231,9 @@ const Registration = () => {
                         className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
                         htmlFor="company"
                       >
-                       Family Type<span className="text-red-500 ">*</span>
+                        Family Type<span className="text-red-500 ">*</span>
                       </label>
-                
+
                       <Select
                         onChange={(e) => handlResidence(e)}
                         options={Family}
@@ -3367,8 +3367,9 @@ const Registration = () => {
                       <Select
                         onChange={(e) => handlemanglik(e)}
                         // defaultValue={selectedOption}
-                        // onChange={setSelectedOption} 
-                        options={manglik} placeholder=""
+                        // onChange={setSelectedOption}
+                        options={manglik}
+                        placeholder=""
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
@@ -3545,8 +3546,8 @@ const Registration = () => {
                             onChange={(e) => handleAgeTo(e)}
                             options={ageto}
                             name="field_name"
-                          className="text-gray-600 border border-gray-400 text-sm font-bold  w-full"
-                              type="text"
+                            className="text-gray-600 border border-gray-400 text-sm font-bold  w-full"
+                            type="text"
                             placeholder=""
                           />
                         </div>
@@ -3562,7 +3563,8 @@ const Registration = () => {
                       </label>
                       <Select
                         onChange={(e) => handlePartnerIncome(e)}
-                        options={Income} placeholder=""
+                        options={Income}
+                        placeholder=""
                         className="text-gray-600 border border-gray-400  mt-4"
                       />
 
@@ -3570,71 +3572,71 @@ const Registration = () => {
                     </div>
                   </div>
                   <div className="md:flex mb-6">
-  <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-    <label
-      className="tracking-wide text-gray-600 text-sm font-bold mb-2"
-      htmlFor="country"
-    >
-      Country
-      <span className="text-red-500">*</span>
-    </label>
-    <select
-      id="country"
-      value={selectedCountry?.name}
-      onChange={handleCountryChange}
-      className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
-    >
-      {countryData.map((country) => (
-        <option key={country.isoCode} value={country.name}>
-          {country.name}
-        </option>
-      ))}
-    </select>
-    <div></div>
-  </div>
-  <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-    <label
-      className="tracking-wide text-gray-600 text-sm font-bold mb-2"
-      htmlFor="state"
-    >
-      State<span className="text-red-500">*</span>
-    </label>
-    <select
-      id="state"
-      value={selectedState?.name}
-      onChange={handleStateChange}
-      className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
-    >
-      {stateData.map((state) => (
-        <option key={state.isoCode} value={state.name}>
-          {state.name}
-        </option>
-      ))}
-    </select>
-    <div></div>
-  </div>
-  <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
-    <label
-      className="tracking-wide text-gray-600 text-sm font-bold mb-2"
-      htmlFor="city"
-    >
-      City<span className="text-red-500">*</span>
-    </label>
-    <select
-      id="city"
-      value={selectedCity?.name}
-      onChange={handleCityChange}
-      className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
-    >
-      {cityData.map((city) => (
-        <option key={city.name} value={city.name}>
-          {city.name}
-        </option>
-      ))}
-    </select>
-    <div></div>
-  </div>
-</div>
+                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
+                      <label
+                        className="tracking-wide text-gray-600 text-sm font-bold mb-2"
+                        htmlFor="country"
+                      >
+                        Country
+                        <span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        id="country"
+                        value={selectedCountry?.name}
+                        onChange={handleCountryChange}
+                        className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
+                      >
+                        {countryData.map((country) => (
+                          <option key={country.isoCode} value={country.name}>
+                            {country.name}
+                          </option>
+                        ))}
+                      </select>
+                      <div></div>
+                    </div>
+                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
+                      <label
+                        className="tracking-wide text-gray-600 text-sm font-bold mb-2"
+                        htmlFor="state"
+                      >
+                        State<span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        id="state"
+                        value={selectedState?.name}
+                        onChange={handleStateChange}
+                        className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
+                      >
+                        {stateData.map((state) => (
+                          <option key={state.isoCode} value={state.name}>
+                            {state.name}
+                          </option>
+                        ))}
+                      </select>
+                      <div></div>
+                    </div>
+                    <div className="md:w-1/3 ps:px-0 px-3 mb-6 md:mb-0">
+                      <label
+                        className="tracking-wide text-gray-600 text-sm font-bold mb-2"
+                        htmlFor="city"
+                      >
+                        City<span className="text-red-500">*</span>
+                      </label>
+                      <select
+                        id="city"
+                        value={selectedCity?.name}
+                        onChange={handleCityChange}
+                        className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
+                      >
+                        {cityData.map((city) => (
+                          <option key={city.name} value={city.name}>
+                            {city.name}
+                          </option>
+                        ))}
+                      </select>
+                      <div></div>
+                    </div>
+                  </div>
 
                   <div className=" md:flex mb-6">
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
@@ -3696,9 +3698,9 @@ const Registration = () => {
                       </label>
                       <Select
                         onChange={(e) => handlePartner_manglik(e)}
-                        options={manglik} placeholder=""
+                        options={manglik}
+                        placeholder=""
                         className="text-gray-600 border border-gray-400 mt-2"
-              
                       />
                       <div></div>
                     </div>
@@ -3714,7 +3716,6 @@ const Registration = () => {
 
                       <Select
                         onChange={(e) => handlePartner_maritalStatus(e)}
-                      
                         options={Marital_status}
                         className="text-gray-600 border border-gray-400 mt-2"
                         placeholder=""
@@ -3731,10 +3732,9 @@ const Registration = () => {
                       </label>
                       <Select
                         onChange={(e) => handlePartnerAstrology(e)}
-                    
                         options={matching}
                         className="text-gray-600 border border-gray-400 mt-2"
-                     placeholder=""
+                        placeholder=""
                       />
                       <div></div>
                     </div>
