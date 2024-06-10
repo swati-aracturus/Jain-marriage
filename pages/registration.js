@@ -5,10 +5,7 @@ import Select from "react-select";
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import axios from "axios";
-import "react-datepicker/dist/react-datepicker.css";
-import DatePicker from "react-datepicker";
 import { City, Country, State } from "country-state-city";
-
 const Registration = () => {
   const notify = () => toast.success("Successfully Registered In!");
  
@@ -2535,7 +2532,7 @@ const Registration = () => {
                     <input
                       required
                       onChange={(e) => handleReference(e)}
-                      className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
+                      className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                       id="company"
                       type="text"
                     />
@@ -2552,7 +2549,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleWhatsappNo(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2572,7 +2569,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleEmail(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2590,8 +2587,8 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlePassword(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
-                        id="company"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
+                         id="company"
                         type="text"
                       />
                       <div></div>
@@ -2606,7 +2603,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlePassword2(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2626,21 +2623,20 @@ const Registration = () => {
                     </div>
                   </div>
                   <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Gender<span className="text-red-500 ">*</span>
-                      </label>
-                      <Select
-                        onChange={(e) => handleGender(e)}
-                        options={Gender}
-                        className="text-gray-600 border border-gray-400 mt-2"
-                      />
-
-                      <div></div>
-                    </div>
+                  <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
+  <label
+    className="tracking-wide text-gray-600 text-sm font-bold mb-2"
+    htmlFor="gender"
+  >
+    Gender<span className="text-red-500">*</span>
+  </label>
+  <Select
+    onChange={(e) => handleGender(e)}
+    options={Gender}
+    className="text-gray-600 border border-gray-400 mt-2" 
+  />
+  <div></div>
+</div>
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
                       <label
                         className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
@@ -2651,7 +2647,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleName(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2666,7 +2662,7 @@ const Registration = () => {
                       >
                         Date of birth<span className="text-red-500 ">*</span>
                       </label>
-                      <div>
+                     {/*  <div>
                         <DatePicker
                           id="dob"
                           selected={dob}
@@ -2675,15 +2671,17 @@ const Registration = () => {
                           placeholderText="dd-mm-yyyy"
                           className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
                         />
-                      </div>
-                      {/* <input
-                      required
-                      onChange={(e) => handleDOB(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
+                      </div> */}
                       
-                      /> */}
+                      <div className="relative max-w-sm">
+ 
+  <input
+    datepicker=""   placeholder="Select date"
+    type="date"   selected={dob}
+    onChange={(date) => handleDOB(date)}
+    className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10 p-2.5  "/>
+  
+</div>
 
                       <div></div>
                     </div>
@@ -2697,7 +2695,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleAge(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2716,7 +2714,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleBirthplace(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2734,8 +2732,9 @@ const Registration = () => {
                         id="appt-time"
                         required
                         onChange={(e) => handleBirthTime(e)}
-                        className="w-full text-pink-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        type="time"
+                        className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10  "
+                        
+                          type="time"
                         name="appt-time"
                         step="2"
                       />
@@ -2822,7 +2821,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleEducation(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2862,7 +2861,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleOccupation(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2880,7 +2879,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleReligion(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2896,7 +2895,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleCommunity(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -2930,7 +2929,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlePhysical(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3106,7 +3105,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlefName(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3  mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3147,7 +3146,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlemname(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3204,7 +3203,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlegotra(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3254,7 +3253,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlefamily_community(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3271,7 +3270,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlesub_community(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3316,7 +3315,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleBrother(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3333,7 +3332,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handleSister(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3368,8 +3367,8 @@ const Registration = () => {
                       <Select
                         onChange={(e) => handlemanglik(e)}
                         // defaultValue={selectedOption}
-                        // onChange={setSelectedOption}
-                        options={manglik}
+                        // onChange={setSelectedOption} 
+                        options={manglik} placeholder=""
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
@@ -3384,7 +3383,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlephone(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3533,7 +3532,7 @@ const Registration = () => {
                             // onChange={setSelectedOption}
                             options={agefrom}
                             name="field_name"
-                            className="text-gray-600 text-sm font-bold  w-full"
+                            className="text-gray-600 border border-gray-400 text-sm font-bold  w-full"
                             type="text"
                             placeholder=""
                           />
@@ -3546,8 +3545,8 @@ const Registration = () => {
                             onChange={(e) => handleAgeTo(e)}
                             options={ageto}
                             name="field_name"
-                            className=" text-gray-600 text-sm font-bold w-full"
-                            type="text"
+                          className="text-gray-600 border border-gray-400 text-sm font-bold  w-full"
+                              type="text"
                             placeholder=""
                           />
                         </div>
@@ -3563,8 +3562,8 @@ const Registration = () => {
                       </label>
                       <Select
                         onChange={(e) => handlePartnerIncome(e)}
-                        options={Income}
-                        className="text-gray-600   mt-4"
+                        options={Income} placeholder=""
+                        className="text-gray-600 border border-gray-400  mt-4"
                       />
 
                       <div></div>
@@ -3649,7 +3648,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlePartner_Education(e)}
-                        className="w-full text-gray-600 border-[3px] border-gray-300 focus:border-pink-400  rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3665,7 +3664,7 @@ const Registration = () => {
                       <input
                         required
                         onChange={(e) => handlepartner_Occupation(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
+                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
                         id="company"
                         type="text"
                       />
@@ -3697,14 +3696,15 @@ const Registration = () => {
                       </label>
                       <Select
                         onChange={(e) => handlePartner_manglik(e)}
-                        options={manglik}
-                        className="mt-2 h-2"
+                        options={manglik} placeholder=""
+                        className="text-gray-600 border border-gray-400 mt-2"
+              
                       />
                       <div></div>
                     </div>
                   </div>
                   <div className=" md:flex mb-6">
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
+                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0 mt-2">
                       <label
                         className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
                         htmlFor="company"
@@ -3733,8 +3733,8 @@ const Registration = () => {
                         onChange={(e) => handlePartnerAstrology(e)}
                     
                         options={matching}
-                        className="mt-2 h-2"
-                        placeholder=""
+                        className="text-gray-600 border border-gray-400 mt-2"
+                     placeholder=""
                       />
                       <div></div>
                     </div>
