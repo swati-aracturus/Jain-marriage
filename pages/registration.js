@@ -2675,7 +2675,7 @@ const Registration = () => {
     datepicker=""   placeholder="Select date"
     type="date"   selected={dob}
     onChange={(date) => handleDOB(date)}
-    className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10 p-2.5  "/>
+    className=" border-[3px] w-[550px] py-[6px] border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10 p-2.5  "/>
   
 </div>
 
@@ -2728,7 +2728,7 @@ const Registration = () => {
                         id="appt-time"
                         required
                         onChange={(e) => handleBirthTime(e)}
-                        className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10  "
+                        className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block py-[6px] ps-10  "
                         
                           type="time"
                         name="appt-time"
