@@ -2733,7 +2733,7 @@ const Registration = () => {
                         id="appt-time"
                         required
                         onChange={(e) => handleBirthTime(e)}
-                        className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block  ps-10  "
+                        className=" border-[3px] w-full border-gray-300 text-gray-700 text-sm rounded mt-2 focus:ring-pink-500 focus:border-pink-500 block py-[6px] ps-10  "
                         type="time"
                         name="appt-time"
                         step="2"
