@@ -56,8 +56,6 @@ function MyApp({ Component, pageProps }) {
     Router.events.on('routeChangeComplete', handleComplete);
     Router.events.on('routeChangeError', handleComplete);
 
-    
-
 
   return (
     <Layout>

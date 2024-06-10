@@ -2115,10 +2115,14 @@ const Registration = () => {
       toast.error("Address is required");
     } else if (isNRI === undefined) {
       toast.error("NRI status is required");
-    } else if (!visa.trim() && isNRI) {
-      toast.error("Visa is required for NRI");
-    } else if (!nriAddress.trim() && isNRI) {
-      toast.error("NRI address is required");
+    } else if (isNRI === "Yes") {
+      if (!visa.trim()) {
+        toast.error("Visa is required for NRI");
+        return false;
+      } else if (!nriAddress.trim()) {
+        toast.error("NRI address is required");
+        return false;
+      }
     } else if (!fname.trim()) {
       toast.error("Father's name is required");
     } else if (!fatherOccupation.trim()) {
