@@ -438,664 +438,7 @@ const Registration = () => {
     { value: "tribal mangal", label: "tribal mangal" },
   ];
 
-  //drinking and smoking
-  const Smoking = [
-    { value: "Yes", label: "Yes" },
-    { value: "No", label: "No" },
-    { value: "occationally", label: "occationally" },
-  ];
-
-  const Sector = [
-    { value: "Private company", label: "Private company" },
-    {
-      value: "Government / public sector",
-      label: "Government / public sector",
-    },
-    { value: "Defense/ civil service", label: "Defense/ civil service" },
-    {
-      value: "Business / Self employment",
-      label: "Business / Self employment",
-    },
-    { value: "Not working", label: "Not working" },
-  ];
-
-  const Salutation_Father = [
-    { value: "Mr.", label: "Mr." },
-    { value: "Late", label: "Late" },
-    { value: "Dr.", label: "Dr." },
-    { value: "Adv.", label: "Adv." },
-    { value: "CA", label: "CA" },
-    { value: "Er.", label: "Er." },
-    { value: "Prof", label: "Prof." },
-    { value: "Sen", label: "Sen" },
-    { value: "M-R", label: "M-R" },
-    { value: "Gov.", label: "Gov." },
-    { value: "Cap.", label: "Cap.. " },
-    { value: "Chief.", label: "Chief." },
-  ];
-
-  const Highest_education = [
-    { value: "Doctorate", label: "Doctorate" },
-    { value: "Master", label: "Master" },
-    { value: "Bachelor/undergraduate", label: "Bachelor/undergraduate" },
-    { value: "Associate/diploma", label: "Associate/diploma" },
-    { value: "High school and below", label: "High school and below" },
-  ];
-
-  const Doctorate_Degree = [
-    {
-      value: "Doctor of Philosophy (PhD)",
-      label: "Doctor of Philosophy (PhD)",
-    },
-    { value: "Doctor of Education (EdD)", label: "Doctor of Education (EdD)" },
-    { value: "Doctor of Design (DDes)", label: "Doctor of Design (DDes)" },
-    { value: "Doctor of Fine Arts (DFA)", label: "Doctor of Fine Arts (DFA)" },
-    {
-      value: "Doctor of Nursing Science (DNS)",
-      label: "Doctor of Nursing Science (DNS)",
-    },
-    { value: "Doctor of Theology (ThD)", label: "Doctor of Theology (ThD)" },
-    {
-      value: "Doctor of Business Administration (DBA)",
-      label: "Doctor of Business Administration (DBA)",
-    },
-    {
-      value: "Doctor of Dental Surgery (DDS)",
-      label: "Doctor of Dental Surgery (DDS)",
-    },
-    {
-      value: "Doctor of Dental Medicine (DMD)",
-      label: "Doctor of Dental Medicine (DMD)",
-    },
-    {
-      value: "Doctor of Podiatric Medicine (DPM)",
-      label: "Doctor of Podiatric Medicine (DPM)",
-    },
-    {
-      value: "Doctor of Chiropractic (DC)",
-      label: "Doctor of Chiropractic (DC)",
-    },
-    {
-      value: "Doctor of Veterinary Medicine (DVM)",
-      label: "Doctor of Veterinary Medicine (DVM)",
-    },
-    {
-      value: "Doctor of Naturopathic Medicine (ND)",
-      label: "Doctor of Naturopathic Medicine (ND)",
-    },
-    { value: "Other", label: "Other" },
-  ];
-
-  const Master_Degree = [
-    { value: "Master of Accountancy", label: "Master of Accountancy" },
-    { value: "Master of Advanced Study", label: "Master of Advanced Study" },
-    {
-      value: "Masters of Agricultural Economics",
-      label: "Masters of Agricultural Economics",
-    },
-    { value: "Master of Applied Finance", label: "Master of Applied Finance" },
-    { value: "Master of Applied Science", label: "Master of Applied Science" },
-    { value: "Master of Architecture", label: "Master of Architecture" },
-    { value: "Master of Arts", label: "Master of Arts" },
-    {
-      value: "Master of Arts in Liberal Studies",
-      label: "Master of Arts in Liberal Studies",
-    },
-    {
-      value: "Master of Arts in Special Education",
-      label: "Master of Arts in Special Education",
-    },
-    {
-      value: "Master of Arts in Teaching",
-      label: "Master of Arts in Teaching",
-    },
-    { value: "Master of Bioethics", label: "Master of Bioethics" },
-    {
-      value: "Master of Business Administration",
-      label: "Master of Business Administration",
-    },
-    {
-      value: "Master of Business, Entrepreneurship and Technology",
-      label: "Master of Business, Entrepreneurship and Technology",
-    },
-    { value: "Master of Business", label: "Master of Business" },
-    {
-      value: "Master of Business Engineering",
-      label: "Master of Business Engineering",
-    },
-    {
-      value: "Master of Business Informatics",
-      label: "Master of Business Informatics",
-    },
-    { value: "Master of Chemistry", label: "Master of Chemistry" },
-    {
-      value: "Master of Christian Education",
-      label: "Master of Christian Education",
-    },
-    { value: "Master of City Planning", label: "Master of City Planning" },
-    { value: "Master of Commerce", label: "Master of Commerce" },
-    {
-      value: "Master of Computational Finance",
-      label: "Master of Computational Finance",
-    },
-    {
-      value: "Master of Computer Applications",
-      label: "Master of Computer Applications",
-    },
-    { value: "Master of Counselling", label: "Master of Counselling" },
-    {
-      value: "Master of Criminal Justice",
-      label: "Master of Criminal Justice",
-    },
-    {
-      value: "Master of Creative Technologies",
-      label: "Master of Creative Technologies",
-    },
-    { value: "Master of Data Science", label: "Master of Data Science" },
-    { value: "Master of Defence Studies", label: "Master of Defence Studies" },
-    { value: "Master of Design", label: "Master of Design" },
-    {
-      value: "Masters of Development Economics",
-      label: "Masters of Development Economics",
-    },
-    { value: "Master of Divinity", label: "Master of Divinity" },
-    { value: "Master of Economics", label: "Master of Economics" },
-    { value: "Master of Education", label: "Master of Education" },
-    { value: "Master of Engineering", label: "Master of Engineering" },
-    {
-      value: "Master of Engineering Management",
-      label: "Master of Engineering Management",
-    },
-    { value: "Master of Applied Science", label: "Master of Applied Science" },
-    { value: "Master of Enterprise", label: "Master of Enterprise" },
-    { value: "Master of European Law", label: "Master of European Law" },
-    { value: "Master of Finance", label: "Master of Finance" },
-    {
-      value: "Master of Financial Economics",
-      label: "Master of Financial Economics",
-    },
-    {
-      value: "Master of Financial Engineering",
-      label: "Master of Financial Engineering",
-    },
-    {
-      value: "Master of Financial Mathematics",
-      label: "Master of Financial Mathematics",
-    },
-    { value: "Master of Fine Arts", label: "Master of Fine Arts" },
-    {
-      value: "Master of Health Administration",
-      label: "Master of Health Administration",
-    },
-    {
-      value: "Master of Health Economics",
-      label: "Master of Health Economics",
-    },
-    { value: "Master of Health Science", label: "Master of Health Science" },
-    { value: "Master of Humanities", label: "Master of Humanities" },
-    {
-      value: "Master of Industrial and Labor Relations",
-      label: "Master of Industrial and Labor Relations",
-    },
-    {
-      value: "Master of International Affairs",
-      label: "Master of International Affairs",
-    },
-    {
-      value: "Master of International Business",
-      label: "Master of International Business",
-    },
-    {
-      value: "Masters of International Economics",
-      label: "Masters of International Economics",
-    },
-    {
-      value: "Master of International Studies",
-      label: "Master of International Studies",
-    },
-    {
-      value: "Master of Information and Cybersecurity",
-      label: "Master of Information and Cybersecurity",
-    },
-    {
-      value: "Master of Information and Data Science",
-      label: "Master of Information and Data Science",
-    },
-    {
-      value: "Master of Information Management",
-      label: "Master of Information Management",
-    },
-    {
-      value: "Master of Information System Management",
-      label: "Master of Information System Management",
-    },
-    { value: "Master of Journalism", label: "Master of Journalism" },
-    { value: "Master of Jurisprudence", label: "Master of Jurisprudence" },
-    { value: "Master of Laws", label: "Master of Laws" },
-    {
-      value: "Master of Mass Communication",
-      label: "Master of Mass Communication",
-    },
-    { value: "Master of Studies in Law", label: "Master of Studies in Law" },
-    {
-      value: "Master of Landscape Architecture",
-      label: "Master of Landscape Architecture",
-    },
-    { value: "Master of Letters", label: "Master of Letters" },
-    { value: "Master of Liberal Arts", label: "Master of Liberal Arts" },
-    {
-      value: "Master of Library and Information Science",
-      label: "Master of Library and Information Science",
-    },
-    { value: "Master of Management", label: "Master of Management" },
-    {
-      value: "Master of Management of Innovation",
-      label: "Master of Management of Innovation",
-    },
-    { value: "Master of Marketing", label: "Master of Marketing" },
-    {
-      value: "Master of Mathematical Finance",
-      label: "Master of Mathematical Finance",
-    },
-    { value: "Master of Mathematics", label: "Master of Mathematics" },
-    { value: "Master of Medical Science", label: "Master of Medical Science" },
-    { value: "Master of Medicine", label: "Master of Medicine" },
-    {
-      value: "Masters of Military Art and Science",
-      label: "Masters of Military Art and Science",
-    },
-    {
-      value: "Master of Military Operational Art and Science",
-      label: "Master of Military Operational Art and Science",
-    },
-    { value: "Master of Ministry", label: "Master of Ministry" },
-    { value: "Master of Music", label: "Master of Music" },
-    { value: "Master of Music Education", label: "Master of Music Education" },
-    {
-      value: "Master of Occupational Behaviour and Development",
-      label: "Master of Occupational Behaviour and Development",
-    },
-    {
-      value: "Master of Occupational Therapy",
-      label: "Master of Occupational Therapy",
-    },
-    { value: "Master of Pharmacy", label: "Master of Pharmacy" },
-    { value: "Master of Philosophy", label: "Master of Philosophy" },
-    {
-      value: "Master of Physician Assistant Studies",
-      label: "Master of Physician Assistant Studies",
-    },
-    { value: "Master of Physics", label: "Master of Physics" },
-    {
-      value: "Master of Political Science",
-      label: "Master of Political Science",
-    },
-    {
-      value: "Master of Professional Studies",
-      label: "Master of Professional Studies",
-    },
-    { value: "Master of Psychology", label: "Master of Psychology" },
-    {
-      value: "Master of Public Administration",
-      label: "Master of Public Administration",
-    },
-    { value: "Master of Public Affairs", label: "Master of Public Affairs" },
-    { value: "Master of Public Health", label: "Master of Public Health" },
-    {
-      value: "Master of Public Management",
-      label: "Master of Public Management",
-    },
-    { value: "Master of Public Policy", label: "Master of Public Policy" },
-    {
-      value: "Master of Public Relations",
-      label: "Master of Public Relations",
-    },
-    { value: "Master of Public Service", label: "Master of Public Service" },
-    {
-      value: "Master of Quantitative Finance",
-      label: "Master of Quantitative Finance",
-    },
-    {
-      value: "Master of Rabbinic Studies",
-      label: "Master of Rabbinic Studies",
-    },
-    {
-      value: "Master of Real Estate Development",
-      label: "Master of Real Estate Development",
-    },
-    {
-      value: "Master of Religious Education",
-      label: "Master of Religious Education",
-    },
-    { value: "Master of Research", label: "Master of Research" },
-    { value: "Master of Sacred Music", label: "Master of Sacred Music" },
-    { value: "Master of Sacred Theology", label: "Master of Sacred Theology" },
-    { value: "Master of Science", label: "Master of Science" },
-    {
-      value: "Master of Science in Administration",
-      label: "Master of Science in Administration",
-    },
-    {
-      value: "Master of Science in Archaeology",
-      label: "Master of Science in Archaeology",
-    },
-    {
-      value: "Master of Science in Biblical Archaeology",
-      label: "Master of Science in Biblical Archaeology",
-    },
-    {
-      value: "Master of Science in Bioinformatics",
-      label: "Master of Science in Bioinformatics",
-    },
-    {
-      value: "Master of Science in Computer Science",
-      label: "Master of Science in Computer Science",
-    },
-    {
-      value: "Master of Science in Counselling",
-      label: "Master of Science in Counselling",
-    },
-    {
-      value: "Master of Science in Cyber Security",
-      label: "Master of Science in Cyber Security",
-    },
-    {
-      value: "Master of Science in Engineering",
-      label: "Master of Science in Engineering",
-    },
-    {
-      value: "Master of Science in Development Administration",
-      label: "Master of Science in Development Administration",
-    },
-    {
-      value: "Master of Science in Finance",
-      label: "Master of Science in Finance",
-    },
-    {
-      value: "Master of Science in Health Informatics",
-      label: "Master of Science in Health Informatics",
-    },
-    {
-      value: "Master of Science in Human Resource Development",
-      label: "Master of Science in Human Resource Development",
-    },
-    {
-      value: "Master of Science in Information Assurance",
-      label: "Master of Science in Information Assurance",
-    },
-    {
-      value: "Master of Science in Information Systems",
-      label: "Master of Science in Information Systems",
-    },
-    {
-      value: "Master of Science in Information Technology",
-      label: "Master of Science in Information Technology",
-    },
-    {
-      value: "Master of Science in Leadership",
-      label: "Master of Science in Leadership",
-    },
-    {
-      value: "Master of Science in Management",
-      label: "Master of Science in Management",
-    },
-    {
-      value: "Master of Science in Nursing",
-      label: "Master of Science in Nursing",
-    },
-    {
-      value: "Master of Science in Project Management",
-      label: "Master of Science in Project Management",
-    },
-    {
-      value: "Master of Science in Supply Chain Management",
-      label: "Master of Science in Supply Chain Management",
-    },
-    {
-      value: "Master of Science in Teaching",
-      label: "Master of Science in Teaching",
-    },
-    {
-      value: "Master of Science in Taxation",
-      label: "Master of Science in Taxation",
-    },
-    {
-      value: "Master of Science in Yoga Therapy",
-      label: "Master of Science in Yoga Therapy",
-    },
-    { value: "Master of Social Science", label: "Master of Social Science" },
-    { value: "Master of Social Work", label: "Master of Social Work" },
-    {
-      value: "Master of Strategic Studies",
-      label: "Master of Strategic Studies",
-    },
-    { value: "Master of Studies", label: "Master of Studies" },
-    { value: "Master of Surgery", label: "Master of Surgery" },
-    { value: "Master of Talmudic Law", label: "Master of Talmudic Law" },
-    { value: "Master of Taxation", label: "Master of Taxation" },
-    {
-      value: "Master of Theological Studies",
-      label: "Master of Theological Studies",
-    },
-    { value: "Master of Technology", label: "Master of Technology" },
-    { value: "Master of Theology", label: "Master of Theology" },
-    { value: "Master of Urban Planning", label: "Master of Urban Planning" },
-    {
-      value: "Master of Veterinary Science",
-      label: "Master of Veterinary Science",
-    },
-    { value: "Other", label: "Other" },
-  ];
-
-  const Bachelor_Degree = [
-    {
-      value: "Bachelor of Business Administration (BBA)",
-      label: "Bachelor of Business Administration (BBA)",
-    },
-    {
-      value: "Bachelor of Management Science (BMS)",
-      label: "Bachelor of Management Science (BMS)",
-    },
-    {
-      value: "Bachelor of Fine Arts (BFA)",
-      label: "Bachelor of Fine Arts (BFA)",
-    },
-    {
-      value: "Bachelor of Event Management (BEM)",
-      label: "Bachelor of Event Management (BEM)",
-    },
-    {
-      value: "Integrated Law Course (BA + LL.B)",
-      label: "Integrated Law Course (BA + LL.B)",
-    },
-    {
-      value: "Bachelor of Journalism and Mass Communication (BJMC)",
-      label: "Bachelor of Journalism and Mass Communication (BJMC)",
-    },
-    {
-      value: "Bachelor of Fashion Designing (BFD)",
-      label: "Bachelor of Fashion Designing (BFD)",
-    },
-    {
-      value: "Bachelor of Social Work (BSW)",
-      label: "Bachelor of Social Work (BSW)",
-    },
-    {
-      value: "Bachelor of Business Studies (BBS)",
-      label: "Bachelor of Business Studies (BBS)",
-    },
-    {
-      value: "Bachelor of Travel and Tourism Management (BTTM)",
-      label: "Bachelor of Travel and Tourism Management (BTTM)",
-    },
-    { value: "Aviation Courses", label: "Aviation Courses" },
-    {
-      value: "Bachelor of Science in Interior Design (B.Sc Interior Design)",
-      label: "Bachelor of Science in Interior Design (B.Sc Interior Design)",
-    },
-    {
-      value:
-        "Bachelor of Science in Hospitality and Hotel Administration (B.Sc Hospitality and Hotel Administration)",
-      label:
-        "Bachelor of Science in Hospitality and Hotel Administration (B.Sc Hospitality and Hotel Administration)",
-    },
-    {
-      value: "Bachelor of Design (B. Design)",
-      label: "Bachelor of Design (B. Design)",
-    },
-    {
-      value: "Bachelor of Performing Arts",
-      label: "Bachelor of Performing Arts",
-    },
-    {
-      value: "Bachelor of Arts in History (BA in History)",
-      label: "Bachelor of Arts in History (BA in History)",
-    },
-    {
-      value: "Bachelor of Technology (BE/B.Tech)",
-      label: "Bachelor of Technology (BE/B.Tech)",
-    },
-    {
-      value: "Bachelor of Architecture (B.Arch)",
-      label: "Bachelor of Architecture (B.Arch)",
-    },
-    {
-      value: "Bachelor of Computer Applications (BCA)",
-      label: "Bachelor of Computer Applications (BCA)",
-    },
-    {
-      value:
-        "Bachelor of Science in Information Technology (B.Sc Information Technology)",
-      label:
-        "Bachelor of Science in Information Technology (B.Sc Information Technology)",
-    },
-    {
-      value: "Bachelor of Science in Nursing (B.Sc Nursing)",
-      label: "Bachelor of Science in Nursing (B.Sc Nursing)",
-    },
-    {
-      value: "Bachelor of Pharmacy (BPharma)",
-      label: "Bachelor of Pharmacy (BPharma)",
-    },
-    {
-      value: "Bachelor of Dental Surgery (BDS)",
-      label: "Bachelor of Dental Surgery (BDS)",
-    },
-    {
-      value: "Animation, Graphics and Multimedia",
-      label: "Animation, Graphics and Multimedia",
-    },
-    {
-      value:
-        "Bachelor of Science in Nutrition & Dietetics (B.Sc Nutrition & Dietetics)",
-      label:
-        "Bachelor of Science in Nutrition & Dietetics (B.Sc Nutrition & Dietetics)",
-    },
-    {
-      value: "Bachelor of Physiotherapy (BPT)",
-      label: "Bachelor of Physiotherapy (BPT)",
-    },
-    {
-      value: "Bachelor of Science in Applied Geology (B.Sc Applied Geology)",
-      label: "Bachelor of Science in Applied Geology (B.Sc Applied Geology)",
-    },
-    {
-      value:
-        "Bachelor of Arts/Bachelor of Science in Liberal Arts (BA/B.Sc Liberal Arts)",
-      label:
-        "Bachelor of Arts/Bachelor of Science in Liberal Arts (BA/B.Sc Liberal Arts)",
-    },
-    {
-      value: "Bachelor of Science in Physics (B.Sc Physics)",
-      label: "Bachelor of Science in Physics (B.Sc Physics)",
-    },
-    {
-      value: "Bachelor of Science in Chemistry (B.Sc Chemistry)",
-      label: "Bachelor of Science in Chemistry (B.Sc Chemistry)",
-    },
-    {
-      value: "Bachelor of Science in Mathematics (B.Sc Mathematics)",
-      label: "Bachelor of Science in Mathematics (B.Sc Mathematics)",
-    },
-    { value: "Aeronautical Engineering", label: "Aeronautical Engineering" },
-    { value: "Automobile Engineering", label: "Automobile Engineering" },
-    { value: "Civil Engineering", label: "Civil Engineering" },
-    {
-      value: "Computer Science and Engineering",
-      label: "Computer Science and Engineering",
-    },
-    { value: "Biotechnology Engineering", label: "Biotechnology Engineering" },
-    {
-      value: "Electrical and Electronics Engineering",
-      label: "Electrical and Electronics Engineering",
-    },
-    {
-      value: "Electronics and Communication Engineering",
-      label: "Electronics and Communication Engineering",
-    },
-    { value: "Automation and Robotics", label: "Automation and Robotics" },
-    { value: "Petroleum Engineering", label: "Petroleum Engineering" },
-    {
-      value: "Instrumentation Engineering",
-      label: "Instrumentation Engineering",
-    },
-    { value: "Ceramic Engineering", label: "Ceramic Engineering" },
-    { value: "Chemical Engineering", label: "Chemical Engineering" },
-    { value: "Structural Engineering", label: "Structural Engineering" },
-    {
-      value: "Transportation Engineering",
-      label: "Transportation Engineering",
-    },
-    { value: "Construction Engineering", label: "Construction Engineering" },
-    { value: "Power Engineering", label: "Power Engineering" },
-    { value: "Robotics Engineering", label: "Robotics Engineering" },
-    { value: "Textile Engineering", label: "Textile Engineering" },
-    {
-      value: "Smart Manufacturing & Automation",
-      label: "Smart Manufacturing & Automation",
-    },
-    {
-      value: "Bachelor of Commerce (B.Com)",
-      label: "Bachelor of Commerce (B.Com)",
-    },
-    {
-      value: "Bachelor of Commerce (Honours) (B.Com (Hons.))",
-      label: "Bachelor of Commerce (Honours) (B.Com (Hons.))",
-    },
-    {
-      value:
-        "Bachelor of Arts (Honours) in Economics (BA (Hons.) in Economics)",
-      label:
-        "Bachelor of Arts (Honours) in Economics (BA (Hons.) in Economics)",
-    },
-    {
-      value: "Integrated Law Program (B.Com LL.B)",
-      label: "Integrated Law Program (B.Com LL.B)",
-    },
-    {
-      value: "Integrated Law Program (BBA LL.B)",
-      label: "Integrated Law Program (BBA LL.B)",
-    },
-    {
-      value: "Chartered Accountancy (CA)",
-      label: "Chartered Accountancy (CA)",
-    },
-    { value: "Company Secretary (CS)", label: "Company Secretary (CS)" },
-    {
-      value:
-        "Bachelor of Design in Accessory Design, Fashion Design, Ceramic Design, Leather Design, Graphic Design, Industrial Design, Jewellery Design",
-      label:
-        "Bachelor of Design in Accessory Design, Fashion Design, Ceramic Design, Leather Design, Graphic Design, Industrial Design, Jewellery Design",
-    },
-    {
-      value: "Bachelor in Foreign Language",
-      label: "Bachelor in Foreign Language",
-    },
-    { value: "Diploma Courses", label: "Diploma Courses" },
-    { value: "Advanced Diploma Courses", label: "Advanced Diploma Courses" },
-    { value: "Certificate Courses", label: "Certificate Courses" },
-    { value: "Other", label: "Other" },
-  ];
+  
 
   const Heights = [
     { value: "4 '", label: "4 '" },
@@ -1809,9 +1152,14 @@ const Registration = () => {
   const [ageFrom, SetAgefrom] = useState("");
   const [ageTo, SetAgeTo] = useState("");
 
+  const [children, SetChildren] = useState("");
+  const [son, SetSon] = useState("");
+  const [daughter, SetDaughter] = useState("");
+
   const handleReference = (e) => {
     const value = e.value;
     if (value !== null);
+    console.log(value);
     SetReference(value);
   };
 
@@ -2117,6 +1465,24 @@ const Registration = () => {
     SetAgeTo(value);
   };
 
+  const handleChildren = (e) => {
+    const value = e.value;
+    if (value !== null);
+    SetChildren(value);
+  };
+
+  const handleSon = (e) => {
+    const value = e?.target.value;
+    if (value !== null);
+    SetSon(value);
+  };
+
+  const handleDaughter = (e) => {
+    const value = e?.target.value;
+    if (value !== null);
+    SetDaughter(value);
+  };
+
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -2143,8 +1509,6 @@ const Registration = () => {
   };
 
   const validateForm = () => {
-    console.log(photo, id);
-
     if (!reference.trim()) {
       toast.error("Reference is required");
     } 
@@ -2187,23 +1551,33 @@ const Registration = () => {
       
     } */  else if (!physical.trim()) {
       toast.error("Physical status is required");
+    } else if (!bloodGroup.trim()) {
+      toast.error("Blood group is required");
     } else if (!netincome.trim()) {
       toast.error("Your Income is required");
     } else if (!address.trim()) {
       toast.error("Address is required");
-    } else if (isNRI === undefined) {
+    } else if (!isNRI.trim()) {
       toast.error("NRI status is required");
-    } else if (isNRI === "Yes") {
+    } if (!isNRI.trim()) {
+      toast.error("NRI status is required");
+    } else if (!isNRI !== "Yes") {
+      let error = false;
       if (!visa.trim()) {
         toast.error("Visa is required for NRI");
-        return false;
-      } else if (!nriAddress.trim()) {
-        toast.error("NRI address is required");
-        return false;
+        error = true;
       }
-    } else if (!fname.trim()) {
+      if (!nriAddress.trim()) {
+        toast.error("NRI address is required");
+        error = true;
+      }
+      if (error) {
+        return false; 
+      }
+    }
+    if (!fname.trim()) {
       toast.error("Father's name is required");
-    } else if (!fatherOccupation.trim()) {
+    }else if (!fatherOccupation.trim()) {
       toast.error("Father's occupation is required");
     } else if (!mname.trim()) {
       toast.error("Mother's name is required");
@@ -2233,6 +1607,10 @@ const Registration = () => {
       toast.error("Photo is required");
     } */ else if (!id) {
       toast.error("ID is required");
+    } else if (!ageFrom.trim()) {
+      toast.error("From Age is required");
+    } else if (!ageTo.trim()) {
+      toast.error("To Age is required");
     } else if (!partner_income.trim()) {
       toast.error("Partner's income is required");
     } else if (!selectedCountry.name.trim()) {
@@ -2255,16 +1633,8 @@ const Registration = () => {
       toast.error("Partner's astrology matching status is required");
     } else if (!partner_ExpectationDetailes.trim()) {
       toast.error("Partner's expectation details are required");
-    } else if (!maritalStatus.trim()) {
-      toast.error("Marital status is required");
-    } else if (!bloodGroup.trim()) {
-      toast.error("Blood group is required");
     } else if (!radio.trim()) {
       toast.error("Please select who is it for.");
-    } else if (!ageFrom.trim()) {
-      toast.error("From Age is required");
-    } else if (!ageTo.trim()) {
-      toast.error("To Age is required");
     } else {
       registerEvent();
     }
@@ -2294,7 +1664,9 @@ const Registration = () => {
       { key: "occupation", value: occupation, type: "text" },
      { key: "candidate_community", value: community_type, type: "text" },
       { key: "marital_status", value: maritalStatus, type: "text" },
-      { key: "physical_status", value: physical, type: "text" },
+      { key: "is_children", value: children, type: "text" },
+      { key: "son_details", value: son, type: "text" },
+      { key: "daughter_details", value: daughter, type: "text" },
       { key: "blood_group", value: bloodGroup, type: "text" },
       { key: "candidate_income", value: netincome, type: "text" },
       {
@@ -2344,6 +1716,7 @@ const Registration = () => {
       },
       { key: "photo", type: "file", value: photo },
       { key: "id_proof", type: "file", value: id },
+
     ]; */
 
     const data = [
@@ -2405,6 +1778,7 @@ const Registration = () => {
       { key: "expectation_partner_details", value: partner_ExpectationDetailes, type: "text" },
     /*   { key: "photo", type: "file", value: photo },
     */  /*  { key: "id_proof", type: "file", value: id }, */
+
     ];
     const formData = buildFormData(data);
     Array.from(photo).forEach((file, index) => {
@@ -2955,16 +2329,6 @@ const Registration = () => {
                       >
                         Date of birth<span className="text-red-500 ">*</span>
                       </label>
-                      {/*  <div>
-                        <DatePicker
-                          id="dob"
-                          selected={dob}
-                          onChange={(date) => handleDOB(date)}
-                          dateFormat="dd-MM-yyyy"
-                          placeholderText="dd-mm-yyyy"
-                          className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        />
-                      </div> */}
 
                       <div className="relative max-w-sm">
                         <input
@@ -3048,13 +2412,7 @@ const Registration = () => {
                         options={Heights}
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
-                      {/* <input
-                        required
-                        onChange={(e) => handleHeight(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2 mt-2"
-                        id="company"
-                        type="text"
-                      /> */}
+
                       <div></div>
                     </div>
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
@@ -3070,13 +2428,7 @@ const Registration = () => {
                         options={Weights}
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
-                      {/* <input
-                        required
-                        onChange={(e) => handleWeight(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      /> */}
+
                       <div></div>
                     </div>
                   </div>
@@ -3130,18 +2482,11 @@ const Registration = () => {
                         Profession<span className="text-red-500 ">*</span>
                       </label>
                       <Select
-                        // defaultValue={selectedOption}
+                        required
                         onChange={(e) => handleProfession(e)}
                         options={Profession}
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
-                      {/* <input
-                        required
-                        onChange={(e) => handleProfession(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      /> */}
                       <div></div>
                     </div>
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
@@ -3165,37 +2510,79 @@ const Registration = () => {
                   <div className=" md:flex mb-6">
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
                       <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
+                        className="tracking-wide text-gray-600 text-sm font-bold mb-2"
                         htmlFor="company"
                       >
-                        Mariatal Status<span className="text-red-500 ">*</span>
+                        Do you have any children?{" "}
+                        <span className="text-red-500">*</span>
                       </label>
-
                       <Select
-                        // defaultValue={selectedOption}
-                        onChange={(e) => handlemaritalStatus(e)}
-                        options={Marital_status}
+                        required
+                        onChange={(e) => handleChildren(e)}
+                        options={matching}
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
                       <div></div>
                     </div>
-                    <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
-                      <label
-                        className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
-                        htmlFor="company"
-                      >
-                        Physical Status<span className="text-red-500 ">*</span>
-                      </label>
-                      <input
-                        required
-                        onChange={(e) => handlePhysical(e)}
-                        className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
-                        id="company"
-                        type="text"
-                      />
-                      <div></div>
-                    </div>
+               
+
+                  {maritalStatus !== "Unmarried" &&
+                    maritalStatus !== "" &&
+                    children === "Yes" && (
+                      <div className=" md:flex mb-6">
+                        <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
+                          <label
+                            className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
+                            htmlFor="company"
+                          >
+                            Son Details<span className="text-red-500 ">*</span>
+                          </label>
+                          <textarea
+                            required
+                            onChange={(e) => handleSon(e)}
+                            className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
+                            id="message"
+                            type="text"
+                          />
+                          <div></div>
+                        </div>
+                        <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
+                          <label
+                            className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
+                            htmlFor="company"
+                          >
+                            Daughter Details
+                            <span className="text-red-500 ">*</span>
+                          </label>
+                          <textarea
+                            required
+                            onChange={(e) => handleDaughter(e)}
+                            className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
+                            id="message"
+                            type="text"
+                          />
+                          <div></div>
+                        </div>
+                      </div>
+                    )}
+
+                  <div className=" ps:px-0 px-3 mb-6">
+                    <label
+                      className=" tracking-wide text-gray-600 text-sm font-bold mb-2"
+                      htmlFor="company"
+                    >
+                      Physical Status <span className="text-red-500 ">*</span>
+                    </label>
+                    <input
+                      required
+                      onChange={(e) => handlePhysical(e)}
+                      className="w-full  text-gray-600 border border-gray-400 rounded py-[5.5px] px-4 mb-3 mt-2"
+                      id="company"
+                      type="text"
+                    />
+                    <div></div>
                   </div>
+
                   <div className=" md:flex mb-6">
                     <div className="md:w-1/2 ps:px-0 px-3 mb-6 md:mb-0">
                       <label
@@ -3206,9 +2593,8 @@ const Registration = () => {
                       </label>
 
                       <Select
+                        required
                         onChange={(e) => handleBloodGroup(e)}
-                        // defaultValue={selectedOption}
-                        // onChange={setSelectedOption}
                         options={optionstwo}
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
@@ -3223,9 +2609,8 @@ const Registration = () => {
                       </label>
 
                       <Select
+                        required
                         onChange={(e) => handleNetIncome(e)}
-                        // defaultValue={selectedOption}
-                        // onChange={setSelectedOption}
                         options={Income}
                         className="text-gray-600 border border-gray-400 mt-2"
                       />
@@ -3240,6 +2625,7 @@ const Registration = () => {
                       Candidate Address <span className="text-red-500 ">*</span>
                     </label>
                     <textarea
+                      required
                       onChange={(e) => handleAddress(e)}
                       className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
                       id="message"
@@ -3314,6 +2700,7 @@ const Registration = () => {
                             <span className="text-red-500">*</span>
                           </label>
                           <textarea
+                          required
                             onChange={(e) => handleVisa(e)}
                             className="w-full text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
                             id="candidateVisa" // Unique ID for the textarea
@@ -3330,6 +2717,7 @@ const Registration = () => {
                             <span className="text-red-500">*</span>
                           </label>
                           <textarea
+                          required
                             onChange={(e) => handleNRIAddress(e)}
                             className="w-full text-gray-600 border border-gray-400 rounded py-3 px-4 mb-3 mt-2"
                             id="nriAddress" // Unique ID for the textarea
@@ -3380,6 +2768,7 @@ const Registration = () => {
                         <span className="text-red-500 ">*</span>
                       </label>
                       <Select
+                        required
                         // defaultValue={selectedOption}
                         onChange={(e) => handlefprofession(e)}
                         options={Profession}
@@ -3422,6 +2811,7 @@ const Registration = () => {
                         <span className="text-red-500 ">*</span>
                       </label>
                       <Select
+                        required
                         // defaultValue={selectedOption}
                         onChange={(e) => handlemprofession(e)}
                         options={Profession}
@@ -3447,6 +2837,7 @@ const Registration = () => {
                       </label>
 
                       <Select
+                        required
                         onChange={(e) => handlResidence(e)}
                         options={Family_Type}
                         className="text-gray-600 border border-gray-400 mt-2"
@@ -3606,6 +2997,7 @@ const Registration = () => {
                       <span className="text-red-500 ">*</span>
                     </label>
                     <textarea
+                      required
                       onChange={(e) => handleFamily_detailes(e)}
                       className="w-full  text-gray-600 border border-gray-400 rounded py-3 px-4 mt-2 mb-3"
                       id="message"
@@ -3623,6 +3015,7 @@ const Registration = () => {
                       </label>
 
                       <Select
+                        required
                         onChange={(e) => handlemanglik(e)}
                         // defaultValue={selectedOption}
                         // onChange={setSelectedOption}
@@ -3695,6 +3088,7 @@ const Registration = () => {
                         id="dropzone-file1"
                         type="file"
                         className="hidden"
+                        name="file1"
                       />
                     </label>
                   </div>  */}
@@ -3787,6 +3181,7 @@ const Registration = () => {
                             From:{" "}
                           </span>
                           <Select
+                            required
                             onChange={(e) => handleAgeFrom(e)}
                             // defaultValue={selectedOption}
                             // onChange={setSelectedOption}
@@ -3802,6 +3197,7 @@ const Registration = () => {
                             To:
                           </span>
                           <Select
+                            required
                             onChange={(e) => handleAgeTo(e)}
                             options={ageto}
                             name="field_name"
@@ -3821,6 +3217,7 @@ const Registration = () => {
                         Income<span className="text-red-500 ">*</span>
                       </label>
                       <Select
+                        required
                         onChange={(e) => handlePartnerIncome(e)}
                         options={Income}
                         placeholder=""
@@ -3941,6 +3338,7 @@ const Registration = () => {
                         Profession<span className="text-red-500 ">*</span>
                       </label>
                       <Select
+                        required
                         onChange={(e) => handlepartner_Profession(e)}
                         options={Profession}
                         className="text-gray-600 border border-gray-400 mt-2"
@@ -3956,6 +3354,7 @@ const Registration = () => {
                         Manglik<span className="text-red-500 ">*</span>
                       </label>
                       <Select
+                        required
                         onChange={(e) => handlePartner_manglik(e)}
                         options={manglik}
                         placeholder=""
@@ -3974,6 +3373,7 @@ const Registration = () => {
                       </label>
 
                       <Select
+                        required
                         onChange={(e) => handlePartner_maritalStatus(e)}
                         options={Marital_status}
                         className="text-gray-600 border border-gray-400 mt-2"
@@ -3990,6 +3390,7 @@ const Registration = () => {
                         <span className="text-red-500 ">*</span>
                       </label>
                       <Select
+                        required
                         onChange={(e) => handlePartnerAstrology(e)}
                         options={matching}
                         className="text-gray-600 border border-gray-400 mt-2"
@@ -4064,6 +3465,7 @@ const Registration = () => {
                       }}
                     />
                   </div>
+                </div>
                 </div>
               </form>
             </div>
